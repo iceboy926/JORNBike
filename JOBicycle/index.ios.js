@@ -12,13 +12,12 @@ import {
   View
 } from 'react-native';
 
-export default class JOBicycle extends Component {
+import CodePush from "react-native-code-push";
+
+export default class CoMoBicycle extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
@@ -29,6 +28,9 @@ export default class JOBicycle extends Component {
       </View>
     );
   }
+  componentDidMount(){
+     CodePush.sync();
+   }
 }
 
 const styles = StyleSheet.create({
@@ -50,4 +52,6 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('JOBicycle', () => JOBicycle);
+
+
+AppRegistry.registerComponent('CoMoBicycle', () => CoMoBicycle);

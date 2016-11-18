@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8319DFA04E87D73193C594D4872C65AEB1515804",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F58586C9C2922137616DA787B8B63AB36702515E" : 0,
+    "8319DFA04E87D73193C594D4872C65AEB1515804" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AAA5FB87-2DE9-47EC-8BAF-0AFE8875E023",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F58586C9C2922137616DA787B8B63AB36702515E" : "JORNBike\/JOBicycle\/ios\/CoMoBicycle\/",
+    "8319DFA04E87D73193C594D4872C65AEB1515804" : "JORNBike\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CoMoBicycle",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JOBicycle\/ios\/CoMoBicycle.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iceboy926\/JORNBike.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8319DFA04E87D73193C594D4872C65AEB1515804"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iceboy926\/CoMoBicycle.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F58586C9C2922137616DA787B8B63AB36702515E"
+    }
+  ]
+}

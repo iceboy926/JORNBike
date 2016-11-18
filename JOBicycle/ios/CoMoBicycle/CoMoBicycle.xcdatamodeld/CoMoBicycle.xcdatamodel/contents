@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Userinfo" representedClassName="Userinfo" syncable="YES">
+        <attribute name="headimage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="headimageurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usename" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Userinfo" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
