@@ -34,6 +34,8 @@
 		101B1AB81DDD504C007FC7D1 /* COMyZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B1AB71DDD504C007FC7D1 /* COMyZoneView.m */; };
 		1033AB681DC8898300961174 /* COForgetPSDEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033AB671DC8898300961174 /* COForgetPSDEndViewController.m */; };
 		1033AB6B1DC88B9F00961174 /* COForgetEndView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033AB6A1DC88B9F00961174 /* COForgetEndView.m */; };
+		104135051DDEFF2700AE7E9E /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 104135021DDEFF2700AE7E9E /* MGSwipeButton.m */; };
+		104135061DDEFF2700AE7E9E /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 104135041DDEFF2700AE7E9E /* MGSwipeTableCell.m */; };
 		10560B0B1DC9924B002638C0 /* guide_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10560B0A1DC9924B002638C0 /* guide_background.jpg */; };
 		10560B0E1DC9C1BB002638C0 /* blurred_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 10560B0D1DC9C1BB002638C0 /* blurred_background.png */; };
 		10560B151DC9D463002638C0 /* COBMHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B141DC9D463002638C0 /* COBMHeaderView.m */; };
@@ -163,6 +165,10 @@
 		1033AB671DC8898300961174 /* COForgetPSDEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COForgetPSDEndViewController.m; path = "Module/Login&&Register/ForgetPSD/End/COForgetPSDEndViewController.m"; sourceTree = "<group>"; };
 		1033AB691DC88B9F00961174 /* COForgetEndView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COForgetEndView.h; path = "Module/Login&&Register/ForgetPSD/End/COForgetEndView.h"; sourceTree = "<group>"; };
 		1033AB6A1DC88B9F00961174 /* COForgetEndView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COForgetEndView.m; path = "Module/Login&&Register/ForgetPSD/End/COForgetEndView.m"; sourceTree = "<group>"; };
+		104135011DDEFF2700AE7E9E /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = Vendor/MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		104135021DDEFF2700AE7E9E /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = Vendor/MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
+		104135031DDEFF2700AE7E9E /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = Vendor/MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
+		104135041DDEFF2700AE7E9E /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = Vendor/MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
 		10560B0A1DC9924B002638C0 /* guide_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = guide_background.jpg; path = Resource/Image/guide_background.jpg; sourceTree = "<group>"; };
 		10560B0D1DC9C1BB002638C0 /* blurred_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blurred_background.png; path = Assets.xcassets/LaunchImage.launchimage/blurred_background.png; sourceTree = "<group>"; };
 		10560B131DC9D463002638C0 /* COBMHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBMHeaderView.h; path = Module/BikeMain/COBMHeaderView.h; sourceTree = "<group>"; };
@@ -386,6 +392,17 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		104135001DDEFF1500AE7E9E /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				104135011DDEFF2700AE7E9E /* MGSwipeButton.h */,
+				104135021DDEFF2700AE7E9E /* MGSwipeButton.m */,
+				104135031DDEFF2700AE7E9E /* MGSwipeTableCell.h */,
+				104135041DDEFF2700AE7E9E /* MGSwipeTableCell.m */,
+			);
+			name = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
 		10560B0F1DC9D38B002638C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +533,7 @@
 		106249B21DB9BA9C001DF428 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				104135001DDEFF1500AE7E9E /* MGSwipeTableCell */,
 				1095B8A01DCC23B300E52098 /* Reachability */,
 				10C81F3F1DC079CA00C03926 /* HttpRequest */,
 				10E0806F1DBDA6B500DE67AA /* CBNetWorking */,
@@ -1486,6 +1504,7 @@
 				106249E21DB9FE6F001DF428 /* COBikeMainViewController.m in Sources */,
 				10C81F421DC079E300C03926 /* httpRequest.m in Sources */,
 				10BD6C731DD999CF00A4E181 /* COMediator+COMyFolderComponet.m in Sources */,
+				104135051DDEFF2700AE7E9E /* MGSwipeButton.m in Sources */,
 				10BD6C2D1DD957AE00A4E181 /* COUserSettingFootModel.m in Sources */,
 				106249F41DBA0341001DF428 /* COBikeMainComponet.m in Sources */,
 				1033AB681DC8898300961174 /* COForgetPSDEndViewController.m in Sources */,
@@ -1528,6 +1547,7 @@
 				1011B0631DC83CF400BC2B63 /* COForgetNavigationBar.m in Sources */,
 				1011B0481DC83BD900BC2B63 /* CORegisterEndView.m in Sources */,
 				10BD6C281DD9577C00A4E181 /* COUserSettingComponet.m in Sources */,
+				104135061DDEFF2700AE7E9E /* MGSwipeTableCell.m in Sources */,
 				100AAD811DD31F2200013FC4 /* COCollectionViewCell.m in Sources */,
 				1011B05A1DC83CAD00BC2B63 /* COForgetViewModel.m in Sources */,
 				1011B0571DC83C9E00BC2B63 /* COForgetPSDNextViewController.m in Sources */,

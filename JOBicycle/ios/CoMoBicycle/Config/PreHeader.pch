@@ -35,5 +35,6 @@
 #import "BMapKit.h"
 #import "UINavigationBar+NavigationBackground.h"
 #import "UIBarButtonItem+Helper.h"
+#import "MGSwipeTableCell.h"
 
 #endif /* PreHeader_pch */
