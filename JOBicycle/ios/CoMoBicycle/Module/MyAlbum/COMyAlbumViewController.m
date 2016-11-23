@@ -8,6 +8,12 @@
 
 #import "COMyAlbumViewController.h"
 
+@interface COMyAlbumViewController() <UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource>
+
+@property (nonatomic, strong)UITableView *tableView;
+
+@end
+
 @implementation COMyAlbumViewController
 
 - (void)viewDidLoad
@@ -42,6 +48,9 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark lazy load
+
 
 
 @end

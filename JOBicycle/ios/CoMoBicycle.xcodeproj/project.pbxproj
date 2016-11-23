@@ -70,6 +70,7 @@
 		1094ED181DD1CE29006D32CA /* COSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094ED171DD1CE29006D32CA /* COSearchView.m */; };
 		1095B89F1DCC22D300E52098 /* NetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095B89E1DCC22D300E52098 /* NetWorkServer.m */; };
 		1095B8A31DCC241E00E52098 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095B8A21DCC241E00E52098 /* Reachability.m */; };
+		10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */; };
 		10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F51DCAD55000D8ECAB /* UserinfoManager.m */; };
 		10B324FA1DCB0DBC00D8ECAB /* COBMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F91DCB0DBC00D8ECAB /* COBMViewModel.m */; };
 		10B324FC1DCB118500D8ECAB /* defaultheadImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B324FB1DCB118500D8ECAB /* defaultheadImage@2x.png */; };
@@ -290,6 +291,8 @@
 		1095B89E1DCC22D300E52098 /* NetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetWorkServer.m; path = AppInit/SDKInit/NetWorkServer.m; sourceTree = "<group>"; };
 		1095B8A11DCC241E00E52098 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Reachability/Reachability.h; sourceTree = "<group>"; };
 		1095B8A21DCC241E00E52098 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Reachability/Reachability.m; sourceTree = "<group>"; };
+		10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMenuShowView.h; path = Module/MyFavorite/COMenuShowView.h; sourceTree = "<group>"; };
+		10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMenuShowView.m; path = Module/MyFavorite/COMenuShowView.m; sourceTree = "<group>"; };
 		10B324F41DCAD55000D8ECAB /* UserinfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserinfoManager.h; path = "Module/Login&&Register/UserinfoManager.h"; sourceTree = "<group>"; };
 		10B324F51DCAD55000D8ECAB /* UserinfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserinfoManager.m; path = "Module/Login&&Register/UserinfoManager.m"; sourceTree = "<group>"; };
 		10B324F81DCB0DBC00D8ECAB /* COBMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBMViewModel.h; path = Module/BikeMain/COBMViewModel.h; sourceTree = "<group>"; };
@@ -1136,6 +1139,8 @@
 		10BD6C601DD995F700A4E181 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */,
+				10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1538,6 +1543,7 @@
 				10E080721DBDA6C800DE67AA /* CBNetworking.m in Sources */,
 				106249E61DB9FFAA001DF428 /* COMediator.m in Sources */,
 				1094ED181DD1CE29006D32CA /* COSearchView.m in Sources */,
+				10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */,
 				1011B03C1DC83B8100BC2B63 /* CORegisterViewModel.m in Sources */,
 				10B324FF1DCB14F300D8ECAB /* UIImage+resize.m in Sources */,
 				10BD6C4D1DD98FD000A4E181 /* UIBarButtonItem+Helper.m in Sources */,
