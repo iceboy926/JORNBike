@@ -7,10 +7,12 @@
 //
 
 #import "COMyFavorViewController.h"
+#import "COMenuShowView.h"
 
 @interface COMyFavorViewController() <UITableViewDataSource, UITableViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) COMenuShowView *menuView;
 
 @end
 
@@ -25,6 +27,10 @@
     [self setNavigationBar];
     
     [self.view addSubview:self.tableView];
+    
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchViewAction:)];
+    
+    [self.view addGestureRecognizer:gesture];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -32,6 +38,13 @@
     [super viewWillAppear:animated];
     
     [self addUIConstriants];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self ClearUI];
 }
 
 - (void)setNavigationBar
@@ -50,12 +63,59 @@
         self.navigationItem.leftBarButtonItem = iconItem;
     }
     
-    [self setTitle:@"MyFavor"];
+    UIButton *buttonTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [buttonTitle setFrame:CGRectMake(0, 0, 80, 44)];
+    [buttonTitle setTitle:@"我的收藏" forState:UIControlStateNormal];
+    [buttonTitle setBackgroundColor:[UIColor clearColor]];
+    [buttonTitle addTarget:self action:@selector(titleViewButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    [self.navigationItem setTitleView:buttonTitle];
+    
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithNormalIcon:@"cancel" highlightedIcon:nil target:self action:@selector(rightItemBtnClicked:)];
+    
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
 }
 
 - (void)backBtnClicked:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)titleViewButtonClicked:(UIButton *)sender
+{
+    if(![self.menuView blShow])
+    {
+        [self.menuView showMenuView];
+    }
+    else
+    {
+        [self.menuView disMissMenuView];
+    }
+}
+
+- (void)rightItemBtnClicked:(id)sender
+{
+    
+}
+
+- (void)touchViewAction:(UITapGestureRecognizer *)gesture
+{
+    [self ClearUI];
+}
+
+
+- (void)ClearUI
+{
+    if([self.menuView blShow])
+    {
+        [self.menuView disMissMenuView];
+    }
+    
+    
 }
 
 
@@ -72,6 +132,17 @@
 
 
 #pragma mark lazy load
+
+- (COMenuShowView *)menuView
+{
+    if(_menuView == nil)
+    {
+        NSArray *arrayData = @[@"默认收藏", @"我的分组1", @"我的分组2"];
+        _menuView = [[COMenuShowView alloc] initWithFrame:CGRectMake(MAX_WIDTH/2.0 - (MAX_WIDTH/4.0), 64, MAX_WIDTH/2.0, 0) items:arrayData];
+    }
+    
+    return _menuView;
+}
 
 - (UITableView *)tableView
 {
@@ -90,7 +161,6 @@
     
     return _tableView;
 }
-
 
 #pragma mark UITableViewDataSource delegate
 

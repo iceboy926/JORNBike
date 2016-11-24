@@ -70,6 +70,7 @@
 		1094ED181DD1CE29006D32CA /* COSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094ED171DD1CE29006D32CA /* COSearchView.m */; };
 		1095B89F1DCC22D300E52098 /* NetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095B89E1DCC22D300E52098 /* NetWorkServer.m */; };
 		1095B8A31DCC241E00E52098 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095B8A21DCC241E00E52098 /* Reachability.m */; };
+		10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E70D1DE6E5100021A9D5 /* XZLog.m */; };
 		10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */; };
 		10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F51DCAD55000D8ECAB /* UserinfoManager.m */; };
 		10B324FA1DCB0DBC00D8ECAB /* COBMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F91DCB0DBC00D8ECAB /* COBMViewModel.m */; };
@@ -291,6 +292,8 @@
 		1095B89E1DCC22D300E52098 /* NetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetWorkServer.m; path = AppInit/SDKInit/NetWorkServer.m; sourceTree = "<group>"; };
 		1095B8A11DCC241E00E52098 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Reachability/Reachability.h; sourceTree = "<group>"; };
 		1095B8A21DCC241E00E52098 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Reachability/Reachability.m; sourceTree = "<group>"; };
+		10A2E70C1DE6E5100021A9D5 /* XZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZLog.h; path = Vendor/ColorLog/XZLog.h; sourceTree = "<group>"; };
+		10A2E70D1DE6E5100021A9D5 /* XZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZLog.m; path = Vendor/ColorLog/XZLog.m; sourceTree = "<group>"; };
 		10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMenuShowView.h; path = Module/MyFavorite/COMenuShowView.h; sourceTree = "<group>"; };
 		10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMenuShowView.m; path = Module/MyFavorite/COMenuShowView.m; sourceTree = "<group>"; };
 		10B324F41DCAD55000D8ECAB /* UserinfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserinfoManager.h; path = "Module/Login&&Register/UserinfoManager.h"; sourceTree = "<group>"; };
@@ -536,6 +539,7 @@
 		106249B21DB9BA9C001DF428 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				10A2E70B1DE6E4A70021A9D5 /* ColorLog */,
 				104135001DDEFF1500AE7E9E /* MGSwipeTableCell */,
 				1095B8A01DCC23B300E52098 /* Reachability */,
 				10C81F3F1DC079CA00C03926 /* HttpRequest */,
@@ -1002,6 +1006,15 @@
 				1095B8A21DCC241E00E52098 /* Reachability.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		10A2E70B1DE6E4A70021A9D5 /* ColorLog */ = {
+			isa = PBXGroup;
+			children = (
+				10A2E70C1DE6E5100021A9D5 /* XZLog.h */,
+				10A2E70D1DE6E5100021A9D5 /* XZLog.m */,
+			);
+			name = ColorLog;
 			sourceTree = "<group>";
 		};
 		10B324F71DCAD9E600D8ECAB /* manager */ = {
@@ -1551,6 +1564,7 @@
 				10BD6C681DD9966600A4E181 /* COMyAlbumViewController.m in Sources */,
 				1011B0391DC83AB700BC2B63 /* COLoginViewController.m in Sources */,
 				1011B0631DC83CF400BC2B63 /* COForgetNavigationBar.m in Sources */,
+				10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */,
 				1011B0481DC83BD900BC2B63 /* CORegisterEndView.m in Sources */,
 				10BD6C281DD9577C00A4E181 /* COUserSettingComponet.m in Sources */,
 				104135061DDEFF2700AE7E9E /* MGSwipeTableCell.m in Sources */,

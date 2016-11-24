@@ -36,5 +36,6 @@
 #import "UINavigationBar+NavigationBackground.h"
 #import "UIBarButtonItem+Helper.h"
 #import "MGSwipeTableCell.h"
+#import "XZLog.h"
 
 #endif /* PreHeader_pch */

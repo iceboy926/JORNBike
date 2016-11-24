@@ -10,6 +10,7 @@
 
 @interface COMenuShowView : UIView
 
+@property (nonatomic, assign) BOOL blShow;
 
 - (instancetype)initWithFrame:(CGRect)frame  items:(NSArray <NSString *>*)arryItems;
 
