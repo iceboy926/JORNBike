@@ -35,8 +35,6 @@
                                    NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:16]
                                    }forState:UIControlStateNormal];
     
-    
-
 }
 
 //更改状态栏颜色

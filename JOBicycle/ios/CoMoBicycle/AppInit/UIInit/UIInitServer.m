@@ -33,6 +33,26 @@
 }
 
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
+{
+ 
+    FDRedLog(@"< iso9 source application");
+    
+    return YES;
+}
+
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    
+    FDRedLog(@" > ios9 open url options");
+    
+    return YES;
+}
+
+
+#pragma mark temp function
+
 - (void)initWithApplication:(UIApplication *)application
 {
     application.delegate.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
@@ -117,6 +137,9 @@
     
     return _drawerController;
 }
+
+
+#pragma mark member function
 
 - (void)toggleLeftView
 {

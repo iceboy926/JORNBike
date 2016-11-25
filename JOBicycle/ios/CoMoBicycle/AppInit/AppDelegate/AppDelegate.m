@@ -101,6 +101,38 @@
 
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
+{
+    id<UIApplicationDelegate> service;
+    for(service in[[ServiceComponent shareInstance] services])
+    {
+        if([service respondsToSelector:@selector(application:openURL:options:)])
+        {
+            return [service application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        }
+        
+    }
+    
+    return NO;
+}
+
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
+{
+    id<UIApplicationDelegate> service;
+    for(service in[[ServiceComponent shareInstance] services])
+    {
+        if([service respondsToSelector:@selector(application:openURL:options:)])
+        {
+            return [service application:app openURL:url options:options];
+        }
+        
+    }
+    
+    return NO;
+}
+
+
 #pragma mark member function
 
 + (AppDelegate *)globalDelegate
