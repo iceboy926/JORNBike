@@ -62,6 +62,7 @@
 		108C28101DE7D657002D06CD /* COMyFavorTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C280F1DE7D657002D06CD /* COMyFavorTableViewModel.m */; };
 		108C28151DE7D6E8002D06CD /* COMyFavorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28141DE7D6E8002D06CD /* COMyFavorCell.m */; };
 		108C28181DE7D770002D06CD /* COMyFavorCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28171DE7D770002D06CD /* COMyFavorCellModel.m */; };
+		108C28291DE837DE002D06CD /* UIImageView+CirecleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */; };
 		1094ECFC1DD023D1006D32CA /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094ECFB1DD023D1006D32CA /* libbaidumapapi.a */; };
 		1094ECFE1DD023DE006D32CA /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1094ECFD1DD023DE006D32CA /* mapapi.bundle */; };
 		1094ED001DD0244A006D32CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094ECFF1DD0244A006D32CA /* CoreLocation.framework */; };
@@ -226,6 +227,8 @@
 		108C28141DE7D6E8002D06CD /* COMyFavorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFavorCell.m; path = Module/MyFavorite/COMyFavorCell.m; sourceTree = "<group>"; };
 		108C28161DE7D770002D06CD /* COMyFavorCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFavorCellModel.h; path = Module/MyFavorite/COMyFavorCellModel.h; sourceTree = "<group>"; };
 		108C28171DE7D770002D06CD /* COMyFavorCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFavorCellModel.m; path = Module/MyFavorite/COMyFavorCellModel.m; sourceTree = "<group>"; };
+		108C28271DE837DE002D06CD /* UIImageView+CirecleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+CirecleView.h"; path = "Vendor/Category/UIImageView+CirecleView.h"; sourceTree = "<group>"; };
+		108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+CirecleView.m"; path = "Vendor/Category/UIImageView+CirecleView.m"; sourceTree = "<group>"; };
 		1094ECBE1DD023C2006D32CA /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMapKit.h; path = Library/BaiduMap/inc/BMapKit.h; sourceTree = "<group>"; };
 		1094ECBF1DD023C2006D32CA /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMKActionPaopaoView.h; path = Library/BaiduMap/inc/BMKActionPaopaoView.h; sourceTree = "<group>"; };
 		1094ECC01DD023C2006D32CA /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMKAnnotation.h; path = Library/BaiduMap/inc/BMKAnnotation.h; sourceTree = "<group>"; };
@@ -547,6 +550,7 @@
 		106249B21DB9BA9C001DF428 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				108C28201DE82051002D06CD /* URLRoute */,
 				10A2E70B1DE6E4A70021A9D5 /* ColorLog */,
 				104135001DDEFF1500AE7E9E /* MGSwipeTableCell */,
 				1095B8A01DCC23B300E52098 /* Reachability */,
@@ -689,6 +693,8 @@
 				10B324FE1DCB14F300D8ECAB /* UIImage+resize.m */,
 				1083153B1DD59BE2002E8B65 /* UINavigationBar+NavigationBackground.h */,
 				1083153C1DD59BE2002E8B65 /* UINavigationBar+NavigationBackground.m */,
+				108C28271DE837DE002D06CD /* UIImageView+CirecleView.h */,
+				108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -915,6 +921,13 @@
 				10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */,
 			);
 			name = BaseNavigation;
+			sourceTree = "<group>";
+		};
+		108C28201DE82051002D06CD /* URLRoute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = URLRoute;
 			sourceTree = "<group>";
 		};
 		1094ECBB1DD0235D006D32CA /* Library */ = {
@@ -1617,6 +1630,7 @@
 				1011B03F1DC83B9800BC2B63 /* CORegistNavigationBar.m in Sources */,
 				1011B0691DC8675E00BC2B63 /* COLRBaseNavigationBar.m in Sources */,
 				10BD6C701DD999A300A4E181 /* COMediator+COMyAlbumComponet.m in Sources */,
+				108C28291DE837DE002D06CD /* UIImageView+CirecleView.m in Sources */,
 				1011B0601DC83CE200BC2B63 /* COAuthCodeView.m in Sources */,
 				10BD6C431DD9581400A4E181 /* COUserSettingTableViewModel.m in Sources */,
 				106249DC1DB9FAD3001DF428 /* COAccount.m in Sources */,

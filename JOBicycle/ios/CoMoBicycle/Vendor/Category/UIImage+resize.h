@@ -12,4 +12,6 @@
 
 + (UIImage* )imageWithImage:(UIImage *)image ScaleSize:(CGSize)newsize;
 
+-(UIImage *)drawRectWithRounderCorner:(CGFloat) radius  WithSize:(CGSize) size;
+
 @end
