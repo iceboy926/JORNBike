@@ -63,6 +63,7 @@
 		108C28151DE7D6E8002D06CD /* COMyFavorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28141DE7D6E8002D06CD /* COMyFavorCell.m */; };
 		108C28181DE7D770002D06CD /* COMyFavorCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28171DE7D770002D06CD /* COMyFavorCellModel.m */; };
 		108C28291DE837DE002D06CD /* UIImageView+CirecleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */; };
+		108C282C1DE83C36002D06CD /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C282B1DE83C36002D06CD /* UIView+Helper.m */; };
 		1094ECFC1DD023D1006D32CA /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094ECFB1DD023D1006D32CA /* libbaidumapapi.a */; };
 		1094ECFE1DD023DE006D32CA /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1094ECFD1DD023DE006D32CA /* mapapi.bundle */; };
 		1094ED001DD0244A006D32CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094ECFF1DD0244A006D32CA /* CoreLocation.framework */; };
@@ -229,6 +230,8 @@
 		108C28171DE7D770002D06CD /* COMyFavorCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFavorCellModel.m; path = Module/MyFavorite/COMyFavorCellModel.m; sourceTree = "<group>"; };
 		108C28271DE837DE002D06CD /* UIImageView+CirecleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+CirecleView.h"; path = "Vendor/Category/UIImageView+CirecleView.h"; sourceTree = "<group>"; };
 		108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+CirecleView.m"; path = "Vendor/Category/UIImageView+CirecleView.m"; sourceTree = "<group>"; };
+		108C282A1DE83C36002D06CD /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Helper.h"; path = "Vendor/Category/UIView+Helper.h"; sourceTree = "<group>"; };
+		108C282B1DE83C36002D06CD /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Helper.m"; path = "Vendor/Category/UIView+Helper.m"; sourceTree = "<group>"; };
 		1094ECBE1DD023C2006D32CA /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMapKit.h; path = Library/BaiduMap/inc/BMapKit.h; sourceTree = "<group>"; };
 		1094ECBF1DD023C2006D32CA /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMKActionPaopaoView.h; path = Library/BaiduMap/inc/BMKActionPaopaoView.h; sourceTree = "<group>"; };
 		1094ECC01DD023C2006D32CA /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMKAnnotation.h; path = Library/BaiduMap/inc/BMKAnnotation.h; sourceTree = "<group>"; };
@@ -695,6 +698,8 @@
 				1083153C1DD59BE2002E8B65 /* UINavigationBar+NavigationBackground.m */,
 				108C28271DE837DE002D06CD /* UIImageView+CirecleView.h */,
 				108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */,
+				108C282A1DE83C36002D06CD /* UIView+Helper.h */,
+				108C282B1DE83C36002D06CD /* UIView+Helper.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -1618,6 +1623,7 @@
 				108C28101DE7D657002D06CD /* COMyFavorTableViewModel.m in Sources */,
 				1011B0391DC83AB700BC2B63 /* COLoginViewController.m in Sources */,
 				1011B0631DC83CF400BC2B63 /* COForgetNavigationBar.m in Sources */,
+				108C282C1DE83C36002D06CD /* UIView+Helper.m in Sources */,
 				10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */,
 				1011B0481DC83BD900BC2B63 /* CORegisterEndView.m in Sources */,
 				10BD6C281DD9577C00A4E181 /* COUserSettingComponet.m in Sources */,
