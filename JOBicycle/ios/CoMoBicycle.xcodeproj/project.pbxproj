@@ -81,6 +81,7 @@
 		109702EC1DEBD12800F5FD7F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702EB1DEBD12800F5FD7F /* CoreTelephony.framework */; };
 		109702EE1DEBD13100F5FD7F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702ED1DEBD13100F5FD7F /* libz.tbd */; };
 		109702F01DEBD14500F5FD7F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702EF1DEBD14500F5FD7F /* libc++.tbd */; };
+		109702F41DEBDD3000F5FD7F /* WeiXinServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 109702F31DEBDD3000F5FD7F /* WeiXinServer.m */; };
 		10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E70D1DE6E5100021A9D5 /* XZLog.m */; };
 		10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */; };
 		10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F51DCAD55000D8ECAB /* UserinfoManager.m */; };
@@ -322,6 +323,8 @@
 		109702EB1DEBD12800F5FD7F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		109702ED1DEBD13100F5FD7F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		109702EF1DEBD14500F5FD7F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		109702F21DEBDD3000F5FD7F /* WeiXinServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeiXinServer.h; path = AppInit/SDKInit/WeiXinServer.h; sourceTree = "<group>"; };
+		109702F31DEBDD3000F5FD7F /* WeiXinServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeiXinServer.m; path = AppInit/SDKInit/WeiXinServer.m; sourceTree = "<group>"; };
 		10A2E70C1DE6E5100021A9D5 /* XZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZLog.h; path = Vendor/ColorLog/XZLog.h; sourceTree = "<group>"; };
 		10A2E70D1DE6E5100021A9D5 /* XZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZLog.m; path = Vendor/ColorLog/XZLog.m; sourceTree = "<group>"; };
 		10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMenuShowView.h; path = Module/MyFavorite/COMenuShowView.h; sourceTree = "<group>"; };
@@ -523,6 +526,7 @@
 		106249AA1DB9BA44001DF428 /* SDKService */ = {
 			isa = PBXGroup;
 			children = (
+				109702F11DEBDCEF00F5FD7F /* WeiXin */,
 				109702E01DEBCE5300F5FD7F /* BaiduMap */,
 				1095B89D1DCC22D300E52098 /* NetWorkServer.h */,
 				1095B89E1DCC22D300E52098 /* NetWorkServer.m */,
@@ -1098,6 +1102,15 @@
 				109702E41DEBCEBC00F5FD7F /* WechatAuthSDK.h */,
 				109702E51DEBCEBC00F5FD7F /* WXApi.h */,
 				109702E61DEBCEBC00F5FD7F /* WXApiObject.h */,
+			);
+			name = WeiXin;
+			sourceTree = "<group>";
+		};
+		109702F11DEBDCEF00F5FD7F /* WeiXin */ = {
+			isa = PBXGroup;
+			children = (
+				109702F21DEBDD3000F5FD7F /* WeiXinServer.h */,
+				109702F31DEBDD3000F5FD7F /* WeiXinServer.m */,
 			);
 			name = WeiXin;
 			sourceTree = "<group>";
@@ -1706,6 +1719,7 @@
 				1011B04E1DC83BFE00BC2B63 /* CORegisterNextViewController.m in Sources */,
 				1011B0701DC877A500BC2B63 /* COForgetNextView.m in Sources */,
 				1095B8A31DCC241E00E52098 /* Reachability.m in Sources */,
+				109702F41DEBDD3000F5FD7F /* WeiXinServer.m in Sources */,
 				108315301DD574FE002E8B65 /* COMyZoneComponet.m in Sources */,
 				10BD6C561DD9941E00A4E181 /* COMyAlbumComponet.m in Sources */,
 				108C28151DE7D6E8002D06CD /* COMyFavorCell.m in Sources */,
