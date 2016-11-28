@@ -75,6 +75,12 @@
 		1094ED181DD1CE29006D32CA /* COSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094ED171DD1CE29006D32CA /* COSearchView.m */; };
 		1095B89F1DCC22D300E52098 /* NetWorkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095B89E1DCC22D300E52098 /* NetWorkServer.m */; };
 		1095B8A31DCC241E00E52098 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095B8A21DCC241E00E52098 /* Reachability.m */; };
+		109702E71DEBCEBC00F5FD7F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702E21DEBCEBC00F5FD7F /* libWeChatSDK.a */; };
+		109702E81DEBCEBC00F5FD7F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 109702E31DEBCEBC00F5FD7F /* README.txt */; };
+		109702EA1DEBCF8500F5FD7F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702E91DEBCF8500F5FD7F /* libsqlite3.0.tbd */; };
+		109702EC1DEBD12800F5FD7F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702EB1DEBD12800F5FD7F /* CoreTelephony.framework */; };
+		109702EE1DEBD13100F5FD7F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702ED1DEBD13100F5FD7F /* libz.tbd */; };
+		109702F01DEBD14500F5FD7F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702EF1DEBD14500F5FD7F /* libc++.tbd */; };
 		10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E70D1DE6E5100021A9D5 /* XZLog.m */; };
 		10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */; };
 		10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F51DCAD55000D8ECAB /* UserinfoManager.m */; };
@@ -307,6 +313,15 @@
 		1095B89E1DCC22D300E52098 /* NetWorkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetWorkServer.m; path = AppInit/SDKInit/NetWorkServer.m; sourceTree = "<group>"; };
 		1095B8A11DCC241E00E52098 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Reachability/Reachability.h; sourceTree = "<group>"; };
 		1095B8A21DCC241E00E52098 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Reachability/Reachability.m; sourceTree = "<group>"; };
+		109702E21DEBCEBC00F5FD7F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Library/WeiXin/libWeChatSDK.a; sourceTree = "<group>"; };
+		109702E31DEBCEBC00F5FD7F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = Library/WeiXin/README.txt; sourceTree = "<group>"; };
+		109702E41DEBCEBC00F5FD7F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = Library/WeiXin/WechatAuthSDK.h; sourceTree = "<group>"; };
+		109702E51DEBCEBC00F5FD7F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = Library/WeiXin/WXApi.h; sourceTree = "<group>"; };
+		109702E61DEBCEBC00F5FD7F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = Library/WeiXin/WXApiObject.h; sourceTree = "<group>"; };
+		109702E91DEBCF8500F5FD7F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		109702EB1DEBD12800F5FD7F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		109702ED1DEBD13100F5FD7F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		109702EF1DEBD14500F5FD7F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		10A2E70C1DE6E5100021A9D5 /* XZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZLog.h; path = Vendor/ColorLog/XZLog.h; sourceTree = "<group>"; };
 		10A2E70D1DE6E5100021A9D5 /* XZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZLog.m; path = Vendor/ColorLog/XZLog.m; sourceTree = "<group>"; };
 		10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMenuShowView.h; path = Module/MyFavorite/COMenuShowView.h; sourceTree = "<group>"; };
@@ -388,8 +403,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109702F01DEBD14500F5FD7F /* libc++.tbd in Frameworks */,
+				109702EE1DEBD13100F5FD7F /* libz.tbd in Frameworks */,
+				109702EC1DEBD12800F5FD7F /* CoreTelephony.framework in Frameworks */,
+				109702EA1DEBCF8500F5FD7F /* libsqlite3.0.tbd in Frameworks */,
 				1094ED0A1DD024B1006D32CA /* Security.framework in Frameworks */,
 				1094ED081DD0249B006D32CA /* CoreGraphics.framework in Frameworks */,
+				109702E71DEBCEBC00F5FD7F /* libWeChatSDK.a in Frameworks */,
 				1094ED061DD02487006D32CA /* SystemConfiguration.framework in Frameworks */,
 				1094ED041DD0246A006D32CA /* OpenGLES.framework in Frameworks */,
 				1094ED021DD0245D006D32CA /* QuartzCore.framework in Frameworks */,
@@ -503,8 +523,7 @@
 		106249AA1DB9BA44001DF428 /* SDKService */ = {
 			isa = PBXGroup;
 			children = (
-				107821941DC324050074059E /* BaiduMapServer.h */,
-				107821951DC324050074059E /* BaiduMapServer.m */,
+				109702E01DEBCE5300F5FD7F /* BaiduMap */,
 				1095B89D1DCC22D300E52098 /* NetWorkServer.h */,
 				1095B89E1DCC22D300E52098 /* NetWorkServer.m */,
 			);
@@ -938,6 +957,7 @@
 		1094ECBB1DD0235D006D32CA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				109702E11DEBCE6400F5FD7F /* WeiXin */,
 				1094ECBC1DD0236F006D32CA /* BaiduMap */,
 			);
 			name = Library;
@@ -1059,6 +1079,27 @@
 				1095B8A21DCC241E00E52098 /* Reachability.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		109702E01DEBCE5300F5FD7F /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				107821941DC324050074059E /* BaiduMapServer.h */,
+				107821951DC324050074059E /* BaiduMapServer.m */,
+			);
+			name = BaiduMap;
+			sourceTree = "<group>";
+		};
+		109702E11DEBCE6400F5FD7F /* WeiXin */ = {
+			isa = PBXGroup;
+			children = (
+				109702E21DEBCEBC00F5FD7F /* libWeChatSDK.a */,
+				109702E31DEBCEBC00F5FD7F /* README.txt */,
+				109702E41DEBCEBC00F5FD7F /* WechatAuthSDK.h */,
+				109702E51DEBCEBC00F5FD7F /* WXApi.h */,
+				109702E61DEBCEBC00F5FD7F /* WXApiObject.h */,
+			);
+			name = WeiXin;
 			sourceTree = "<group>";
 		};
 		10A2E70B1DE6E4A70021A9D5 /* ColorLog */ = {
@@ -1421,6 +1462,10 @@
 		CC92CF4008F2206A67D8DA93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				109702EF1DEBD14500F5FD7F /* libc++.tbd */,
+				109702ED1DEBD13100F5FD7F /* libz.tbd */,
+				109702EB1DEBD12800F5FD7F /* CoreTelephony.framework */,
+				109702E91DEBCF8500F5FD7F /* libsqlite3.0.tbd */,
 				1094ED091DD024B1006D32CA /* Security.framework */,
 				1094ED071DD0249B006D32CA /* CoreGraphics.framework */,
 				1094ED051DD02487006D32CA /* SystemConfiguration.framework */,
@@ -1500,6 +1545,7 @@
 				10560B0E1DC9C1BB002638C0 /* blurred_background.png in Resources */,
 				10BACCDD1DB9ADE80004C2B7 /* Assets.xcassets in Resources */,
 				10BACCD81DB9ADE80004C2B7 /* Main.storyboard in Resources */,
+				109702E81DEBCEBC00F5FD7F /* README.txt in Resources */,
 				1094ECFE1DD023DE006D32CA /* mapapi.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1786,6 +1832,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoMoBicycle/Library/BaiduMap",
+					"$(PROJECT_DIR)/CoMoBicycle/Library/WeiXin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.automo.CoMoBicycle;
 				PRODUCT_NAME = "我的地盘";
@@ -1809,6 +1856,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoMoBicycle/Library/BaiduMap",
+					"$(PROJECT_DIR)/CoMoBicycle/Library/WeiXin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.automo.CoMoBicycle;
 				PRODUCT_NAME = "我的地盘";
