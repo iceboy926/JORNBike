@@ -37,5 +37,7 @@
 #import "UIBarButtonItem+Helper.h"
 #import "MGSwipeTableCell.h"
 #import "XZLog.h"
+#import "WXApi.h"
+#import "WechatAuthSDK.h"
 
 #endif /* PreHeader_pch */
