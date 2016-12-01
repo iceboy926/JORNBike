@@ -12,7 +12,7 @@
 
 @interface COMyFavorCell : UITableViewCell
 
-@property (nonatomic, strong) COMyFavorCellModel *cellModel;
+@property (nonatomic, strong) COMyFavorCellModel *favorCellModel;
 
 +(instancetype)cellWithTableView:(UITableView *)tableview;
 

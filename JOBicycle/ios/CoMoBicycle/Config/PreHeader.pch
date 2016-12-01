@@ -39,5 +39,7 @@
 #import "XZLog.h"
 #import "WXApi.h"
 #import "WechatAuthSDK.h"
+#import "UIView+Helper.h"
+#import "UIImageView+CirecleView.h"
 
 #endif /* PreHeader_pch */
