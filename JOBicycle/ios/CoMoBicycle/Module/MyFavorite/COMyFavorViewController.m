@@ -8,11 +8,13 @@
 
 #import "COMyFavorViewController.h"
 #import "COMenuShowView.h"
+#import "COMyFavorTableViewModel.h"
 
 @interface COMyFavorViewController() <UITableViewDataSource, UITableViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) COMenuShowView *menuView;
+@property (nonatomic, strong) COMyFavorTableViewModel *myFavorViewModel;
 
 @end
 
@@ -38,6 +40,15 @@
     [super viewWillAppear:animated];
     
     [self addUIConstriants];
+    
+    WEAK_SELF(weakself)
+    [self.myFavorViewModel requestFavorViewModelWithCompletion:^(BOOL blfinished) {
+       
+        if(blfinished)
+        {
+            [weakself.tableView reloadData];
+        }
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -114,8 +125,6 @@
     {
         [self.menuView disMissMenuView];
     }
-    
-    
 }
 
 
@@ -162,25 +171,31 @@
     return _tableView;
 }
 
+- (COMyFavorTableViewModel *)myFavorViewModel
+{
+    if(_myFavorViewModel == nil)
+    {
+        _myFavorViewModel = [[COMyFavorTableViewModel alloc] init];
+    }
+    
+    return _myFavorViewModel;
+}
+
 #pragma mark UITableViewDataSource delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.myFavorViewModel numberOfRowsInSection:section];
 }
-
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
-    
-    return cell;
+    return [self.myFavorViewModel tableView:tableView cellForRowAtIndexPath:indexPath];
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.myFavorViewModel heightForRowAtIndexPath:indexPath];
 }
 
 

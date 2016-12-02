@@ -15,5 +15,6 @@ extern NSString *const API_URL_REGIST;
 extern NSString *const API_URL_FORGETPSD;
 
 extern NSString *const API_URL_USERSETTING;
+extern NSString *const API_URL_MYFAVOR;
 
 @end

@@ -153,7 +153,7 @@
     [UIView animateWithDuration:0.3 animations:^{
         
         self.transform = CGAffineTransformMakeScale(1.0, 1.0);
-        self.alpha = 0.8;
+        self.alpha = 1.0;
         
     } completion:^(BOOL blfinished){
         
@@ -166,7 +166,7 @@
 
 - (void)disMissMenuView
 {
-    self.alpha = 0.8;
+    self.alpha = 1.0;
     [UIView animateWithDuration:0.3 animations:^{
     
         self.transform = CGAffineTransformMakeScale(1, 0.001);

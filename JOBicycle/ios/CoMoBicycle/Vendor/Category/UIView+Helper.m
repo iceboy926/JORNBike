@@ -10,7 +10,7 @@
 
 @implementation UIView (Helper)
 
-- (void)addCorner:(CGFloat) radius
+- (void)addCornerView:(CGFloat) radius
 {
     UIImage *image = [UIImage new];
     

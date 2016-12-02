@@ -27,11 +27,10 @@ CGFloat heightCell;
 {
     static NSString *cellIdentifier = @"MyFavorCell";
     
-    COMyFavorCell *myFavorCell = [tableview dequeueReusableCellWithIdentifier:cellIdentifier];
-    if(myFavorCell == nil)
-    {
-        myFavorCell = [[COMyFavorCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
+    //COMyFavorCell *myFavorCell = [tableview dequeueReusableCellWithIdentifier:cellIdentifier];
+    //if(myFavorCell == nil)
+
+      COMyFavorCell*  myFavorCell = [[COMyFavorCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     
     return myFavorCell;
 }
@@ -128,7 +127,8 @@ CGFloat heightCell;
 {
     if(_headImageView == nil)
     {
-        _headImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _headImageView = [[UIImageView alloc] init];
+        
         
     }
     return _headImageView;
@@ -138,7 +138,7 @@ CGFloat heightCell;
 {
     if(_titleLabel == nil)
     {
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _titleLabel = [[UILabel alloc] init];
         
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.font = [UIFont systemFontOfSize:14.0];
@@ -154,7 +154,7 @@ CGFloat heightCell;
 {
     if(_timeLabel == nil)
     {
-        _timeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _timeLabel = [[UILabel alloc] init];
         
         _timeLabel.textColor = [UIColor grayColor];
         _timeLabel.textAlignment = NSTextAlignmentLeft;
@@ -169,7 +169,7 @@ CGFloat heightCell;
 {
     if(_contentImageView == nil)
     {
-        _contentImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _contentImageView = [[UIImageView alloc] init];
         
     }
     
@@ -180,7 +180,7 @@ CGFloat heightCell;
 {
     if(_contentdescriptLabel == nil)
     {
-        _contentdescriptLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _contentdescriptLabel = [[UILabel alloc] init];
         
         _contentdescriptLabel.font = [UIFont systemFontOfSize:14.0];
         _contentdescriptLabel.textAlignment = NSTextAlignmentLeft;
@@ -197,12 +197,11 @@ CGFloat heightCell;
 
 - (void)setFavorCellModel:(COMyFavorCellModel *)favorCellModel
 {
-    self.favorCellModel = favorCellModel;
+    _favorCellModel = favorCellModel;
     
     // headerImage
-    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:favorCellModel.strHeadImageUrl] placeholderImage:[UIImage imageNamed:@"CenterPark"]];
-    
-    [self.headImageView addCorner:15.0];
+    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:favorCellModel.strHeadImageUrl] placeholderImage:[UIImage imageNamed:@"header_placeholder"]];
+
  
 
     //title
@@ -211,9 +210,9 @@ CGFloat heightCell;
     //time
     self.timeLabel.text = favorCellModel.strTime;
 
-    
+
     //contentImage
-    [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:favorCellModel.strContentImageUrl] placeholderImage:[UIImage imageNamed:@"mail_holder"]];
+    [self.contentImageView sd_setImageWithURL:nil placeholderImage:[UIImage imageNamed:@"mail_holder"]];
     
     
     //ContentDescript

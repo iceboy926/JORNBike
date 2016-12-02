@@ -10,6 +10,6 @@
 
 @interface UIView (Helper)
 
-- (void)addCorner:(CGFloat) radius;
+- (void)addCornerView:(CGFloat) radius;
 
 @end

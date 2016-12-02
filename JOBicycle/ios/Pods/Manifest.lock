@@ -25,19 +25,19 @@ PODS:
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManager (3.3.7)
   - Masonry (1.0.2)
-  - MMDrawerController (0.5.7):
-    - MMDrawerController/Core (= 0.5.7)
-    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
-    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
-    - MMDrawerController/Subclass (= 0.5.7)
-  - MMDrawerController/Core (0.5.7)
-  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
     - MMDrawerController/Core
-  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
     - MMDrawerController/Core
-  - MMDrawerController/Subclass (0.5.7):
+  - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
-  - PYSearch (0.3.4)
+  - PYSearch (0.3.9)
   - React (0.37.0):
     - React/Core (= 0.37.0)
   - React/Core (0.37.0)
@@ -58,6 +58,13 @@ PODS:
     - React/Core
   - React/RCTWebSocket (0.37.0):
     - React/Core
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -80,6 +87,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - ReactiveCocoa
   - SDWebImage
   - SVProgressHUD
 
@@ -95,12 +103,13 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
-  PYSearch: d7d89a358545f4f8ef3700197724162d1e0e2029
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  PYSearch: 80b44704e9459f206b5e56b23579de17a6df4fd1
   React: aa8f585cbea131b6781c6ad7a1aee436e1ac5ddf
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
-PODFILE CHECKSUM: 8e08766f059b0de858ad5b843dfca31f31165a24
+PODFILE CHECKSUM: e8dd540f07c0f4eddac5790cc706f6a7a60f62e1
 
 COCOAPODS: 1.1.1

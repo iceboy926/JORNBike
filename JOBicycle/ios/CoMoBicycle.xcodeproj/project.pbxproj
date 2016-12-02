@@ -95,8 +95,6 @@
 		10BACCDD1DB9ADE80004C2B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BACCDC1DB9ADE80004C2B7 /* Assets.xcassets */; };
 		10BACCE01DB9ADE80004C2B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BACCDE1DB9ADE80004C2B7 /* LaunchScreen.storyboard */; };
 		10BAE3481DF0213B00274877 /* header_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE3471DF0213B00274877 /* header_placeholder.png */; };
-		10BAE34A1DF023C200274877 /* CenterPark.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE3491DF023C200274877 /* CenterPark.png */; };
-		10BAE34C1DF024D500274877 /* mail_holder.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE34B1DF024D500274877 /* mail_holder.png */; };
 		10BD6C281DD9577C00A4E181 /* COUserSettingComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C271DD9577C00A4E181 /* COUserSettingComponet.m */; };
 		10BD6C2D1DD957AE00A4E181 /* COUserSettingFootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C2A1DD957AE00A4E181 /* COUserSettingFootModel.m */; };
 		10BD6C2E1DD957AE00A4E181 /* COUserSettingHeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C2C1DD957AE00A4E181 /* COUserSettingHeadModel.m */; };
@@ -349,8 +347,6 @@
 		10BACCDF1DB9ADE80004C2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BACCE11DB9ADE80004C2B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10BAE3471DF0213B00274877 /* header_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_placeholder.png; path = Resource/Image/header_placeholder.png; sourceTree = "<group>"; };
-		10BAE3491DF023C200274877 /* CenterPark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CenterPark.png; path = Resource/Image/CenterPark.png; sourceTree = "<group>"; };
-		10BAE34B1DF024D500274877 /* mail_holder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail_holder.png; path = Resource/Image/mail_holder.png; sourceTree = "<group>"; };
 		10BD6C261DD9577C00A4E181 /* COUserSettingComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COUserSettingComponet.h; path = Module/Setting/COUserSettingComponet.h; sourceTree = "<group>"; };
 		10BD6C271DD9577C00A4E181 /* COUserSettingComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COUserSettingComponet.m; path = Module/Setting/COUserSettingComponet.m; sourceTree = "<group>"; };
 		10BD6C291DD957AE00A4E181 /* COUserSettingFootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COUserSettingFootModel.h; path = Module/Setting/COUserSettingFootModel.h; sourceTree = "<group>"; };
@@ -562,8 +558,6 @@
 		106249B01DB9BA82001DF428 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				10BAE34B1DF024D500274877 /* mail_holder.png */,
-				10BAE3491DF023C200274877 /* CenterPark.png */,
 				10BAE3471DF0213B00274877 /* header_placeholder.png */,
 				10560B0D1DC9C1BB002638C0 /* blurred_background.png */,
 				10B324FB1DCB118500D8ECAB /* defaultheadImage@2x.png */,
@@ -1561,14 +1555,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BAE34C1DF024D500274877 /* mail_holder.png in Resources */,
 				10560B0B1DC9924B002638C0 /* guide_background.jpg in Resources */,
 				10B324FC1DCB118500D8ECAB /* defaultheadImage@2x.png in Resources */,
 				10BACCE01DB9ADE80004C2B7 /* LaunchScreen.storyboard in Resources */,
 				10560B0E1DC9C1BB002638C0 /* blurred_background.png in Resources */,
 				10BACCDD1DB9ADE80004C2B7 /* Assets.xcassets in Resources */,
 				10BAE3481DF0213B00274877 /* header_placeholder.png in Resources */,
-				10BAE34A1DF023C200274877 /* CenterPark.png in Resources */,
 				10BACCD81DB9ADE80004C2B7 /* Main.storyboard in Resources */,
 				109702E81DEBCEBC00F5FD7F /* README.txt in Resources */,
 				1094ECFE1DD023DE006D32CA /* mapapi.bundle in Resources */,
