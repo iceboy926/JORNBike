@@ -169,7 +169,7 @@ CGFloat heightCell;
 {
     if(_contentImageView == nil)
     {
-        _contentImageView = [[UIImageView alloc] init];
+        _contentImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"placeholder_60x60"]];
         
     }
     
