@@ -60,15 +60,15 @@ CGFloat heightCell;
 #pragma mark ui layout
 - (void)addUIConstriants
 {
-    NSInteger leftPadding = 20;
+    NSInteger leftPadding = 10;
     NSInteger midPadding = 10;
     NSInteger rightPadding = 20;
     NSInteger topPadding = 5;
     CGFloat width = 40;
     CGFloat height = width;
     CGFloat titleHeight = 30;
-    CGFloat timeLabelWidth = 60;
-    CGFloat ContentImageWidth = 60;
+    CGFloat timeLabelWidth = 100;
+    CGFloat ContentImageWidth = 80;
     CGFloat ContentImageHeight = ContentImageWidth;
     
     heightCell = 0.0;
@@ -127,7 +127,7 @@ CGFloat heightCell;
 {
     if(_headImageView == nil)
     {
-        _headImageView = [[UIImageView alloc] init];
+        _headImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"header_placeholder"]];
         
         
     }
@@ -202,6 +202,7 @@ CGFloat heightCell;
     // headerImage
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:favorCellModel.strHeadImageUrl] placeholderImage:[UIImage imageNamed:@"header_placeholder"]];
 
+    [self.headImageView addCorner:20];
  
 
     //title
