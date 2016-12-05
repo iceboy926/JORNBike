@@ -17,6 +17,7 @@ CGFloat heightCell;
 @property (nonatomic, strong) UILabel  *titleLabel;
 @property (nonatomic, strong) UIImageView *contentImageView;
 @property (nonatomic, strong) UILabel  *contentdescriptLabel;
+@property (nonatomic, strong) UILabel  *contenttip;
 @property (nonatomic, strong) UILabel  *timeLabel;
 
 @end
@@ -44,6 +45,7 @@ CGFloat heightCell;
         [self.contentView addSubview:self.titleLabel];
         [self.contentView addSubview:self.contentImageView];
         [self.contentView addSubview:self.contentdescriptLabel];
+        [self.contentView addSubview:self.contenttip];
         [self.contentView addSubview:self.timeLabel];
         [self addUIConstriants];
     }
@@ -60,14 +62,14 @@ CGFloat heightCell;
 #pragma mark ui layout
 - (void)addUIConstriants
 {
-    NSInteger leftPadding = 10;
+    NSInteger leftPadding = 5;
     NSInteger midPadding = 10;
-    NSInteger rightPadding = 20;
+    NSInteger rightPadding = 5;
     NSInteger topPadding = 5;
     CGFloat width = 40;
     CGFloat height = width;
     CGFloat titleHeight = 30;
-    CGFloat timeLabelWidth = 100;
+    CGFloat timeLabelWidth = 80;
     CGFloat ContentImageWidth = 80;
     CGFloat ContentImageHeight = ContentImageWidth;
     
@@ -111,13 +113,24 @@ CGFloat heightCell;
         heightCell += ContentImageHeight;
     }];
     
+    
     [self.contentdescriptLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(_contentImageView.mas_top);
         make.left.equalTo(_contentImageView.mas_right).offset(5);
-        make.right.equalTo(_titleLabel.mas_right);
-        make.height.equalTo(_contentImageView.mas_height);
+        make.right.equalTo(_timeLabel.mas_right);
+        make.height.equalTo(_contentImageView.mas_height).multipliedBy(0.8);
     }];
+    
+    [self.contenttip mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.equalTo(_contentdescriptLabel.mas_bottom);
+        make.left.equalTo(_contentdescriptLabel.mas_right).offset(5);
+        make.right.equalTo(_timeLabel.mas_right);
+        make.bottom.equalTo(_contentImageView.mas_bottom);
+        
+    }];
+    
     
 }
 
@@ -157,7 +170,7 @@ CGFloat heightCell;
         _timeLabel = [[UILabel alloc] init];
         
         _timeLabel.textColor = [UIColor grayColor];
-        _timeLabel.textAlignment = NSTextAlignmentLeft;
+        _timeLabel.textAlignment = NSTextAlignmentRight;
         _timeLabel.font = [UIFont systemFontOfSize:12.0];
         _timeLabel.backgroundColor = [UIColor clearColor];
     }
@@ -192,6 +205,21 @@ CGFloat heightCell;
     return _contentdescriptLabel;
 }
 
+- (UILabel *)contenttip
+{
+    if(_contenttip == nil)
+    {
+        _contenttip = [[UILabel alloc] init];
+        
+        _contenttip.font = [UIFont systemFontOfSize:12.0];
+        _contenttip.textAlignment = NSTextAlignmentLeft;
+        _contenttip.backgroundColor = [UIColor clearColor];
+        _contenttip.textColor = [UIColor grayColor];
+    }
+    
+    return _contenttip;
+}
+
 
 #pragma mark member function
 
@@ -213,12 +241,15 @@ CGFloat heightCell;
 
 
     //contentImage
-    [self.contentImageView sd_setImageWithURL:nil placeholderImage:[UIImage imageNamed:@"mail_holder"]];
+    [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:favorCellModel.strContentImageUrl] placeholderImage:[UIImage imageNamed:@"ic_category_11"]];
     
     
     //ContentDescript
     
     self.contentdescriptLabel.text = favorCellModel.strContentDescript;
+    
+    
+    self.contenttip.text = favorCellModel.strContentTip;
     
 }
 

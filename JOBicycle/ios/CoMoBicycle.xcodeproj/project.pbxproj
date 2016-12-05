@@ -32,6 +32,11 @@
 		1011B06A1DC8675E00BC2B63 /* COLRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011B0681DC8675E00BC2B63 /* COLRBaseViewController.m */; };
 		1011B0701DC877A500BC2B63 /* COForgetNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011B06F1DC877A500BC2B63 /* COForgetNextView.m */; };
 		101B1AB81DDD504C007FC7D1 /* COMyZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B1AB71DDD504C007FC7D1 /* COMyZoneView.m */; };
+		101D7C4C1DF54610005767BA /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 101D7C4A1DF54610005767BA /* AlipaySDK.bundle */; };
+		101D7C4D1DF54610005767BA /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101D7C4B1DF54610005767BA /* AlipaySDK.framework */; };
+		101D7C4F1DF5471B005767BA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101D7C4E1DF5471B005767BA /* CoreMotion.framework */; };
+		101D7C551DF55EEC005767BA /* ic_category_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 101D7C531DF55EEC005767BA /* ic_category_11.png */; };
+		101D7C561DF55EEC005767BA /* ic_category_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 101D7C541DF55EEC005767BA /* ic_category_16.png */; };
 		1033AB681DC8898300961174 /* COForgetPSDEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033AB671DC8898300961174 /* COForgetPSDEndViewController.m */; };
 		1033AB6B1DC88B9F00961174 /* COForgetEndView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033AB6A1DC88B9F00961174 /* COForgetEndView.m */; };
 		104135051DDEFF2700AE7E9E /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 104135021DDEFF2700AE7E9E /* MGSwipeButton.m */; };
@@ -176,6 +181,11 @@
 		1011B06F1DC877A500BC2B63 /* COForgetNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COForgetNextView.m; path = "Module/Login&&Register/ForgetPSD/Next/COForgetNextView.m"; sourceTree = "<group>"; };
 		101B1AB61DDD504C007FC7D1 /* COMyZoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyZoneView.h; path = Module/MyZone/COMyZoneView.h; sourceTree = "<group>"; };
 		101B1AB71DDD504C007FC7D1 /* COMyZoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyZoneView.m; path = Module/MyZone/COMyZoneView.m; sourceTree = "<group>"; };
+		101D7C4A1DF54610005767BA /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = Library/AliPay/AlipaySDK.bundle; sourceTree = "<group>"; };
+		101D7C4B1DF54610005767BA /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = Library/AliPay/AlipaySDK.framework; sourceTree = "<group>"; };
+		101D7C4E1DF5471B005767BA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		101D7C531DF55EEC005767BA /* ic_category_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_category_11.png; path = Resource/Image/ic_category_11.png; sourceTree = "<group>"; };
+		101D7C541DF55EEC005767BA /* ic_category_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_category_16.png; path = Resource/Image/ic_category_16.png; sourceTree = "<group>"; };
 		1033AB661DC8898300961174 /* COForgetPSDEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COForgetPSDEndViewController.h; path = "Module/Login&&Register/ForgetPSD/End/COForgetPSDEndViewController.h"; sourceTree = "<group>"; };
 		1033AB671DC8898300961174 /* COForgetPSDEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COForgetPSDEndViewController.m; path = "Module/Login&&Register/ForgetPSD/End/COForgetPSDEndViewController.m"; sourceTree = "<group>"; };
 		1033AB691DC88B9F00961174 /* COForgetEndView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COForgetEndView.h; path = "Module/Login&&Register/ForgetPSD/End/COForgetEndView.h"; sourceTree = "<group>"; };
@@ -408,6 +418,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101D7C4F1DF5471B005767BA /* CoreMotion.framework in Frameworks */,
 				109702F01DEBD14500F5FD7F /* libc++.tbd in Frameworks */,
 				109702EE1DEBD13100F5FD7F /* libz.tbd in Frameworks */,
 				109702EC1DEBD12800F5FD7F /* CoreTelephony.framework in Frameworks */,
@@ -415,6 +426,7 @@
 				1094ED0A1DD024B1006D32CA /* Security.framework in Frameworks */,
 				1094ED081DD0249B006D32CA /* CoreGraphics.framework in Frameworks */,
 				109702E71DEBCEBC00F5FD7F /* libWeChatSDK.a in Frameworks */,
+				101D7C4D1DF54610005767BA /* AlipaySDK.framework in Frameworks */,
 				1094ED061DD02487006D32CA /* SystemConfiguration.framework in Frameworks */,
 				1094ED041DD0246A006D32CA /* OpenGLES.framework in Frameworks */,
 				1094ED021DD0245D006D32CA /* QuartzCore.framework in Frameworks */,
@@ -436,6 +448,15 @@
 				1011B0681DC8675E00BC2B63 /* COLRBaseViewController.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		101D7C491DF545FA005767BA /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				101D7C4A1DF54610005767BA /* AlipaySDK.bundle */,
+				101D7C4B1DF54610005767BA /* AlipaySDK.framework */,
+			);
+			name = AliPay;
 			sourceTree = "<group>";
 		};
 		104135001DDEFF1500AE7E9E /* MGSwipeTableCell */ = {
@@ -558,6 +579,8 @@
 		106249B01DB9BA82001DF428 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				101D7C531DF55EEC005767BA /* ic_category_11.png */,
+				101D7C541DF55EEC005767BA /* ic_category_16.png */,
 				10BAE3471DF0213B00274877 /* header_placeholder.png */,
 				10560B0D1DC9C1BB002638C0 /* blurred_background.png */,
 				10B324FB1DCB118500D8ECAB /* defaultheadImage@2x.png */,
@@ -964,6 +987,7 @@
 		1094ECBB1DD0235D006D32CA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				101D7C491DF545FA005767BA /* AliPay */,
 				109702E11DEBCE6400F5FD7F /* WeiXin */,
 				1094ECBC1DD0236F006D32CA /* BaiduMap */,
 			);
@@ -1478,6 +1502,7 @@
 		CC92CF4008F2206A67D8DA93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				101D7C4E1DF5471B005767BA /* CoreMotion.framework */,
 				109702EF1DEBD14500F5FD7F /* libc++.tbd */,
 				109702ED1DEBD13100F5FD7F /* libz.tbd */,
 				109702EB1DEBD12800F5FD7F /* CoreTelephony.framework */,
@@ -1555,10 +1580,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101D7C561DF55EEC005767BA /* ic_category_16.png in Resources */,
+				101D7C4C1DF54610005767BA /* AlipaySDK.bundle in Resources */,
 				10560B0B1DC9924B002638C0 /* guide_background.jpg in Resources */,
 				10B324FC1DCB118500D8ECAB /* defaultheadImage@2x.png in Resources */,
 				10BACCE01DB9ADE80004C2B7 /* LaunchScreen.storyboard in Resources */,
 				10560B0E1DC9C1BB002638C0 /* blurred_background.png in Resources */,
+				101D7C551DF55EEC005767BA /* ic_category_11.png in Resources */,
 				10BACCDD1DB9ADE80004C2B7 /* Assets.xcassets in Resources */,
 				10BAE3481DF0213B00274877 /* header_placeholder.png in Resources */,
 				10BACCD81DB9ADE80004C2B7 /* Main.storyboard in Resources */,
@@ -1843,6 +1871,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoMoBicycle/Library/AliPay",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PreHeader.pch";
 				INFOPLIST_FILE = CoMoBicycle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1867,6 +1899,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoMoBicycle/Library/AliPay",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PreHeader.pch";
 				INFOPLIST_FILE = CoMoBicycle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

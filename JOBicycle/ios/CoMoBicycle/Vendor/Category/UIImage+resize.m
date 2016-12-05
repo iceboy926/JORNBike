@@ -60,9 +60,10 @@
     
     UIGraphicsBeginImageContextWithOptions(rect.size, false, [UIScreen mainScreen].scale);
     
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(radius, radius)];
+    UIBezierPath *CirclePath = [UIBezierPath bezierPathWithOvalInRect:rect];
+    //UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(radius, radius)];
     
-    CGContextAddPath(UIGraphicsGetCurrentContext(), path.CGPath);
+    CGContextAddPath(UIGraphicsGetCurrentContext(), CirclePath.CGPath);
     
     
     CGContextClip(UIGraphicsGetCurrentContext());

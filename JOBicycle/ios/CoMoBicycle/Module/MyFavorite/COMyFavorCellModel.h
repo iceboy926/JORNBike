@@ -14,6 +14,7 @@
 @property (nonatomic, strong)NSString *strTitle;
 @property (nonatomic, strong)NSString *strContentImageUrl;
 @property (nonatomic, strong)NSString *strContentDescript;
+@property (nonatomic, strong)NSString *strContentTip;
 @property (nonatomic, strong)NSString *strTime;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dicRes;

@@ -41,5 +41,6 @@
 #import "WechatAuthSDK.h"
 #import "UIView+Helper.h"
 #import "UIImageView+CirecleView.h"
+#import <AlipaySDK/AlipaySDK.h>
 
 #endif /* PreHeader_pch */
