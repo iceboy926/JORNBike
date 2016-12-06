@@ -39,6 +39,7 @@
         self.layer.anchorPoint = CGPointMake(0.5, 0);
         
         self.layer.position = CGPointMake(self.layer.position.x+(0.5-0.5)*self.frame.size.width, self.layer.position.y+(0-0.5)*self.frame.size.height);
+        self.backgroundColor = [UIColor clearColor];
     }
     
     return self;
@@ -84,6 +85,7 @@
         _mytableView.delegate = self;
         _mytableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _mytableView.scrollEnabled = NO;
+        _mytableView.backgroundColor = backGroundColor;
     }
     
     return _mytableView;
@@ -105,7 +107,7 @@
     menuCell.textLabel.textColor = [UIColor blackColor];
     menuCell.textLabel.font = [UIFont systemFontOfSize:16.0];
     menuCell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+    menuCell.backgroundColor = [UIColor clearColor];
     
     return menuCell;
 }

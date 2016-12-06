@@ -13,6 +13,7 @@
 @interface COMyFavorTableViewModel : NSObject
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
+@property (nonatomic, copy) BOOL (^didSelectMGSwiperBtn)(NSInteger index);
 
 
 - (void)requestFavorViewModelWithCompletion:(void (^)(BOOL blfinished)) completion;

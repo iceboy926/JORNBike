@@ -176,6 +176,12 @@
     if(_myFavorViewModel == nil)
     {
         _myFavorViewModel = [[COMyFavorTableViewModel alloc] init];
+        _myFavorViewModel.didSelectMGSwiperBtn = ^(NSInteger index){
+        
+        
+            NSLog(@"did select mgswiperbtn index = %d", index);
+            return NO;
+        };
     }
     
     return _myFavorViewModel;

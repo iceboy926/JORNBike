@@ -17,7 +17,7 @@ CGFloat heightCell;
 @property (nonatomic, strong) UILabel  *titleLabel;
 @property (nonatomic, strong) UIImageView *contentImageView;
 @property (nonatomic, strong) UILabel  *contentdescriptLabel;
-@property (nonatomic, strong) UILabel  *contenttip;
+@property (nonatomic, strong) UILabel  *contenttipLabel;
 @property (nonatomic, strong) UILabel  *timeLabel;
 
 @end
@@ -45,7 +45,7 @@ CGFloat heightCell;
         [self.contentView addSubview:self.titleLabel];
         [self.contentView addSubview:self.contentImageView];
         [self.contentView addSubview:self.contentdescriptLabel];
-        [self.contentView addSubview:self.contenttip];
+        [self.contentView addSubview:self.contenttipLabel];
         [self.contentView addSubview:self.timeLabel];
         [self addUIConstriants];
     }
@@ -66,11 +66,10 @@ CGFloat heightCell;
     NSInteger midPadding = 10;
     NSInteger rightPadding = 5;
     NSInteger topPadding = 5;
-    CGFloat width = 40;
-    CGFloat height = width;
-    CGFloat titleHeight = 30;
+    CGFloat width = 30;
+    CGFloat titleHeight = 25;
     CGFloat timeLabelWidth = 80;
-    CGFloat ContentImageWidth = 80;
+    CGFloat ContentImageWidth = 60;
     CGFloat ContentImageHeight = ContentImageWidth;
     
     heightCell = 0.0;
@@ -79,7 +78,7 @@ CGFloat heightCell;
         
         make.left.equalTo(self.contentView.mas_left).offset(leftPadding);
         make.top.equalTo(self.contentView.mas_top).offset(topPadding);
-        make.size.mas_equalTo(CGSizeMake(width, height));
+        make.width.height.mas_equalTo(width);
         
         heightCell = topPadding;
         
@@ -109,7 +108,7 @@ CGFloat heightCell;
         
         make.left.equalTo(_titleLabel.mas_left);
         make.top.equalTo(_titleLabel.mas_bottom);
-        make.size.mas_equalTo(CGSizeMake(ContentImageWidth, ContentImageHeight));
+        make.width.height.mas_equalTo(ContentImageHeight);
         heightCell += ContentImageHeight;
     }];
     
@@ -119,16 +118,19 @@ CGFloat heightCell;
         make.top.equalTo(_contentImageView.mas_top);
         make.left.equalTo(_contentImageView.mas_right).offset(5);
         make.right.equalTo(_timeLabel.mas_right);
-        make.height.equalTo(_contentImageView.mas_height).multipliedBy(0.8);
+        make.height.mas_equalTo(ContentImageHeight);
+        
+        heightCell += midPadding;
     }];
     
-    [self.contenttip mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.contenttipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.top.equalTo(_contentdescriptLabel.mas_bottom);
-        make.left.equalTo(_contentdescriptLabel.mas_right).offset(5);
-        make.right.equalTo(_timeLabel.mas_right);
-        make.bottom.equalTo(_contentImageView.mas_bottom);
+        make.left.equalTo(_contentdescriptLabel.mas_left);
+        make.right.equalTo(_contentdescriptLabel.mas_right);
+        make.height.mas_equalTo(20);
         
+        heightCell += midPadding;
     }];
     
     
@@ -205,19 +207,20 @@ CGFloat heightCell;
     return _contentdescriptLabel;
 }
 
-- (UILabel *)contenttip
+- (UILabel *)contenttipLabel
 {
-    if(_contenttip == nil)
+    if(_contenttipLabel == nil)
     {
-        _contenttip = [[UILabel alloc] init];
+        _contenttipLabel = [[UILabel alloc] init];
         
-        _contenttip.font = [UIFont systemFontOfSize:12.0];
-        _contenttip.textAlignment = NSTextAlignmentLeft;
-        _contenttip.backgroundColor = [UIColor clearColor];
-        _contenttip.textColor = [UIColor grayColor];
+        _contenttipLabel.font = [UIFont systemFontOfSize:12.0];
+        _contenttipLabel.textAlignment = NSTextAlignmentLeft;
+        _contenttipLabel.textColor = [UIColor grayColor];
+        _contenttipLabel.backgroundColor = [UIColor clearColor];
+        
     }
     
-    return _contenttip;
+    return _contenttipLabel;
 }
 
 
@@ -230,7 +233,7 @@ CGFloat heightCell;
     // headerImage
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:favorCellModel.strHeadImageUrl] placeholderImage:[UIImage imageNamed:@"header_placeholder"]];
 
-    [self.headImageView addCorner:20];
+    [self.headImageView addCorner:self.headImageView.frame.size.width/2];
  
 
     //title
@@ -245,11 +248,11 @@ CGFloat heightCell;
     
     
     //ContentDescript
-    
     self.contentdescriptLabel.text = favorCellModel.strContentDescript;
     
     
-    self.contenttip.text = favorCellModel.strContentTip;
+    //ContentTip
+    self.contenttipLabel.text = favorCellModel.strContentTip;
     
 }
 

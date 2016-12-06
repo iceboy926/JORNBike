@@ -10,7 +10,7 @@
 #import "COMyFavorCell.h"
 #import "COMyFavorCellModel.h"
 
-@interface COMyFavorTableViewModel()
+@interface COMyFavorTableViewModel() <MGSwipeTableCellDelegate>
 
 @end
 
@@ -99,6 +99,9 @@
     COMyFavorCell *favorCell = [COMyFavorCell cellWithTableView:tableview];
     if(favorCell)
     {
+        favorCell.delegate = self;
+        favorCell.allowsMultipleSwipe = YES;
+        favorCell.rightButtons = [self getSwiperButtonsArray];
         favorCell.favorCellModel = [self.modelArray objectAtIndex:[indexPath row]];
     }
     
@@ -108,6 +111,43 @@
 - (CGFloat)heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [COMyFavorCell heightForCell];
+}
+
+
+- (NSArray *)getSwiperButtonsArray
+{
+    NSMutableArray *arrayButtons = [NSMutableArray array];
+    
+    NSString *titles[2] = {@"Delete", @"More"};
+    UIColor *colors[2] = {[UIColor redColor], [UIColor lightGrayColor]};
+    
+    for (int i = 0; i < 2; i++) {
+        
+        MGSwipeButton *swiperBtn = [MGSwipeButton buttonWithTitle:titles[i] backgroundColor:colors[i]];
+        if(swiperBtn)
+        {
+            [arrayButtons addObject:swiperBtn];
+        }
+    }
+    
+    
+    return arrayButtons;
+}
+
+
+#pragma mark MGSwiperTableCellDelegate
+
+-(BOOL) swipeTableCell:(nonnull MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion
+{
+    if(direction == MGSwipeDirectionRightToLeft)
+    {
+        if(self.didSelectMGSwiperBtn)
+        {
+            return self.didSelectMGSwiperBtn(index);
+        }
+    }
+    
+    return YES;
 }
 
 

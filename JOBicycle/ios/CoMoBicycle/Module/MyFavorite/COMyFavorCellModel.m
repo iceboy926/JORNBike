@@ -19,7 +19,7 @@
         self.strTitle = [NSString replaceUnicode:dicRes[@"title"]];
         self.strContentImageUrl = dicRes[@"contentimage"];
         self.strContentDescript = dicRes[@"contentdescript"];
-        self.strContentTip = dicRes[@"contentTip"];
+        self.strContentTip = dicRes[@"contenttip"];
         self.strTime = dicRes[@"time"];
     }
     

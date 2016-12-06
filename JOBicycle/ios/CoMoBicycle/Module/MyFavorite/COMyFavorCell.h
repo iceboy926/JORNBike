@@ -10,7 +10,7 @@
 
 @class COMyFavorCellModel;
 
-@interface COMyFavorCell : UITableViewCell
+@interface COMyFavorCell : MGSwipeTableCell
 
 @property (nonatomic, strong) COMyFavorCellModel *favorCellModel;
 
