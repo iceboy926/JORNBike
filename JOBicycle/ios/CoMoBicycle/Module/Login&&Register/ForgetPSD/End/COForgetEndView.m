@@ -150,6 +150,7 @@
         _userpsdoldTextField.font = [UIFont systemFontOfSize:16.0];
         _userpsdoldTextField.textColor = [UIColor blackColor];
         _userpsdoldTextField.placeholder = @"输入6-12位密码";
+        _userpsdoldTextField.secureTextEntry = YES;
         _userpsdoldTextField.backgroundColor = [UIColor clearColor];
         _userpsdoldTextField.borderStyle = UITextBorderStyleNone;
         _userpsdoldTextField.returnKeyType = UIReturnKeyNext;
@@ -195,6 +196,7 @@
         _userpsdnewTextField.font = [UIFont systemFontOfSize:16.0];
         _userpsdnewTextField.textColor = [UIColor blackColor];
         _userpsdnewTextField.placeholder = @"输入6-12位密码";
+        _userpsdoldTextField.secureTextEntry = YES;
         _userpsdnewTextField.backgroundColor = [UIColor clearColor];
         _userpsdnewTextField.borderStyle = UITextBorderStyleNone;
         _userpsdnewTextField.returnKeyType = UIReturnKeyDone;

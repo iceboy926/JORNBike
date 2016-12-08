@@ -42,5 +42,6 @@
 #import "UIView+Helper.h"
 #import "UIImageView+CirecleView.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import "NSLogger.h"
 
 #endif /* PreHeader_pch */

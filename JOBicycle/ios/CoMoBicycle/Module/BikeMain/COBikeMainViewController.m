@@ -71,6 +71,7 @@
     
     headBtn.layer.cornerRadius = 20;
     headBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    headBtn.layer.masksToBounds = YES;
     [headBtn setBackgroundImage:image forState:UIControlStateNormal];
     [headBtn addTarget:self action:@selector(headbtnClicked:) forControlEvents:UIControlEventTouchUpInside];
 

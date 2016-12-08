@@ -104,6 +104,7 @@
         _userpsdTextField = [[UITextField alloc] init];
         _userpsdTextField.font = [UIFont systemFontOfSize:16.0];
         _userpsdTextField.textColor = [UIColor blackColor];
+        _userpsdTextField.secureTextEntry = YES;
         _userpsdTextField.placeholder = @"输入6-12位密码";
         _userpsdTextField.backgroundColor = [UIColor clearColor];
         _userpsdTextField.borderStyle = UITextBorderStyleNone;

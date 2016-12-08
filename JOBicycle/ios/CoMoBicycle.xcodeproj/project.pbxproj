@@ -69,6 +69,12 @@
 		108C28181DE7D770002D06CD /* COMyFavorCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28171DE7D770002D06CD /* COMyFavorCellModel.m */; };
 		108C28291DE837DE002D06CD /* UIImageView+CirecleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */; };
 		108C282C1DE83C36002D06CD /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C282B1DE83C36002D06CD /* UIView+Helper.m */; };
+		108E30B71DF9506100D4EEC6 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108E30B41DF9506000D4EEC6 /* MOBFoundation.framework */; };
+		108E30B81DF9506100D4EEC6 /* MOBFoundationEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108E30B51DF9506100D4EEC6 /* MOBFoundationEx.framework */; };
+		108E30B91DF9506100D4EEC6 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108E30B61DF9506100D4EEC6 /* SMS_SDK.framework */; };
+		108E30BB1DF950D200D4EEC6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108E30BA1DF950D200D4EEC6 /* AdSupport.framework */; };
+		108E30BD1DF9515E00D4EEC6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 108E30BC1DF9515E00D4EEC6 /* libicucore.tbd */; };
+		108E30C51DF956DC00D4EEC6 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E30C21DF956DC00D4EEC6 /* LoggerClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1094ECFC1DD023D1006D32CA /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094ECFB1DD023D1006D32CA /* libbaidumapapi.a */; };
 		1094ECFE1DD023DE006D32CA /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1094ECFD1DD023DE006D32CA /* mapapi.bundle */; };
 		1094ED001DD0244A006D32CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094ECFF1DD0244A006D32CA /* CoreLocation.framework */; };
@@ -250,6 +256,15 @@
 		108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+CirecleView.m"; path = "Vendor/Category/UIImageView+CirecleView.m"; sourceTree = "<group>"; };
 		108C282A1DE83C36002D06CD /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Helper.h"; path = "Vendor/Category/UIView+Helper.h"; sourceTree = "<group>"; };
 		108C282B1DE83C36002D06CD /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Helper.m"; path = "Vendor/Category/UIView+Helper.m"; sourceTree = "<group>"; };
+		108E30B41DF9506000D4EEC6 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = Library/SMS_SDK/MOBFoundation.framework; sourceTree = "<group>"; };
+		108E30B51DF9506100D4EEC6 /* MOBFoundationEx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundationEx.framework; path = Library/SMS_SDK/MOBFoundationEx.framework; sourceTree = "<group>"; };
+		108E30B61DF9506100D4EEC6 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SMS_SDK.framework; path = Library/SMS_SDK/SMS_SDK.framework; sourceTree = "<group>"; };
+		108E30BA1DF950D200D4EEC6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		108E30BC1DF9515E00D4EEC6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		108E30C11DF956DC00D4EEC6 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerClient.h; path = Vendor/NSLogger/LoggerClient.h; sourceTree = "<group>"; };
+		108E30C21DF956DC00D4EEC6 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggerClient.m; path = Vendor/NSLogger/LoggerClient.m; sourceTree = "<group>"; };
+		108E30C31DF956DC00D4EEC6 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerCommon.h; path = Vendor/NSLogger/LoggerCommon.h; sourceTree = "<group>"; };
+		108E30C41DF956DC00D4EEC6 /* NSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSLogger.h; path = Vendor/NSLogger/NSLogger.h; sourceTree = "<group>"; };
 		1094ECBE1DD023C2006D32CA /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMapKit.h; path = Library/BaiduMap/inc/BMapKit.h; sourceTree = "<group>"; };
 		1094ECBF1DD023C2006D32CA /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMKActionPaopaoView.h; path = Library/BaiduMap/inc/BMKActionPaopaoView.h; sourceTree = "<group>"; };
 		1094ECC01DD023C2006D32CA /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMKAnnotation.h; path = Library/BaiduMap/inc/BMKAnnotation.h; sourceTree = "<group>"; };
@@ -418,19 +433,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108E30BD1DF9515E00D4EEC6 /* libicucore.tbd in Frameworks */,
+				108E30BB1DF950D200D4EEC6 /* AdSupport.framework in Frameworks */,
 				101D7C4F1DF5471B005767BA /* CoreMotion.framework in Frameworks */,
 				109702F01DEBD14500F5FD7F /* libc++.tbd in Frameworks */,
 				109702EE1DEBD13100F5FD7F /* libz.tbd in Frameworks */,
+				108E30B91DF9506100D4EEC6 /* SMS_SDK.framework in Frameworks */,
 				109702EC1DEBD12800F5FD7F /* CoreTelephony.framework in Frameworks */,
 				109702EA1DEBCF8500F5FD7F /* libsqlite3.0.tbd in Frameworks */,
 				1094ED0A1DD024B1006D32CA /* Security.framework in Frameworks */,
 				1094ED081DD0249B006D32CA /* CoreGraphics.framework in Frameworks */,
 				109702E71DEBCEBC00F5FD7F /* libWeChatSDK.a in Frameworks */,
+				108E30B71DF9506100D4EEC6 /* MOBFoundation.framework in Frameworks */,
 				101D7C4D1DF54610005767BA /* AlipaySDK.framework in Frameworks */,
 				1094ED061DD02487006D32CA /* SystemConfiguration.framework in Frameworks */,
 				1094ED041DD0246A006D32CA /* OpenGLES.framework in Frameworks */,
 				1094ED021DD0245D006D32CA /* QuartzCore.framework in Frameworks */,
 				1094ED001DD0244A006D32CA /* CoreLocation.framework in Frameworks */,
+				108E30B81DF9506100D4EEC6 /* MOBFoundationEx.framework in Frameworks */,
 				A35F1FE07D79EE7FBA169288 /* libPods-CoMoBicycle.a in Frameworks */,
 				1094ECFC1DD023D1006D32CA /* libbaidumapapi.a in Frameworks */,
 			);
@@ -549,6 +569,7 @@
 		106249AA1DB9BA44001DF428 /* SDKService */ = {
 			isa = PBXGroup;
 			children = (
+				108E30B31DF9504900D4EEC6 /* SMS_SDK */,
 				109702F11DEBDCEF00F5FD7F /* WeiXin */,
 				109702E01DEBCE5300F5FD7F /* BaiduMap */,
 				1095B89D1DCC22D300E52098 /* NetWorkServer.h */,
@@ -602,6 +623,7 @@
 		106249B21DB9BA9C001DF428 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				108E30C01DF956B200D4EEC6 /* NSLogger */,
 				108C28201DE82051002D06CD /* URLRoute */,
 				10A2E70B1DE6E4A70021A9D5 /* ColorLog */,
 				104135001DDEFF1500AE7E9E /* MGSwipeTableCell */,
@@ -982,6 +1004,27 @@
 			children = (
 			);
 			name = URLRoute;
+			sourceTree = "<group>";
+		};
+		108E30B31DF9504900D4EEC6 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				108E30B41DF9506000D4EEC6 /* MOBFoundation.framework */,
+				108E30B51DF9506100D4EEC6 /* MOBFoundationEx.framework */,
+				108E30B61DF9506100D4EEC6 /* SMS_SDK.framework */,
+			);
+			name = SMS_SDK;
+			sourceTree = "<group>";
+		};
+		108E30C01DF956B200D4EEC6 /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				108E30C11DF956DC00D4EEC6 /* LoggerClient.h */,
+				108E30C21DF956DC00D4EEC6 /* LoggerClient.m */,
+				108E30C31DF956DC00D4EEC6 /* LoggerCommon.h */,
+				108E30C41DF956DC00D4EEC6 /* NSLogger.h */,
+			);
+			name = NSLogger;
 			sourceTree = "<group>";
 		};
 		1094ECBB1DD0235D006D32CA /* Library */ = {
@@ -1502,6 +1545,8 @@
 		CC92CF4008F2206A67D8DA93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				108E30BC1DF9515E00D4EEC6 /* libicucore.tbd */,
+				108E30BA1DF950D200D4EEC6 /* AdSupport.framework */,
 				101D7C4E1DF5471B005767BA /* CoreMotion.framework */,
 				109702EF1DEBD14500F5FD7F /* libc++.tbd */,
 				109702ED1DEBD13100F5FD7F /* libz.tbd */,
@@ -1712,6 +1757,7 @@
 				107821931DC321630074059E /* ServiceComponent.m in Sources */,
 				10BD6C681DD9966600A4E181 /* COMyAlbumViewController.m in Sources */,
 				108C28101DE7D657002D06CD /* COMyFavorTableViewModel.m in Sources */,
+				108E30C51DF956DC00D4EEC6 /* LoggerClient.m in Sources */,
 				1011B0391DC83AB700BC2B63 /* COLoginViewController.m in Sources */,
 				1011B0631DC83CF400BC2B63 /* COForgetNavigationBar.m in Sources */,
 				108C282C1DE83C36002D06CD /* UIView+Helper.m in Sources */,
@@ -1874,6 +1920,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoMoBicycle/Library/AliPay",
+					"$(PROJECT_DIR)/CoMoBicycle/Library/SMS_SDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PreHeader.pch";
 				INFOPLIST_FILE = CoMoBicycle/Info.plist;
@@ -1902,6 +1949,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoMoBicycle/Library/AliPay",
+					"$(PROJECT_DIR)/CoMoBicycle/Library/SMS_SDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PreHeader.pch";
 				INFOPLIST_FILE = CoMoBicycle/Info.plist;

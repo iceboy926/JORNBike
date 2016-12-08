@@ -14,6 +14,9 @@
 
 #import "COMediator+COBikeMainComponet.h"
 
+#import "AppDelegate.h"
+#import "COBaseNavigationController.h"
+
 
 @interface CORegisterEndViewController() <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
@@ -223,7 +226,10 @@
 {
     UIViewController *mainVC = [[COMediator shareInstance] COBikeComponet_ViewController];
     
-    [self presentViewController:mainVC animated:YES completion:nil];
+    [AppDelegate globalDelegate].rootNavigationController = [[COBaseNavigationController alloc] initWithRootViewController:mainVC];
+    
+    [[AppDelegate globalDelegate] showMainPage];
+    
 }
 
 @end
