@@ -114,7 +114,7 @@
     [self.settingFooterView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.left.right.bottom.equalTo(self.view);
-        make.height.equalTo(self.view.mas_height).multipliedBy(0.2);
+        make.height.equalTo(self.view.mas_height).multipliedBy(0.1);
         
     }];
 }

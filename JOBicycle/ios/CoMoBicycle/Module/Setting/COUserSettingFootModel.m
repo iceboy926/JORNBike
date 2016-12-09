@@ -16,7 +16,10 @@
     self = [super init];
     if(self)
     {
-        self.imageUrl = dic[@"image"];
+        self.settingImageUrl = dic[@"settingimage"];
+        self.settingTitleStr = dic[@"settingtitle"];
+        self.quitImageUrl = dic[@"quitimage"];
+        self.quitTitleStr = dic[@"quittitle"];
     }
     
     return self;

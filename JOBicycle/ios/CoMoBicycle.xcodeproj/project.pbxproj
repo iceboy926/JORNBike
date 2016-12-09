@@ -130,6 +130,7 @@
 		10BD6C7A1DD99C8100A4E181 /* COMyFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C791DD99C8100A4E181 /* COMyFolderViewController.m */; };
 		10BD6C7D1DD9B9FE00A4E181 /* COBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */; };
 		10C777D71DFA43D2000E7A3E /* SMSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C777D61DFA43D2000E7A3E /* SMSServer.m */; };
+		10C777DA1DFA7ECC000E7A3E /* UserSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C777D91DFA7ECC000E7A3E /* UserSetting.plist */; };
 		10C81F421DC079E300C03926 /* httpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C81F411DC079E300C03926 /* httpRequest.m */; };
 		10E0806E1DBDA27100DE67AA /* Global.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10E0806D1DBDA27100DE67AA /* Global.mm */; };
 		10E080721DBDA6C800DE67AA /* CBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E080711DBDA6C800DE67AA /* CBNetworking.m */; };
@@ -421,6 +422,7 @@
 		10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBaseNavigationController.m; path = AppInit/UIInit/COBaseNavigationController.m; sourceTree = "<group>"; };
 		10C777D51DFA43D2000E7A3E /* SMSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSServer.h; path = AppInit/SDKInit/SMSServer.h; sourceTree = "<group>"; };
 		10C777D61DFA43D2000E7A3E /* SMSServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSServer.m; path = AppInit/SDKInit/SMSServer.m; sourceTree = "<group>"; };
+		10C777D91DFA7ECC000E7A3E /* UserSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UserSetting.plist; path = Resource/InterfaceBuilder/UserSetting.plist; sourceTree = "<group>"; };
 		10C81F401DC079E300C03926 /* httpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = httpRequest.h; path = Vendor/HttpRequest/httpRequest.h; sourceTree = "<group>"; };
 		10C81F411DC079E300C03926 /* httpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = httpRequest.m; path = Vendor/HttpRequest/httpRequest.m; sourceTree = "<group>"; };
 		10E0806C1DBDA27100DE67AA /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Global.h; path = Config/Global.h; sourceTree = "<group>"; };
@@ -1252,6 +1254,7 @@
 			children = (
 				10BACCE11DB9ADE80004C2B7 /* Info.plist */,
 				10BACCCE1DB9ADE80004C2B7 /* main.m */,
+				10C777D91DFA7ECC000E7A3E /* UserSetting.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1644,6 +1647,7 @@
 				10B324FC1DCB118500D8ECAB /* defaultheadImage@2x.png in Resources */,
 				10BACCE01DB9ADE80004C2B7 /* LaunchScreen.storyboard in Resources */,
 				10560B0E1DC9C1BB002638C0 /* blurred_background.png in Resources */,
+				10C777DA1DFA7ECC000E7A3E /* UserSetting.plist in Resources */,
 				101D7C551DF55EEC005767BA /* ic_category_11.png in Resources */,
 				10BACCDD1DB9ADE80004C2B7 /* Assets.xcassets in Resources */,
 				10BAE3481DF0213B00274877 /* header_placeholder.png in Resources */,

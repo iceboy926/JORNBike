@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>headSetting</key>
+	<dict>
+		<key>image</key>
+		<string>http://tva3.sinaimg.cn/crop.0.0.180.180.50/66375ce9jw1e8qgp5bmzyj2050050aa8.jpg</string>
+		<key>title</key>
+		<string>周zhou</string>
+		<key>description</key>
+		<string>\u4e2d\u56fd\u5965\u8fd0\u8db3\u7403\u961f\u7c89\u4e1d\u4ff1\u4e50\u90e8\u3002</string>
+	</dict>
+	<key>centerSetting</key>
+	<array>
+		<dict>
+			<key>headimage</key>
+			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
+			<key>headtitle</key>
+			<string>我的地盘</string>
+		</dict>
+		<dict>
+			<key>headimage</key>
+			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
+			<key>headtitle</key>
+			<string>我的收藏</string>
+		</dict>
+		<dict>
+			<key>headimage</key>
+			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
+			<key>headtitle</key>
+			<string>我的相册</string>
+		</dict>
+		<dict>
+			<key>headimage</key>
+			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
+			<key>headtitle</key>
+			<string>我的文件夹</string>
+		</dict>
+	</array>
+	<key>footSetting</key>
+	<dict>
+		<key>image</key>
+		<string></string>
+		<key>title</key>
+		<string>退出</string>
+	</dict>
+</dict>
+</plist>

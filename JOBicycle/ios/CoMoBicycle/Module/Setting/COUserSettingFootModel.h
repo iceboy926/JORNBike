@@ -10,7 +10,10 @@
 
 @interface COUserSettingFootModel : NSObject
 
-@property (nonatomic, strong)NSString *imageUrl;
+@property (nonatomic, strong)NSString *settingImageUrl;
+@property (nonatomic, strong)NSString *settingTitleStr;
+@property (nonatomic, strong)NSString *quitImageUrl;
+@property (nonatomic, strong)NSString *quitTitleStr;
 
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;

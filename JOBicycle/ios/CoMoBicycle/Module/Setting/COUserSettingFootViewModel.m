@@ -32,9 +32,27 @@
         
     } failure:^(NSError *error){
     
+        NSDictionary *dic = [self fetchUserSettingPlistValue];
+        if(dic)
+        {
+            NSDictionary *dicResult = dic[@"footSetting"];
+            if(completion)
+            {
+                completion(dicResult);
+            }
+        }
     
-        
     }];
+}
+
+- (NSMutableDictionary *)fetchUserSettingPlistValue
+{
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"UserSetting" ofType:@"plist"];
+    
+    NSMutableDictionary *userSettingDic = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    return userSettingDic;
 }
 
 @end

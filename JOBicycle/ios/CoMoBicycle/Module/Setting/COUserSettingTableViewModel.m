@@ -47,15 +47,16 @@
     {
         NSDictionary *dicParams = @{@"user": accout[@"username"], @"token": accout[@"usertoken"]};
         
+        WEAK_SELF(weakself)
         [httpRequest requestWithURLString:API_URL_USERSETTING parameters:nil type:HttpRequestTypeGet success:^(id response){
             
             if(response)
             {
                 NSArray *arrayResult = response[@"centerSetting"];
                 
-                if([self.infoArray count] > 0)
+                if([weakself.infoArray count] > 0)
                 {
-                    [self.infoArray removeAllObjects];
+                    [weakself.infoArray removeAllObjects];
                 }
                 
                 for (NSDictionary *dic in arrayResult) {
@@ -63,7 +64,7 @@
                     COUserSettingCellModel *cellModel = [[COUserSettingCellModel alloc] initWithDictionary:dic];
                     if(cellModel)
                     {
-                        [self.infoArray addObject:cellModel];
+                        [weakself.infoArray addObject:cellModel];
                     }
                 }
                 
@@ -75,13 +76,41 @@
         
         } failure:^(NSError *error){
         
+            NSDictionary *dic = [weakself fetchUserSettingPlistValue];
+            
+            NSArray *arrayResult = dic[@"centerSetting"];
+            
+            if([weakself.infoArray count] > 0)
+            {
+                [weakself.infoArray removeAllObjects];
+            }
+            
+            for (NSDictionary *dic in arrayResult) {
+                
+                COUserSettingCellModel *cellModel = [[COUserSettingCellModel alloc] initWithDictionary:dic];
+                if(cellModel)
+                {
+                    [weakself.infoArray addObject:cellModel];
+                }
+            }
+
             if(callback)
             {
-                callback(NO);
+                callback(YES);
             }
         
         }];
     }
+}
+
+- (NSMutableDictionary *)fetchUserSettingPlistValue
+{
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"UserSetting" ofType:@"plist"];
+    
+    NSMutableDictionary *userSettingDic = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    return userSettingDic;
 }
 
 - (NSInteger)numberOfRowsInSection:(NSInteger)section
