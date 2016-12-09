@@ -30,12 +30,10 @@
 }
 
 
-- (BOOL)checkSMSNumber
+- (void)checkSMSNumber
 {
-    BOOL blValid = YES;
     
     
-    return blValid;
 }
 
 - (void)startRegister
@@ -48,15 +46,20 @@
         return ;
     }
     
-    if([self checkSMSNumber])
-    {
-        self.smsCheck = @YES;
-    }
-    else
-    {
-        self.invalidMsg = @"短信校验码有误";
-        self.smsCheck = @NO;
-    }
+    
+    [SMSSDK commitVerificationCode:self.checkSMS phoneNumber:self.username zone:@"86" result:^(SMSSDKUserInfo *userInfo, NSError *error) {
+        
+        if(!error)
+        {
+            self.smsCheck = @YES;
+        }
+        else
+        {
+           self.invalidMsg = @"短信验证码有误";
+           self.smsCheck = @NO;
+        }
+        
+    }];
     
 }
 

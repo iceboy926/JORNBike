@@ -10,7 +10,7 @@
 
 #import "BaiduMapServer.h"
 #import "UIInitServer.h"
-#import "NetWorkServer.h"
+#import "SMSServer.h"
 
 @interface ServiceComponent : NSObject
 

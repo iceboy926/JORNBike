@@ -57,9 +57,8 @@
 - (void)registServices
 {
     [self registService:[[BaiduMapServer alloc] init]];
-    //[self registService:[[NetWorkServer alloc] init]];
     [self registService:[[UIInitServer alloc] init]];
-
+    [self registService:[[SMSServer alloc] init]];
 }
 
 @end

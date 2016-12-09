@@ -267,6 +267,18 @@
     checkCount = 60;
     checkTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reduceTime:) userInfo:button repeats:YES];
     
+    [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.usernameTextField.text zone:@"86" customIdentifier:nil result:^(NSError *error){
+    
+        if(!error)
+        {
+            NSLog(@"get sms code success");
+        }
+        else
+        {
+            NSLog(@"get sms code failed");
+        }
+    
+    }];
     
 }
 

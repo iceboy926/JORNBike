@@ -48,10 +48,6 @@
     }
 }
 
-- (BOOL)checkSMSCode:(NSString *)smsCode
-{
-    return YES;
-}
 
 - (void)forgetNext
 {
@@ -62,17 +58,20 @@
         return ;
     }
     
-    if(![self checkSMSCode:self.smsCode])
-    {
-        self.invalidMsg = @"短信验证码错误";
-        self.invalid = @NO;
-        return ;
-    }
-    else
-    {
-        self.invalid = @YES;
-    }
-
+    
+    [SMSSDK commitVerificationCode:self.smsCode phoneNumber:self.username zone:@"86" result:^(SMSSDKUserInfo *userInfo, NSError *error) {
+       
+        if(!error)
+        {
+            self.invalid = @YES;
+        }
+        else
+        {
+            self.invalidMsg = @"短信验证码错误";
+            self.invalid = @NO;
+        }
+        
+    }];
 }
 
 - (void)forgetEnd

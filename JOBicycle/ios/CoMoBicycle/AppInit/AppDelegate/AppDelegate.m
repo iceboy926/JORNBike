@@ -19,8 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    LoggerApp(1, @"Hello world! Today is: %@", [NSDate date]);
-    
     id<UIApplicationDelegate> service;
     
     for (service in [[ServiceComponent shareInstance] services]) {

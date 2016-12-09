@@ -129,6 +129,7 @@
 		10BD6C731DD999CF00A4E181 /* COMediator+COMyFolderComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C721DD999CF00A4E181 /* COMediator+COMyFolderComponet.m */; };
 		10BD6C7A1DD99C8100A4E181 /* COMyFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C791DD99C8100A4E181 /* COMyFolderViewController.m */; };
 		10BD6C7D1DD9B9FE00A4E181 /* COBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */; };
+		10C777D71DFA43D2000E7A3E /* SMSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C777D61DFA43D2000E7A3E /* SMSServer.m */; };
 		10C81F421DC079E300C03926 /* httpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C81F411DC079E300C03926 /* httpRequest.m */; };
 		10E0806E1DBDA27100DE67AA /* Global.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10E0806D1DBDA27100DE67AA /* Global.mm */; };
 		10E080721DBDA6C800DE67AA /* CBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E080711DBDA6C800DE67AA /* CBNetworking.m */; };
@@ -418,6 +419,8 @@
 		10BD6C791DD99C8100A4E181 /* COMyFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFolderViewController.m; path = Module/MyFolder/COMyFolderViewController.m; sourceTree = "<group>"; };
 		10BD6C7B1DD9B9FE00A4E181 /* COBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBaseNavigationController.h; path = AppInit/UIInit/COBaseNavigationController.h; sourceTree = "<group>"; };
 		10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBaseNavigationController.m; path = AppInit/UIInit/COBaseNavigationController.m; sourceTree = "<group>"; };
+		10C777D51DFA43D2000E7A3E /* SMSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSServer.h; path = AppInit/SDKInit/SMSServer.h; sourceTree = "<group>"; };
+		10C777D61DFA43D2000E7A3E /* SMSServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSServer.m; path = AppInit/SDKInit/SMSServer.m; sourceTree = "<group>"; };
 		10C81F401DC079E300C03926 /* httpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = httpRequest.h; path = Vendor/HttpRequest/httpRequest.h; sourceTree = "<group>"; };
 		10C81F411DC079E300C03926 /* httpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = httpRequest.m; path = Vendor/HttpRequest/httpRequest.m; sourceTree = "<group>"; };
 		10E0806C1DBDA27100DE67AA /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Global.h; path = Config/Global.h; sourceTree = "<group>"; };
@@ -569,7 +572,7 @@
 		106249AA1DB9BA44001DF428 /* SDKService */ = {
 			isa = PBXGroup;
 			children = (
-				108E30B31DF9504900D4EEC6 /* SMS_SDK */,
+				108E30B31DF9504900D4EEC6 /* SMS */,
 				109702F11DEBDCEF00F5FD7F /* WeiXin */,
 				109702E01DEBCE5300F5FD7F /* BaiduMap */,
 				1095B89D1DCC22D300E52098 /* NetWorkServer.h */,
@@ -1006,14 +1009,13 @@
 			name = URLRoute;
 			sourceTree = "<group>";
 		};
-		108E30B31DF9504900D4EEC6 /* SMS_SDK */ = {
+		108E30B31DF9504900D4EEC6 /* SMS */ = {
 			isa = PBXGroup;
 			children = (
-				108E30B41DF9506000D4EEC6 /* MOBFoundation.framework */,
-				108E30B51DF9506100D4EEC6 /* MOBFoundationEx.framework */,
-				108E30B61DF9506100D4EEC6 /* SMS_SDK.framework */,
+				10C777D51DFA43D2000E7A3E /* SMSServer.h */,
+				10C777D61DFA43D2000E7A3E /* SMSServer.m */,
 			);
-			name = SMS_SDK;
+			name = SMS;
 			sourceTree = "<group>";
 		};
 		108E30C01DF956B200D4EEC6 /* NSLogger */ = {
@@ -1030,6 +1032,7 @@
 		1094ECBB1DD0235D006D32CA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				10C777D41DFA41BE000E7A3E /* SMS_SDK */,
 				101D7C491DF545FA005767BA /* AliPay */,
 				109702E11DEBCE6400F5FD7F /* WeiXin */,
 				1094ECBC1DD0236F006D32CA /* BaiduMap */,
@@ -1502,6 +1505,16 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		10C777D41DFA41BE000E7A3E /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				108E30B41DF9506000D4EEC6 /* MOBFoundation.framework */,
+				108E30B51DF9506100D4EEC6 /* MOBFoundationEx.framework */,
+				108E30B61DF9506100D4EEC6 /* SMS_SDK.framework */,
+			);
+			name = SMS_SDK;
+			sourceTree = "<group>";
+		};
 		10C81F3F1DC079CA00C03926 /* HttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -1782,6 +1795,7 @@
 				10BD6C411DD9581400A4E181 /* COUserSettingFootViewModel.m in Sources */,
 				106249EB1DBA012A001DF428 /* COMediator+COLoginRegistComponet.m in Sources */,
 				100AAD7B1DD2FE9100013FC4 /* COResultListView.m in Sources */,
+				10C777D71DFA43D2000E7A3E /* SMSServer.m in Sources */,
 				10BD6C591DD9944000A4E181 /* COMyFolderComponet.m in Sources */,
 				107821961DC324050074059E /* BaiduMapServer.m in Sources */,
 				1011B0451DC83BC600BC2B63 /* CORegisterNextView.m in Sources */,

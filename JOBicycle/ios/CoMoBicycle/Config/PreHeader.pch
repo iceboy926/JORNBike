@@ -20,6 +20,7 @@
 #import <PYSearch/PYSearch.h>
 #import <WebKit/WebKit.h>
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <SMS_SDK/SMSSDK.h>
 
 
 #import "Macros.h"

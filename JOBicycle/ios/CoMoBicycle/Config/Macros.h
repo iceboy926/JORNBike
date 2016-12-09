@@ -47,4 +47,8 @@
 #define BAIDUMAP_SK @"X6fWRYC69DdhfrYc9Y3Qw1uIGyxwLuHn"
 
 
+#define SMS_APPKEY          @"19be103c5bce6"
+#define SMS_APPSECRET       @"8b77bbddf8227e44becf266fb26c445a"
+
+
 #endif /* Macros_h */
