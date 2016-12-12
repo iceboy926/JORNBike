@@ -162,7 +162,7 @@
     }
 }
 
-- (UINavigationController *)rootNavigationController
+- (UIViewController *)rootNavigationController
 {
     id<UIApplicationDelegate> service;
     for (service in [[ServiceComponent shareInstance] services]) {
@@ -170,14 +170,14 @@
         {
             MMDrawerController *drawerController = [(UIInitServer *)service drawerController];
             
-            return (UINavigationController *)drawerController.centerViewController;
+            return drawerController.centerViewController;
         }
     }
 
     return nil;
 }
 
-- (void)setRootNavigationController:(UINavigationController *)rootNavigationController
+- (void)setRootNavigationController:(UIViewController *)rootNavigationController
 {
     id<UIApplicationDelegate> service;
     for (service in [[ServiceComponent shareInstance] services]) {

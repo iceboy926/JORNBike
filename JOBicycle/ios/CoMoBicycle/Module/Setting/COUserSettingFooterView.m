@@ -42,8 +42,8 @@
 
 - (void)addUIConstraints
 {
-    NSInteger imageSize = 30;
-    NSInteger leftpadding = 10;
+    NSInteger imageSize = 25;
+    NSInteger leftpadding = 20;
     
     [self.mySettingImage mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -143,11 +143,19 @@
 
 - (void)mysettingBtnClicked:(UIButton *)sender
 {
-    
+    if(self.didsettingBtnClicked)
+    {
+        self.didsettingBtnClicked();
+    }
 }
 
 - (void)myquitBtnClicked:(UIButton *)sender
 {
+    
+    if(self.didquitBtnClicked)
+    {
+        self.didquitBtnClicked();
+    }
     
 }
 
@@ -165,7 +173,7 @@
     
     NSURL *quitURL = [NSURL URLWithString:footModel.quitImageUrl];
     
-    [self.myQuitImage sd_setImageWithURL:quitURL placeholderImage:[UIImage imageNamed:@"success"]];
+    [self.myQuitImage sd_setImageWithURL:quitURL placeholderImage:[UIImage imageNamed:@"logout-night"]];
     
     [self.myQuitBtn setTitle:footModel.quitTitleStr forState:UIControlStateNormal];
     

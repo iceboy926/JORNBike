@@ -13,5 +13,7 @@
 @interface COUserSettingFooterView : UIView
 
 @property (nonatomic, strong)COUserSettingFootModel *footModel;
+@property (nonatomic, copy) void (^didsettingBtnClicked)();
+@property (nonatomic, copy) void (^didquitBtnClicked)();
 
 @end

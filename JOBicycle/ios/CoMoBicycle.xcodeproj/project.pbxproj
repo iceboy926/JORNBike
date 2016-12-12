@@ -93,6 +93,8 @@
 		109702EE1DEBD13100F5FD7F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702ED1DEBD13100F5FD7F /* libz.tbd */; };
 		109702F01DEBD14500F5FD7F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109702EF1DEBD14500F5FD7F /* libc++.tbd */; };
 		109702F41DEBDD3000F5FD7F /* WeiXinServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 109702F31DEBDD3000F5FD7F /* WeiXinServer.m */; };
+		109911BD1DFE3C1800F82584 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109911BC1DFE3C1800F82584 /* LocalAuthentication.framework */; };
+		109911C11DFE4F0700F82584 /* NTImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 109911C01DFE4F0700F82584 /* NTImageBrowser.m */; };
 		10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E70D1DE6E5100021A9D5 /* XZLog.m */; };
 		10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */; };
 		10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F51DCAD55000D8ECAB /* UserinfoManager.m */; };
@@ -353,6 +355,9 @@
 		109702EF1DEBD14500F5FD7F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		109702F21DEBDD3000F5FD7F /* WeiXinServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeiXinServer.h; path = AppInit/SDKInit/WeiXinServer.h; sourceTree = "<group>"; };
 		109702F31DEBDD3000F5FD7F /* WeiXinServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeiXinServer.m; path = AppInit/SDKInit/WeiXinServer.m; sourceTree = "<group>"; };
+		109911BC1DFE3C1800F82584 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		109911BF1DFE4F0700F82584 /* NTImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTImageBrowser.h; path = Vendor/NTImageBrowser/NTImageBrowser.h; sourceTree = "<group>"; };
+		109911C01DFE4F0700F82584 /* NTImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTImageBrowser.m; path = Vendor/NTImageBrowser/NTImageBrowser.m; sourceTree = "<group>"; };
 		10A2E70C1DE6E5100021A9D5 /* XZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZLog.h; path = Vendor/ColorLog/XZLog.h; sourceTree = "<group>"; };
 		10A2E70D1DE6E5100021A9D5 /* XZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZLog.m; path = Vendor/ColorLog/XZLog.m; sourceTree = "<group>"; };
 		10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMenuShowView.h; path = Module/MyFavorite/COMenuShowView.h; sourceTree = "<group>"; };
@@ -438,6 +443,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109911BD1DFE3C1800F82584 /* LocalAuthentication.framework in Frameworks */,
 				108E30BD1DF9515E00D4EEC6 /* libicucore.tbd in Frameworks */,
 				108E30BB1DF950D200D4EEC6 /* AdSupport.framework in Frameworks */,
 				101D7C4F1DF5471B005767BA /* CoreMotion.framework in Frameworks */,
@@ -628,6 +634,7 @@
 		106249B21DB9BA9C001DF428 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				109911BE1DFE4EEB00F82584 /* NTImageBrowser */,
 				108E30C01DF956B200D4EEC6 /* NSLogger */,
 				108C28201DE82051002D06CD /* URLRoute */,
 				10A2E70B1DE6E4A70021A9D5 /* ColorLog */,
@@ -1190,6 +1197,15 @@
 			name = WeiXin;
 			sourceTree = "<group>";
 		};
+		109911BE1DFE4EEB00F82584 /* NTImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				109911BF1DFE4F0700F82584 /* NTImageBrowser.h */,
+				109911C01DFE4F0700F82584 /* NTImageBrowser.m */,
+			);
+			name = NTImageBrowser;
+			sourceTree = "<group>";
+		};
 		10A2E70B1DE6E4A70021A9D5 /* ColorLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -1561,6 +1577,7 @@
 		CC92CF4008F2206A67D8DA93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				109911BC1DFE3C1800F82584 /* LocalAuthentication.framework */,
 				108E30BC1DF9515E00D4EEC6 /* libicucore.tbd */,
 				108E30BA1DF950D200D4EEC6 /* AdSupport.framework */,
 				101D7C4E1DF5471B005767BA /* CoreMotion.framework */,
@@ -1810,6 +1827,7 @@
 				106249AE1DB9BA67001DF428 /* AppDelegate.m in Sources */,
 				10BD6C391DD957F800A4E181 /* COUserSettingFooterView.m in Sources */,
 				106249C81DB9E7A6001DF428 /* FBKVOController.m in Sources */,
+				109911C11DFE4F0700F82584 /* NTImageBrowser.m in Sources */,
 				1083153D1DD59BE2002E8B65 /* UINavigationBar+NavigationBackground.m in Sources */,
 				1083153A1DD575A6002E8B65 /* COMyZoneViewController.m in Sources */,
 				1011B04E1DC83BFE00BC2B63 /* CORegisterNextViewController.m in Sources */,

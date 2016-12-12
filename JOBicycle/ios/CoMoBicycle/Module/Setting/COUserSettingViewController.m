@@ -21,6 +21,9 @@
 #import "COMediator+COMyFavorComponet.h"
 #import "COMediator+COMyAlbumComponet.h"
 #import "COMediator+COMyFolderComponet.h"
+#import "COMediator+COLoginRegistComponet.h"
+
+#import "COBaseNavigationController.h"
 
 
 @interface COUserSettingViewController() <UITableViewDataSource, UITableViewDelegate>
@@ -156,7 +159,18 @@
 {
     if(_settingFooterView == nil)
     {
+        WEAK_SELF(weakself)
         _settingFooterView = [[COUserSettingFooterView alloc] init];
+        
+        _settingFooterView.didsettingBtnClicked = ^{
+        
+            [weakself didSettingClicked];
+        };
+        
+        _settingFooterView.didquitBtnClicked = ^{
+        
+            [weakself didQuitClicked];
+        };
     }
     
     return _settingFooterView;
@@ -188,6 +202,7 @@
     if(_footViewModel == nil)
     {
         _footViewModel = [[COUserSettingFootViewModel alloc] init];
+
         
     }
     return _footViewModel;
@@ -272,16 +287,58 @@
             break;
         case 4:
             
+            
             break;
             
         default:
             break;
     }
 
-     [[AppDelegate globalDelegate].rootNavigationController pushViewController:viewcontroller animated:YES];
+     [(UINavigationController *)[AppDelegate globalDelegate].rootNavigationController pushViewController:viewcontroller animated:YES];
 }
 
 
+#pragma mark function-self
+
+- (void)didSettingClicked
+{
+    
+}
+
+- (void)didQuitClicked
+{
+    WEAK_SELF(weakself)
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"我的地盘" message:@"确定退出当前登录的账户？" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
+    
+    UIAlertAction *actionQuit = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action){
+        
+        [weakself quitCurrentAccout];
+        
+    }];
+    
+    [alertController addAction:actionCancel];
+    
+    [alertController addAction:actionQuit];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)quitCurrentAccout
+{
+    [[AppDelegate globalDelegate] closeDrawleft];
+    
+    //[COAccount DeleteAcount];
+    
+    UIViewController *viewController = [[COMediator shareInstance] COLoginRegistComponet_LoginViewController];
+    
+    [AppDelegate globalDelegate].rootNavigationController = viewController;
+    
+    [[AppDelegate globalDelegate] showMainPage];
+
+
+}
 
 
 @end

@@ -68,11 +68,6 @@
         
         self.drawerController.leftDrawerViewController = leftNavController;
         
-        
-        [self.drawerController setMaximumLeftDrawerWidth:WIDTH_TO_FIT(250)];
-        [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
-        [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-        
         rootVC = self.drawerController;
     }
     else
@@ -86,10 +81,6 @@
         self.drawerController.leftDrawerViewController = leftNavController;
         
     
-        [self.drawerController setMaximumLeftDrawerWidth:WIDTH_TO_FIT(250)];
-        [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
-        [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-        
         rootVC = self.drawerController;
     }
     
@@ -133,6 +124,10 @@
     {
         _drawerController = [[MMDrawerController alloc] init];
         
+        [_drawerController setMaximumLeftDrawerWidth:WIDTH_TO_FIT(250)];
+        [_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
+        [_drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+
     }
     
     return _drawerController;
