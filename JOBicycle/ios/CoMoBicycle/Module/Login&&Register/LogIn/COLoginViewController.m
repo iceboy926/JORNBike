@@ -191,16 +191,13 @@
 
 - (void)gotoMainViewController
 {
+    
     UIViewController *mainVC = [[COMediator shareInstance] COBikeComponet_ViewController];
     
     [AppDelegate globalDelegate].rootNavigationController = [[COBaseNavigationController alloc] initWithRootViewController:mainVC];
     
+    [[AppDelegate globalDelegate] showMainPage];
     
-    [self dismissViewControllerAnimated:YES completion:^{
-    
-        [[AppDelegate globalDelegate] showMainPage];
-    
-    }];
 }
 
 

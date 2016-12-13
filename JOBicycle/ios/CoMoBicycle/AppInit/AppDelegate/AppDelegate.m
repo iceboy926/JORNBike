@@ -186,6 +186,7 @@
             MMDrawerController *drawerController = [(UIInitServer *)service drawerController];
             
             drawerController.centerViewController = rootNavigationController;
+
         }
     }
 
@@ -200,6 +201,7 @@
             MMDrawerController *drawerController = [(UIInitServer *)service drawerController];
             
             self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+            
             self.window.rootViewController = drawerController;
             
             [self.window makeKeyAndVisible];

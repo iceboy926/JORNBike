@@ -26,7 +26,7 @@
 #import "COBaseNavigationController.h"
 
 
-@interface COUserSettingViewController() <UITableViewDataSource, UITableViewDelegate>
+@interface COUserSettingViewController() <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) COUserSettingHeaderView *settingHeaderView;
 @property (nonatomic, strong) UITableView *settingTableView;
@@ -271,7 +271,6 @@
             
             viewcontroller = [[COMediator shareInstance] COMyFavorComponet_ViewController];
                     
-
             break;
         case 2:
             
@@ -282,7 +281,6 @@
         case 3:
             
             viewcontroller = [[COMediator shareInstance] COMyFolderComponet_ViewController];
-            
             
             break;
         case 4:
@@ -307,38 +305,54 @@
 
 - (void)didQuitClicked
 {
-    WEAK_SELF(weakself)
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"我的地盘" message:@"确定退出当前登录的账户？" preferredStyle:UIAlertControllerStyleAlert];
+//    WEAK_SELF(weakself)
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"我的头条" message:@"确定退出当前登录的账户？" preferredStyle:UIAlertControllerStyleAlert];
+//    
+//    UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+//    
+//    UIAlertAction *actionQuit = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+//        
+//
+//        [weakself quitCurrentAccout];
+//        
+//    }];
+//    
+//    [alertController addAction:actionCancel];
+//    
+//    [alertController addAction:actionQuit];
     
-    UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
     
-    UIAlertAction *actionQuit = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action){
-        
-        [weakself quitCurrentAccout];
-        
-    }];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"我的头条" message:@"确定退出当前登录的账户" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     
-    [alertController addAction:actionCancel];
+    [alertView show];
     
-    [alertController addAction:actionQuit];
-    
-    [self presentViewController:alertController animated:YES completion:nil];
 }
 
-- (void)quitCurrentAccout
+- (void)gotoLoginViewController
 {
     [[AppDelegate globalDelegate] closeDrawleft];
     
-    //[COAccount DeleteAcount];
+    [COAccount DeleteAcount];
     
     UIViewController *viewController = [[COMediator shareInstance] COLoginRegistComponet_LoginViewController];
     
-    [AppDelegate globalDelegate].rootNavigationController = viewController;
+    [AppDelegate globalDelegate].window.rootViewController = viewController;
     
-    [[AppDelegate globalDelegate] showMainPage];
-
-
+    [[AppDelegate globalDelegate].window makeKeyAndVisible];
 }
 
+
+#pragma mark uialertviewdelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0)
+    {
+        
+    }
+    else if(buttonIndex == 1)
+    {
+        [self gotoLoginViewController];
+    }
+}
 
 @end

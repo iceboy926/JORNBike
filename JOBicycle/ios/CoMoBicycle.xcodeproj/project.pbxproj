@@ -48,6 +48,8 @@
 		10560B291DC9DEA6002638C0 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B281DC9DEA6002638C0 /* CoreDataManager.m */; };
 		10560B2E1DC9E769002638C0 /* Userinfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B2B1DC9E769002638C0 /* Userinfo+CoreDataProperties.m */; };
 		10560B2F1DC9E769002638C0 /* Userinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B2D1DC9E769002638C0 /* Userinfo.m */; };
+		105BFA491DFF96C80053551B /* COMyCardComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 105BFA481DFF96C80053551B /* COMyCardComponet.m */; };
+		105BFA4C1DFF992A0053551B /* COMyCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 105BFA4B1DFF992A0053551B /* COMyCardViewController.m */; };
 		106249AE1DB9BA67001DF428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 106249AD1DB9BA67001DF428 /* AppDelegate.m */; };
 		106249C81DB9E7A6001DF428 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106249C71DB9E7A6001DF428 /* FBKVOController.m */; };
 		106249D51DB9F808001DF428 /* UIInitServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 106249D41DB9F808001DF428 /* UIInitServer.m */; };
@@ -216,6 +218,10 @@
 		10560B2B1DC9E769002638C0 /* Userinfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Userinfo+CoreDataProperties.m"; path = "Module/Login&&Register/Userinfo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		10560B2C1DC9E769002638C0 /* Userinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Userinfo.h; path = "Module/Login&&Register/Userinfo.h"; sourceTree = "<group>"; };
 		10560B2D1DC9E769002638C0 /* Userinfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Userinfo.m; path = "Module/Login&&Register/Userinfo.m"; sourceTree = "<group>"; };
+		105BFA471DFF96C80053551B /* COMyCardComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyCardComponet.h; path = Module/MyCard/COMyCardComponet.h; sourceTree = "<group>"; };
+		105BFA481DFF96C80053551B /* COMyCardComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyCardComponet.m; path = Module/MyCard/COMyCardComponet.m; sourceTree = "<group>"; };
+		105BFA4A1DFF992A0053551B /* COMyCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyCardViewController.h; path = Module/MyCard/COMyCardViewController.h; sourceTree = "<group>"; };
+		105BFA4B1DFF992A0053551B /* COMyCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyCardViewController.m; path = Module/MyCard/COMyCardViewController.m; sourceTree = "<group>"; };
 		106249AC1DB9BA67001DF428 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppInit/AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		106249AD1DB9BA67001DF428 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppInit/AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
 		106249B41DB9BB88001DF428 /* PreHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PreHeader.pch; path = Config/PreHeader.pch; sourceTree = "<group>"; };
@@ -371,7 +377,7 @@
 		10B324FE1DCB14F300D8ECAB /* UIImage+resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+resize.m"; path = "Vendor/Category/UIImage+resize.m"; sourceTree = "<group>"; };
 		10B3250A1DCB1CDB00D8ECAB /* COMediator+COUserSettingComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COUserSettingComponet.h"; path = "Module/Mediator/COMediator+COUserSettingComponet.h"; sourceTree = "<group>"; };
 		10B3250B1DCB1CDB00D8ECAB /* COMediator+COUserSettingComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COUserSettingComponet.m"; path = "Module/Mediator/COMediator+COUserSettingComponet.m"; sourceTree = "<group>"; };
-		10BACCCA1DB9ADE80004C2B7 /* 我的地盘.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的地盘.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BACCCA1DB9ADE80004C2B7 /* 我的头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BACCCE1DB9ADE80004C2B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10BACCD71DB9ADE80004C2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10BACCDA1DB9ADE80004C2B7 /* CoMoBicycle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoMoBicycle.xcdatamodel; sourceTree = "<group>"; };
@@ -541,6 +547,49 @@
 				10BD6C2A1DD957AE00A4E181 /* COUserSettingFootModel.m */,
 				10BD6C2B1DD957AE00A4E181 /* COUserSettingHeadModel.h */,
 				10BD6C2C1DD957AE00A4E181 /* COUserSettingHeadModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		105BFA421DFF96260053551B /* MyCard */ = {
+			isa = PBXGroup;
+			children = (
+				105BFA461DFF96800053551B /* Model */,
+				105BFA451DFF96790053551B /* View */,
+				105BFA441DFF96710053551B /* ViewModel */,
+				105BFA431DFF965E0053551B /* ViewController */,
+				105BFA471DFF96C80053551B /* COMyCardComponet.h */,
+				105BFA481DFF96C80053551B /* COMyCardComponet.m */,
+			);
+			name = MyCard;
+			sourceTree = "<group>";
+		};
+		105BFA431DFF965E0053551B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				105BFA4A1DFF992A0053551B /* COMyCardViewController.h */,
+				105BFA4B1DFF992A0053551B /* COMyCardViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		105BFA441DFF96710053551B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		105BFA451DFF96790053551B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		105BFA461DFF96800053551B /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -860,6 +909,7 @@
 		1083152C1DD57499002E8B65 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				105BFA421DFF96260053551B /* MyCard */,
 				10BD6C501DD9934000A4E181 /* MyFolder */,
 				10BD6C4F1DD9933100A4E181 /* MyAlbum */,
 				10BD6C4E1DD992E700A4E181 /* MyFavorite */,
@@ -1246,7 +1296,7 @@
 		10BACCCB1DB9ADE80004C2B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10BACCCA1DB9ADE80004C2B7 /* 我的地盘.app */,
+				10BACCCA1DB9ADE80004C2B7 /* 我的头条.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1617,7 +1667,7 @@
 			);
 			name = CoMoBicycle;
 			productName = CoMoBicycle;
-			productReference = 10BACCCA1DB9ADE80004C2B7 /* 我的地盘.app */;
+			productReference = 10BACCCA1DB9ADE80004C2B7 /* 我的头条.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1773,6 +1823,7 @@
 				10BD6C421DD9581400A4E181 /* COUserSettingHeadViewModel.m in Sources */,
 				10BD6C7A1DD99C8100A4E181 /* COMyFolderViewController.m in Sources */,
 				100AAD7E1DD3040F00013FC4 /* COResultInfo.m in Sources */,
+				105BFA4C1DFF992A0053551B /* COMyCardViewController.m in Sources */,
 				10BD6C5D1DD9949900A4E181 /* COMediator+COMyFavorComponet.m in Sources */,
 				10560B291DC9DEA6002638C0 /* CoreDataManager.m in Sources */,
 				10560B2F1DC9E769002638C0 /* Userinfo.m in Sources */,
@@ -1828,6 +1879,7 @@
 				10BD6C391DD957F800A4E181 /* COUserSettingFooterView.m in Sources */,
 				106249C81DB9E7A6001DF428 /* FBKVOController.m in Sources */,
 				109911C11DFE4F0700F82584 /* NTImageBrowser.m in Sources */,
+				105BFA491DFF96C80053551B /* COMyCardComponet.m in Sources */,
 				1083153D1DD59BE2002E8B65 /* UINavigationBar+NavigationBackground.m in Sources */,
 				1083153A1DD575A6002E8B65 /* COMyZoneViewController.m in Sources */,
 				1011B04E1DC83BFE00BC2B63 /* CORegisterNextViewController.m in Sources */,
@@ -1968,7 +2020,7 @@
 					"$(PROJECT_DIR)/CoMoBicycle/Library/WeiXin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.automo.CoMoBicycle;
-				PRODUCT_NAME = "我的地盘";
+				PRODUCT_NAME = "我的头条";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -1997,7 +2049,7 @@
 					"$(PROJECT_DIR)/CoMoBicycle/Library/WeiXin",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.automo.CoMoBicycle;
-				PRODUCT_NAME = "我的地盘";
+				PRODUCT_NAME = "我的头条";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

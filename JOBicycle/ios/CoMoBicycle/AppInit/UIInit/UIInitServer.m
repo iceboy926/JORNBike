@@ -56,31 +56,27 @@
 - (void)initWithApplication:(UIApplication *)application
 {
     application.delegate.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //设置侧边框
+    COBaseNavigationController *CenterNavController = [[COBaseNavigationController alloc] initWithRootViewController:[[COMediator shareInstance] COBikeComponet_ViewController]];
+    self.drawerController.centerViewController = CenterNavController;
+    
+    COBaseNavigationController *leftNavController = [[COBaseNavigationController alloc] initWithRootViewController:[[COMediator shareInstance] COUserSettingComponet_ViewController]];
+    
+    self.drawerController.leftDrawerViewController = leftNavController;
+    
+
     UIViewController *rootVC = nil;
     if([COAccount getAccount] == nil)
     {
-        //登录界面
+        //登录主界面
         UIViewController *loginVC = [[COMediator shareInstance] COLoginRegistComponet_LoginViewController];
         
-        COBaseNavigationController *leftNavController = [[COBaseNavigationController alloc] initWithRootViewController:[[COMediator shareInstance] COUserSettingComponet_ViewController]];
-        
-        self.drawerController.centerViewController = loginVC;
-        
-        self.drawerController.leftDrawerViewController = leftNavController;
-        
-        rootVC = self.drawerController;
+        rootVC = loginVC;
     }
     else
     {
-        //主界面
-        COBaseNavigationController *CenterNavController = [[COBaseNavigationController alloc] initWithRootViewController:[[COMediator shareInstance] COBikeComponet_ViewController]];
-        self.drawerController.centerViewController = CenterNavController;
-        
-        COBaseNavigationController *leftNavController = [[COBaseNavigationController alloc] initWithRootViewController:[[COMediator shareInstance] COUserSettingComponet_ViewController]];
-        
-        self.drawerController.leftDrawerViewController = leftNavController;
-        
-    
+        //首页主界面
         rootVC = self.drawerController;
     }
     

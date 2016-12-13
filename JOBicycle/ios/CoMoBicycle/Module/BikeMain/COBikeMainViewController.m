@@ -56,7 +56,7 @@
 
 - (void)setupNavigationView
 {
-    [self setTitle:@"CoBicycle"];
+    [self setTitle:@"我的头条"];
     
     UIBarButtonItem *seperatorBarItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     
