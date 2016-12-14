@@ -1,26 +1,30 @@
 //
-//  COMyFolderViewController.m
+//  COMyCardViewController.m
 //  CoMoBicycle
 //
-//  Created by 金玉衡 on 16/11/14.
+//  Created by 金玉衡 on 16/12/13.
 //  Copyright © 2016年 AutoMo. All rights reserved.
 //
 
-#import "COMyFolderViewController.h"
+#import "COMyHistoryTodayViewController.h"
 
-@interface COMyFolderViewController()
+@interface COMyHistoryTodayViewController ()
 
 @end
 
-@implementation COMyFolderViewController
+@implementation COMyHistoryTodayViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.view setBackgroundColor:backGroundColor];
+
+    self.view.backgroundColor = backGroundColor;
     
     [self setNavigationBar];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+
 }
 
 - (void)setNavigationBar
@@ -39,13 +43,14 @@
         self.navigationItem.leftBarButtonItem = iconItem;
     }
     
-    [self setTitle:@"MyFolder"];
+    [self setTitle:@"历史今日"];
 }
 
 - (void)backBtnClicked:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 
 @end

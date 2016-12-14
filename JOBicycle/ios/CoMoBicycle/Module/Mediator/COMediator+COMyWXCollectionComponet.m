@@ -6,14 +6,14 @@
 //  Copyright © 2016年 AutoMo. All rights reserved.
 //
 
-#import "COMediator+COMyAlbumComponet.h"
+#import "COMediator+COMyWXCollectionComponet.h"
 
-#define MyAlbum_Target  @"COMyAlbumComponet"
-#define MyAlbum_Action  @"MyAlbumViewController"
+#define MyAlbum_Target  @"COMyWXCollectionComponet"
+#define MyAlbum_Action  @"MyWXCollectionViewController"
 
-@implementation COMediator (COMyAlbumComponet)
+@implementation COMediator (COMyWXCollectionComponet)
 
-- (UIViewController *)COMyAlbumComponet_ViewController
+- (UIViewController *)COMyWXCollectionComponet_ViewController
 {
     UIViewController *viewcontroller = [self performTarget:MyAlbum_Target action:MyAlbum_Action params:nil];
     

@@ -44,5 +44,6 @@
 #import "UIImageView+CirecleView.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "NSLogger.h"
+#import "SVProgressHUD+ShowWait.h"
 
 #endif /* PreHeader_pch */

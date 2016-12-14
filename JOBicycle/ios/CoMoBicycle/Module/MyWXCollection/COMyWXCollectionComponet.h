@@ -1,5 +1,5 @@
 //
-//  COMyFolderComponet.h
+//  COMyAlbumComponet.h
 //  CoMoBicycle
 //
 //  Created by 金玉衡 on 16/11/14.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface COMyFolderComponet : NSObject
+@interface COMyWXCollectionComponet : NSObject
 
-- (UIViewController *)MyFolderViewController;
+- (UIViewController *)MyWXCollectionViewController;
 
 @end

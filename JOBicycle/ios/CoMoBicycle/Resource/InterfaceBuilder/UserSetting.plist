@@ -29,13 +29,19 @@
 			<key>headimage</key>
 			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
 			<key>headtitle</key>
-			<string>我的相册</string>
+			<string>我的精选</string>
 		</dict>
 		<dict>
 			<key>headimage</key>
 			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
 			<key>headtitle</key>
-			<string>我的文件夹</string>
+			<string>我的头条</string>
+		</dict>
+		<dict>
+			<key>headimage</key>
+			<string>https://placeholdi.imgix.net/~text?&amp;w=30&amp;h=30</string>
+			<key>headtitle</key>
+			<string>历史今日</string>
 		</dict>
 	</array>
 	<key>footSetting</key>

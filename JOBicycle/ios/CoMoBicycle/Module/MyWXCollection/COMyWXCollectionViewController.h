@@ -1,5 +1,5 @@
 //
-//  COMyFolderViewController.h
+//  COMyAlbumViewController.h
 //  CoMoBicycle
 //
 //  Created by 金玉衡 on 16/11/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COMyFolderViewController : UIViewController
+@interface COMyWXCollectionViewController : UIViewController
 
 @end

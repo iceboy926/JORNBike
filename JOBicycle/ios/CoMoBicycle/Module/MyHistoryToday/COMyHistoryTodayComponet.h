@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface COMyCardComponet : NSObject
+@interface COMyHistoryTodayComponet : NSObject
 
-- (UIViewController *)MyCardViewController;
+- (UIViewController *)MyHistoryTodayViewController;
 
 @end

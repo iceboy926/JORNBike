@@ -48,8 +48,6 @@
 		10560B291DC9DEA6002638C0 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B281DC9DEA6002638C0 /* CoreDataManager.m */; };
 		10560B2E1DC9E769002638C0 /* Userinfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B2B1DC9E769002638C0 /* Userinfo+CoreDataProperties.m */; };
 		10560B2F1DC9E769002638C0 /* Userinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10560B2D1DC9E769002638C0 /* Userinfo.m */; };
-		105BFA491DFF96C80053551B /* COMyCardComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 105BFA481DFF96C80053551B /* COMyCardComponet.m */; };
-		105BFA4C1DFF992A0053551B /* COMyCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 105BFA4B1DFF992A0053551B /* COMyCardViewController.m */; };
 		106249AE1DB9BA67001DF428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 106249AD1DB9BA67001DF428 /* AppDelegate.m */; };
 		106249C81DB9E7A6001DF428 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106249C71DB9E7A6001DF428 /* FBKVOController.m */; };
 		106249D51DB9F808001DF428 /* UIInitServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 106249D41DB9F808001DF428 /* UIInitServer.m */; };
@@ -98,7 +96,19 @@
 		109911BD1DFE3C1800F82584 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109911BC1DFE3C1800F82584 /* LocalAuthentication.framework */; };
 		109911C11DFE4F0700F82584 /* NTImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 109911C01DFE4F0700F82584 /* NTImageBrowser.m */; };
 		10A2E70E1DE6E5100021A9D5 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E70D1DE6E5100021A9D5 /* XZLog.m */; };
+		10A5B5131E00EB1800BC9A42 /* COMyHistoryTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5121E00EB1800BC9A42 /* COMyHistoryTodayViewController.m */; };
+		10A5B5161E00EB2E00BC9A42 /* COMyHistoryTodayComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5151E00EB2E00BC9A42 /* COMyHistoryTodayComponet.m */; };
+		10A5B5191E00EB4600BC9A42 /* COMyNewsTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5181E00EB4600BC9A42 /* COMyNewsTopViewController.m */; };
+		10A5B51C1E00EB5700BC9A42 /* COMyNewsTopComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B51B1E00EB5700BC9A42 /* COMyNewsTopComponet.m */; };
+		10A5B51F1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B51E1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m */; };
+		10A5B5221E00EB7D00BC9A42 /* COMyWXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5211E00EB7D00BC9A42 /* COMyWXCollectionViewController.m */; };
+		10A5B5251E00EB8F00BC9A42 /* COMyWXCollectionComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5241E00EB8F00BC9A42 /* COMyWXCollectionComponet.m */; };
+		10A5B52A1E00ECD600BC9A42 /* COMyWXCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5291E00ECD600BC9A42 /* COMyWXCollectionCell.m */; };
+		10A5B52D1E00EF5600BC9A42 /* COMyWXCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B52C1E00EF5600BC9A42 /* COMyWXCollectionModel.m */; };
+		10A5B5301E0131EC00BC9A42 /* SVProgressHUD+ShowWait.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B52F1E0131EC00BC9A42 /* SVProgressHUD+ShowWait.m */; };
+		10A5B5331E01453300BC9A42 /* COMyWXCollectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A5B5321E01453300BC9A42 /* COMyWXCollectionDetailViewController.m */; };
 		10A7A9291DE29F7C00FEBD5F /* COMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */; };
+		10AF40271E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF40261E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.m */; };
 		10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F51DCAD55000D8ECAB /* UserinfoManager.m */; };
 		10B324FA1DCB0DBC00D8ECAB /* COBMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B324F91DCB0DBC00D8ECAB /* COBMViewModel.m */; };
 		10B324FC1DCB118500D8ECAB /* defaultheadImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B324FB1DCB118500D8ECAB /* defaultheadImage@2x.png */; };
@@ -124,14 +134,10 @@
 		10BD6C4A1DD958CE00A4E181 /* COMediator+COMyZoneComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C491DD958CE00A4E181 /* COMediator+COMyZoneComponet.m */; };
 		10BD6C4D1DD98FD000A4E181 /* UIBarButtonItem+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C4C1DD98FD000A4E181 /* UIBarButtonItem+Helper.m */; };
 		10BD6C531DD993F600A4E181 /* COMyFavorComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C521DD993F600A4E181 /* COMyFavorComponet.m */; };
-		10BD6C561DD9941E00A4E181 /* COMyAlbumComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C551DD9941E00A4E181 /* COMyAlbumComponet.m */; };
-		10BD6C591DD9944000A4E181 /* COMyFolderComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C581DD9944000A4E181 /* COMyFolderComponet.m */; };
 		10BD6C5D1DD9949900A4E181 /* COMediator+COMyFavorComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C5C1DD9949900A4E181 /* COMediator+COMyFavorComponet.m */; };
-		10BD6C681DD9966600A4E181 /* COMyAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C671DD9966600A4E181 /* COMyAlbumViewController.m */; };
 		10BD6C6B1DD9968B00A4E181 /* COMyFavorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C6A1DD9968B00A4E181 /* COMyFavorViewController.m */; };
-		10BD6C701DD999A300A4E181 /* COMediator+COMyAlbumComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C6F1DD999A300A4E181 /* COMediator+COMyAlbumComponet.m */; };
-		10BD6C731DD999CF00A4E181 /* COMediator+COMyFolderComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C721DD999CF00A4E181 /* COMediator+COMyFolderComponet.m */; };
-		10BD6C7A1DD99C8100A4E181 /* COMyFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C791DD99C8100A4E181 /* COMyFolderViewController.m */; };
+		10BD6C701DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C6F1DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.m */; };
+		10BD6C731DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C721DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.m */; };
 		10BD6C7D1DD9B9FE00A4E181 /* COBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */; };
 		10C777D71DFA43D2000E7A3E /* SMSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C777D61DFA43D2000E7A3E /* SMSServer.m */; };
 		10C777DA1DFA7ECC000E7A3E /* UserSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C777D91DFA7ECC000E7A3E /* UserSetting.plist */; };
@@ -218,10 +224,6 @@
 		10560B2B1DC9E769002638C0 /* Userinfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Userinfo+CoreDataProperties.m"; path = "Module/Login&&Register/Userinfo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		10560B2C1DC9E769002638C0 /* Userinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Userinfo.h; path = "Module/Login&&Register/Userinfo.h"; sourceTree = "<group>"; };
 		10560B2D1DC9E769002638C0 /* Userinfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Userinfo.m; path = "Module/Login&&Register/Userinfo.m"; sourceTree = "<group>"; };
-		105BFA471DFF96C80053551B /* COMyCardComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyCardComponet.h; path = Module/MyCard/COMyCardComponet.h; sourceTree = "<group>"; };
-		105BFA481DFF96C80053551B /* COMyCardComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyCardComponet.m; path = Module/MyCard/COMyCardComponet.m; sourceTree = "<group>"; };
-		105BFA4A1DFF992A0053551B /* COMyCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyCardViewController.h; path = Module/MyCard/COMyCardViewController.h; sourceTree = "<group>"; };
-		105BFA4B1DFF992A0053551B /* COMyCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyCardViewController.m; path = Module/MyCard/COMyCardViewController.m; sourceTree = "<group>"; };
 		106249AC1DB9BA67001DF428 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppInit/AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		106249AD1DB9BA67001DF428 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppInit/AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
 		106249B41DB9BB88001DF428 /* PreHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PreHeader.pch; path = Config/PreHeader.pch; sourceTree = "<group>"; };
@@ -366,8 +368,32 @@
 		109911C01DFE4F0700F82584 /* NTImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTImageBrowser.m; path = Vendor/NTImageBrowser/NTImageBrowser.m; sourceTree = "<group>"; };
 		10A2E70C1DE6E5100021A9D5 /* XZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZLog.h; path = Vendor/ColorLog/XZLog.h; sourceTree = "<group>"; };
 		10A2E70D1DE6E5100021A9D5 /* XZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZLog.m; path = Vendor/ColorLog/XZLog.m; sourceTree = "<group>"; };
+		10A5B5111E00EB1800BC9A42 /* COMyHistoryTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyHistoryTodayViewController.h; path = Module/MyHistoryToday/COMyHistoryTodayViewController.h; sourceTree = "<group>"; };
+		10A5B5121E00EB1800BC9A42 /* COMyHistoryTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyHistoryTodayViewController.m; path = Module/MyHistoryToday/COMyHistoryTodayViewController.m; sourceTree = "<group>"; };
+		10A5B5141E00EB2E00BC9A42 /* COMyHistoryTodayComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyHistoryTodayComponet.h; path = Module/MyHistoryToday/COMyHistoryTodayComponet.h; sourceTree = "<group>"; };
+		10A5B5151E00EB2E00BC9A42 /* COMyHistoryTodayComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyHistoryTodayComponet.m; path = Module/MyHistoryToday/COMyHistoryTodayComponet.m; sourceTree = "<group>"; };
+		10A5B5171E00EB4600BC9A42 /* COMyNewsTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyNewsTopViewController.h; path = Module/MyNewsTop/COMyNewsTopViewController.h; sourceTree = "<group>"; };
+		10A5B5181E00EB4600BC9A42 /* COMyNewsTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyNewsTopViewController.m; path = Module/MyNewsTop/COMyNewsTopViewController.m; sourceTree = "<group>"; };
+		10A5B51A1E00EB5700BC9A42 /* COMyNewsTopComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyNewsTopComponet.h; path = Module/MyNewsTop/COMyNewsTopComponet.h; sourceTree = "<group>"; };
+		10A5B51B1E00EB5700BC9A42 /* COMyNewsTopComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyNewsTopComponet.m; path = Module/MyNewsTop/COMyNewsTopComponet.m; sourceTree = "<group>"; };
+		10A5B51D1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyWXCollectionTableViewModel.h; path = Module/MyWXCollection/COMyWXCollectionTableViewModel.h; sourceTree = "<group>"; };
+		10A5B51E1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyWXCollectionTableViewModel.m; path = Module/MyWXCollection/COMyWXCollectionTableViewModel.m; sourceTree = "<group>"; };
+		10A5B5201E00EB7D00BC9A42 /* COMyWXCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyWXCollectionViewController.h; path = Module/MyWXCollection/COMyWXCollectionViewController.h; sourceTree = "<group>"; };
+		10A5B5211E00EB7D00BC9A42 /* COMyWXCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyWXCollectionViewController.m; path = Module/MyWXCollection/COMyWXCollectionViewController.m; sourceTree = "<group>"; };
+		10A5B5231E00EB8F00BC9A42 /* COMyWXCollectionComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyWXCollectionComponet.h; path = Module/MyWXCollection/COMyWXCollectionComponet.h; sourceTree = "<group>"; };
+		10A5B5241E00EB8F00BC9A42 /* COMyWXCollectionComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyWXCollectionComponet.m; path = Module/MyWXCollection/COMyWXCollectionComponet.m; sourceTree = "<group>"; };
+		10A5B5281E00ECD600BC9A42 /* COMyWXCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyWXCollectionCell.h; path = Module/MyWXCollection/COMyWXCollectionCell.h; sourceTree = "<group>"; };
+		10A5B5291E00ECD600BC9A42 /* COMyWXCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyWXCollectionCell.m; path = Module/MyWXCollection/COMyWXCollectionCell.m; sourceTree = "<group>"; };
+		10A5B52B1E00EF5600BC9A42 /* COMyWXCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyWXCollectionModel.h; path = Module/MyWXCollection/COMyWXCollectionModel.h; sourceTree = "<group>"; };
+		10A5B52C1E00EF5600BC9A42 /* COMyWXCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyWXCollectionModel.m; path = Module/MyWXCollection/COMyWXCollectionModel.m; sourceTree = "<group>"; };
+		10A5B52E1E0131EC00BC9A42 /* SVProgressHUD+ShowWait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SVProgressHUD+ShowWait.h"; path = "Vendor/Category/SVProgressHUD+ShowWait.h"; sourceTree = "<group>"; };
+		10A5B52F1E0131EC00BC9A42 /* SVProgressHUD+ShowWait.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SVProgressHUD+ShowWait.m"; path = "Vendor/Category/SVProgressHUD+ShowWait.m"; sourceTree = "<group>"; };
+		10A5B5311E01453300BC9A42 /* COMyWXCollectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyWXCollectionDetailViewController.h; path = Module/MyWXCollection/COMyWXCollectionDetailViewController.h; sourceTree = "<group>"; };
+		10A5B5321E01453300BC9A42 /* COMyWXCollectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyWXCollectionDetailViewController.m; path = Module/MyWXCollection/COMyWXCollectionDetailViewController.m; sourceTree = "<group>"; };
 		10A7A9271DE29F7C00FEBD5F /* COMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMenuShowView.h; path = Module/MyFavorite/COMenuShowView.h; sourceTree = "<group>"; };
 		10A7A9281DE29F7C00FEBD5F /* COMenuShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMenuShowView.m; path = Module/MyFavorite/COMenuShowView.m; sourceTree = "<group>"; };
+		10AF40251E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyHistoryTodayComponet.h"; path = "Module/Mediator/COMediator+COMyHistoryTodayComponet.h"; sourceTree = "<group>"; };
+		10AF40261E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyHistoryTodayComponet.m"; path = "Module/Mediator/COMediator+COMyHistoryTodayComponet.m"; sourceTree = "<group>"; };
 		10B324F41DCAD55000D8ECAB /* UserinfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserinfoManager.h; path = "Module/Login&&Register/UserinfoManager.h"; sourceTree = "<group>"; };
 		10B324F51DCAD55000D8ECAB /* UserinfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserinfoManager.m; path = "Module/Login&&Register/UserinfoManager.m"; sourceTree = "<group>"; };
 		10B324F81DCB0DBC00D8ECAB /* COBMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBMViewModel.h; path = Module/BikeMain/COBMViewModel.h; sourceTree = "<group>"; };
@@ -413,22 +439,14 @@
 		10BD6C4C1DD98FD000A4E181 /* UIBarButtonItem+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+Helper.m"; path = "Vendor/Category/UIBarButtonItem+Helper.m"; sourceTree = "<group>"; };
 		10BD6C511DD993F600A4E181 /* COMyFavorComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFavorComponet.h; path = Module/MyFavorite/COMyFavorComponet.h; sourceTree = "<group>"; };
 		10BD6C521DD993F600A4E181 /* COMyFavorComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFavorComponet.m; path = Module/MyFavorite/COMyFavorComponet.m; sourceTree = "<group>"; };
-		10BD6C541DD9941E00A4E181 /* COMyAlbumComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyAlbumComponet.h; path = Module/MyAlbum/COMyAlbumComponet.h; sourceTree = "<group>"; };
-		10BD6C551DD9941E00A4E181 /* COMyAlbumComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyAlbumComponet.m; path = Module/MyAlbum/COMyAlbumComponet.m; sourceTree = "<group>"; };
-		10BD6C571DD9944000A4E181 /* COMyFolderComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFolderComponet.h; path = Module/MyFolder/COMyFolderComponet.h; sourceTree = "<group>"; };
-		10BD6C581DD9944000A4E181 /* COMyFolderComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFolderComponet.m; path = Module/MyFolder/COMyFolderComponet.m; sourceTree = "<group>"; };
 		10BD6C5B1DD9949900A4E181 /* COMediator+COMyFavorComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyFavorComponet.h"; path = "Module/Mediator/COMediator+COMyFavorComponet.h"; sourceTree = "<group>"; };
 		10BD6C5C1DD9949900A4E181 /* COMediator+COMyFavorComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyFavorComponet.m"; path = "Module/Mediator/COMediator+COMyFavorComponet.m"; sourceTree = "<group>"; };
-		10BD6C661DD9966600A4E181 /* COMyAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyAlbumViewController.h; path = Module/MyAlbum/COMyAlbumViewController.h; sourceTree = "<group>"; };
-		10BD6C671DD9966600A4E181 /* COMyAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyAlbumViewController.m; path = Module/MyAlbum/COMyAlbumViewController.m; sourceTree = "<group>"; };
 		10BD6C691DD9968B00A4E181 /* COMyFavorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFavorViewController.h; path = Module/MyFavorite/COMyFavorViewController.h; sourceTree = "<group>"; };
 		10BD6C6A1DD9968B00A4E181 /* COMyFavorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFavorViewController.m; path = Module/MyFavorite/COMyFavorViewController.m; sourceTree = "<group>"; };
-		10BD6C6E1DD999A300A4E181 /* COMediator+COMyAlbumComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyAlbumComponet.h"; path = "Module/Mediator/COMediator+COMyAlbumComponet.h"; sourceTree = "<group>"; };
-		10BD6C6F1DD999A300A4E181 /* COMediator+COMyAlbumComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyAlbumComponet.m"; path = "Module/Mediator/COMediator+COMyAlbumComponet.m"; sourceTree = "<group>"; };
-		10BD6C711DD999CF00A4E181 /* COMediator+COMyFolderComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyFolderComponet.h"; path = "Module/Mediator/COMediator+COMyFolderComponet.h"; sourceTree = "<group>"; };
-		10BD6C721DD999CF00A4E181 /* COMediator+COMyFolderComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyFolderComponet.m"; path = "Module/Mediator/COMediator+COMyFolderComponet.m"; sourceTree = "<group>"; };
-		10BD6C781DD99C8100A4E181 /* COMyFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFolderViewController.h; path = Module/MyFolder/COMyFolderViewController.h; sourceTree = "<group>"; };
-		10BD6C791DD99C8100A4E181 /* COMyFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFolderViewController.m; path = Module/MyFolder/COMyFolderViewController.m; sourceTree = "<group>"; };
+		10BD6C6E1DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyWXCollectionComponet.h"; path = "Module/Mediator/COMediator+COMyWXCollectionComponet.h"; sourceTree = "<group>"; };
+		10BD6C6F1DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyWXCollectionComponet.m"; path = "Module/Mediator/COMediator+COMyWXCollectionComponet.m"; sourceTree = "<group>"; };
+		10BD6C711DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyNewsTopComponet.h"; path = "Module/Mediator/COMediator+COMyNewsTopComponet.h"; sourceTree = "<group>"; };
+		10BD6C721DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyNewsTopComponet.m"; path = "Module/Mediator/COMediator+COMyNewsTopComponet.m"; sourceTree = "<group>"; };
 		10BD6C7B1DD9B9FE00A4E181 /* COBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBaseNavigationController.h; path = AppInit/UIInit/COBaseNavigationController.h; sourceTree = "<group>"; };
 		10BD6C7C1DD9B9FE00A4E181 /* COBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBaseNavigationController.m; path = AppInit/UIInit/COBaseNavigationController.m; sourceTree = "<group>"; };
 		10C777D51DFA43D2000E7A3E /* SMSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSServer.h; path = AppInit/SDKInit/SMSServer.h; sourceTree = "<group>"; };
@@ -551,24 +569,24 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		105BFA421DFF96260053551B /* MyCard */ = {
+		105BFA421DFF96260053551B /* MyHistoryToday */ = {
 			isa = PBXGroup;
 			children = (
+				10A5B5141E00EB2E00BC9A42 /* COMyHistoryTodayComponet.h */,
+				10A5B5151E00EB2E00BC9A42 /* COMyHistoryTodayComponet.m */,
 				105BFA461DFF96800053551B /* Model */,
 				105BFA451DFF96790053551B /* View */,
 				105BFA441DFF96710053551B /* ViewModel */,
 				105BFA431DFF965E0053551B /* ViewController */,
-				105BFA471DFF96C80053551B /* COMyCardComponet.h */,
-				105BFA481DFF96C80053551B /* COMyCardComponet.m */,
 			);
-			name = MyCard;
+			name = MyHistoryToday;
 			sourceTree = "<group>";
 		};
 		105BFA431DFF965E0053551B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				105BFA4A1DFF992A0053551B /* COMyCardViewController.h */,
-				105BFA4B1DFF992A0053551B /* COMyCardViewController.m */,
+				10A5B5111E00EB1800BC9A42 /* COMyHistoryTodayViewController.h */,
+				10A5B5121E00EB1800BC9A42 /* COMyHistoryTodayViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -832,6 +850,8 @@
 				108C28281DE837DE002D06CD /* UIImageView+CirecleView.m */,
 				108C282A1DE83C36002D06CD /* UIView+Helper.h */,
 				108C282B1DE83C36002D06CD /* UIView+Helper.m */,
+				10A5B52E1E0131EC00BC9A42 /* SVProgressHUD+ShowWait.h */,
+				10A5B52F1E0131EC00BC9A42 /* SVProgressHUD+ShowWait.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -866,8 +886,9 @@
 		106249E31DB9FF4E001DF428 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
-				10BD6C6D1DD9995A00A4E181 /* Mediator+COMyFolderComponet */,
-				10BD6C6C1DD9992300A4E181 /* Mediator+COMyAlbumComponet */,
+				10AF40241E00E41E00CBC656 /* Mediator+COMyHistoryToday */,
+				10BD6C6D1DD9995A00A4E181 /* Mediator+COMyNewsTopComponet */,
+				10BD6C6C1DD9992300A4E181 /* Mediator+COMyWXCollectionComponet */,
 				10BD6C5A1DD9945C00A4E181 /* Mediator+COMyFavorComponet */,
 				10BD6C471DD9588800A4E181 /* Mediator+COMyZoneComponet */,
 				10B325091DCB1C9000D8ECAB /* Mediator+COUserSettingComponet */,
@@ -909,9 +930,9 @@
 		1083152C1DD57499002E8B65 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				105BFA421DFF96260053551B /* MyCard */,
-				10BD6C501DD9934000A4E181 /* MyFolder */,
-				10BD6C4F1DD9933100A4E181 /* MyAlbum */,
+				105BFA421DFF96260053551B /* MyHistoryToday */,
+				10BD6C501DD9934000A4E181 /* MyNewsTop */,
+				10BD6C4F1DD9933100A4E181 /* MyWXCollection */,
 				10BD6C4E1DD992E700A4E181 /* MyFavorite */,
 				1083152D1DD574B4002E8B65 /* MyZone */,
 			);
@@ -1265,6 +1286,31 @@
 			name = ColorLog;
 			sourceTree = "<group>";
 		};
+		10A5B5261E00EC8700BC9A42 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				10A5B5281E00ECD600BC9A42 /* COMyWXCollectionCell.h */,
+				10A5B5291E00ECD600BC9A42 /* COMyWXCollectionCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		10A5B5271E00EC9000BC9A42 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SubView;
+			sourceTree = "<group>";
+		};
+		10AF40241E00E41E00CBC656 /* Mediator+COMyHistoryToday */ = {
+			isa = PBXGroup;
+			children = (
+				10AF40251E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.h */,
+				10AF40261E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.m */,
+			);
+			name = "Mediator+COMyHistoryToday";
+			sourceTree = "<group>";
+		};
 		10B324F71DCAD9E600D8ECAB /* manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1347,30 +1393,30 @@
 			name = MyFavorite;
 			sourceTree = "<group>";
 		};
-		10BD6C4F1DD9933100A4E181 /* MyAlbum */ = {
+		10BD6C4F1DD9933100A4E181 /* MyWXCollection */ = {
 			isa = PBXGroup;
 			children = (
+				10A5B5231E00EB8F00BC9A42 /* COMyWXCollectionComponet.h */,
+				10A5B5241E00EB8F00BC9A42 /* COMyWXCollectionComponet.m */,
 				10BD6C651DD9962400A4E181 /* Model */,
 				10BD6C641DD9961C00A4E181 /* View */,
 				10BD6C631DD9961500A4E181 /* ViewModel */,
 				10BD6C621DD9960B00A4E181 /* ViewController */,
-				10BD6C541DD9941E00A4E181 /* COMyAlbumComponet.h */,
-				10BD6C551DD9941E00A4E181 /* COMyAlbumComponet.m */,
 			);
-			name = MyAlbum;
+			name = MyWXCollection;
 			sourceTree = "<group>";
 		};
-		10BD6C501DD9934000A4E181 /* MyFolder */ = {
+		10BD6C501DD9934000A4E181 /* MyNewsTop */ = {
 			isa = PBXGroup;
 			children = (
+				10A5B51A1E00EB5700BC9A42 /* COMyNewsTopComponet.h */,
+				10A5B51B1E00EB5700BC9A42 /* COMyNewsTopComponet.m */,
 				10BD6C771DD99C5700A4E181 /* Model */,
 				10BD6C761DD99C5100A4E181 /* View */,
 				10BD6C751DD99C4500A4E181 /* ViewModel */,
 				10BD6C741DD99C3D00A4E181 /* ViewController */,
-				10BD6C571DD9944000A4E181 /* COMyFolderComponet.h */,
-				10BD6C581DD9944000A4E181 /* COMyFolderComponet.m */,
 			);
-			name = MyFolder;
+			name = MyNewsTop;
 			sourceTree = "<group>";
 		};
 		10BD6C5A1DD9945C00A4E181 /* Mediator+COMyFavorComponet */ = {
@@ -1421,8 +1467,10 @@
 		10BD6C621DD9960B00A4E181 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				10BD6C661DD9966600A4E181 /* COMyAlbumViewController.h */,
-				10BD6C671DD9966600A4E181 /* COMyAlbumViewController.m */,
+				10A5B5201E00EB7D00BC9A42 /* COMyWXCollectionViewController.h */,
+				10A5B5211E00EB7D00BC9A42 /* COMyWXCollectionViewController.m */,
+				10A5B5311E01453300BC9A42 /* COMyWXCollectionDetailViewController.h */,
+				10A5B5321E01453300BC9A42 /* COMyWXCollectionDetailViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -1430,6 +1478,8 @@
 		10BD6C631DD9961500A4E181 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				10A5B51D1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.h */,
+				10A5B51E1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -1437,6 +1487,8 @@
 		10BD6C641DD9961C00A4E181 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10A5B5261E00EC8700BC9A42 /* Cell */,
+				10A5B5271E00EC9000BC9A42 /* SubView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1444,33 +1496,35 @@
 		10BD6C651DD9962400A4E181 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				10A5B52B1E00EF5600BC9A42 /* COMyWXCollectionModel.h */,
+				10A5B52C1E00EF5600BC9A42 /* COMyWXCollectionModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		10BD6C6C1DD9992300A4E181 /* Mediator+COMyAlbumComponet */ = {
+		10BD6C6C1DD9992300A4E181 /* Mediator+COMyWXCollectionComponet */ = {
 			isa = PBXGroup;
 			children = (
-				10BD6C6E1DD999A300A4E181 /* COMediator+COMyAlbumComponet.h */,
-				10BD6C6F1DD999A300A4E181 /* COMediator+COMyAlbumComponet.m */,
+				10BD6C6E1DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.h */,
+				10BD6C6F1DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.m */,
 			);
-			name = "Mediator+COMyAlbumComponet";
+			name = "Mediator+COMyWXCollectionComponet";
 			sourceTree = "<group>";
 		};
-		10BD6C6D1DD9995A00A4E181 /* Mediator+COMyFolderComponet */ = {
+		10BD6C6D1DD9995A00A4E181 /* Mediator+COMyNewsTopComponet */ = {
 			isa = PBXGroup;
 			children = (
-				10BD6C711DD999CF00A4E181 /* COMediator+COMyFolderComponet.h */,
-				10BD6C721DD999CF00A4E181 /* COMediator+COMyFolderComponet.m */,
+				10BD6C711DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.h */,
+				10BD6C721DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.m */,
 			);
-			name = "Mediator+COMyFolderComponet";
+			name = "Mediator+COMyNewsTopComponet";
 			sourceTree = "<group>";
 		};
 		10BD6C741DD99C3D00A4E181 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				10BD6C781DD99C8100A4E181 /* COMyFolderViewController.h */,
-				10BD6C791DD99C8100A4E181 /* COMyFolderViewController.m */,
+				10A5B5171E00EB4600BC9A42 /* COMyNewsTopViewController.h */,
+				10A5B5181E00EB4600BC9A42 /* COMyNewsTopViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -1798,7 +1852,8 @@
 				1011B04B1DC83BF000BC2B63 /* CORegisterStartViewController.m in Sources */,
 				106249E21DB9FE6F001DF428 /* COBikeMainViewController.m in Sources */,
 				10C81F421DC079E300C03926 /* httpRequest.m in Sources */,
-				10BD6C731DD999CF00A4E181 /* COMediator+COMyFolderComponet.m in Sources */,
+				10A5B5161E00EB2E00BC9A42 /* COMyHistoryTodayComponet.m in Sources */,
+				10BD6C731DD999CF00A4E181 /* COMediator+COMyNewsTopComponet.m in Sources */,
 				104135051DDEFF2700AE7E9E /* MGSwipeButton.m in Sources */,
 				10BD6C2D1DD957AE00A4E181 /* COUserSettingFootModel.m in Sources */,
 				106249F41DBA0341001DF428 /* COBikeMainComponet.m in Sources */,
@@ -1812,8 +1867,11 @@
 				106249DF1DB9FD27001DF428 /* NSString+HashValue.m in Sources */,
 				10560B181DC9D504002638C0 /* COBMCustomView.mm in Sources */,
 				10E0806E1DBDA27100DE67AA /* Global.mm in Sources */,
+				10A5B5301E0131EC00BC9A42 /* SVProgressHUD+ShowWait.m in Sources */,
 				1011B05D1DC83CC200BC2B63 /* COForgetStartView.m in Sources */,
+				10A5B5191E00EB4600BC9A42 /* COMyNewsTopViewController.m in Sources */,
 				1011B0511DC83C0A00BC2B63 /* CORegisterEndViewController.m in Sources */,
+				10A5B52A1E00ECD600BC9A42 /* COMyWXCollectionCell.m in Sources */,
 				1011B0541DC83C8F00BC2B63 /* COForgetPSDStartViewController.m in Sources */,
 				10BD6C461DD9582400A4E181 /* COUserSettingViewController.m in Sources */,
 				1011B0421DC83BB900BC2B63 /* CORegisterStartView.m in Sources */,
@@ -1821,14 +1879,14 @@
 				10B324FA1DCB0DBC00D8ECAB /* COBMViewModel.m in Sources */,
 				1011B06A1DC8675E00BC2B63 /* COLRBaseViewController.m in Sources */,
 				10BD6C421DD9581400A4E181 /* COUserSettingHeadViewModel.m in Sources */,
-				10BD6C7A1DD99C8100A4E181 /* COMyFolderViewController.m in Sources */,
 				100AAD7E1DD3040F00013FC4 /* COResultInfo.m in Sources */,
-				105BFA4C1DFF992A0053551B /* COMyCardViewController.m in Sources */,
 				10BD6C5D1DD9949900A4E181 /* COMediator+COMyFavorComponet.m in Sources */,
 				10560B291DC9DEA6002638C0 /* CoreDataManager.m in Sources */,
 				10560B2F1DC9E769002638C0 /* Userinfo.m in Sources */,
+				10A5B5221E00EB7D00BC9A42 /* COMyWXCollectionViewController.m in Sources */,
 				10BD6C311DD957CC00A4E181 /* COUserSettingCellModel.m in Sources */,
 				1095B89F1DCC22D300E52098 /* NetWorkServer.m in Sources */,
+				10A5B51F1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m in Sources */,
 				1033AB6B1DC88B9F00961174 /* COForgetEndView.m in Sources */,
 				10BACCCF1DB9ADE80004C2B7 /* main.m in Sources */,
 				10BD6C6B1DD9968B00A4E181 /* COMyFavorViewController.m in Sources */,
@@ -1840,7 +1898,6 @@
 				10B324FF1DCB14F300D8ECAB /* UIImage+resize.m in Sources */,
 				10BD6C4D1DD98FD000A4E181 /* UIBarButtonItem+Helper.m in Sources */,
 				107821931DC321630074059E /* ServiceComponent.m in Sources */,
-				10BD6C681DD9966600A4E181 /* COMyAlbumViewController.m in Sources */,
 				108C28101DE7D657002D06CD /* COMyFavorTableViewModel.m in Sources */,
 				108E30C51DF956DC00D4EEC6 /* LoggerClient.m in Sources */,
 				1011B0391DC83AB700BC2B63 /* COLoginViewController.m in Sources */,
@@ -1852,23 +1909,26 @@
 				104135061DDEFF2700AE7E9E /* MGSwipeTableCell.m in Sources */,
 				100AAD811DD31F2200013FC4 /* COCollectionViewCell.m in Sources */,
 				1011B05A1DC83CAD00BC2B63 /* COForgetViewModel.m in Sources */,
+				10A5B5331E01453300BC9A42 /* COMyWXCollectionDetailViewController.m in Sources */,
 				1011B0571DC83C9E00BC2B63 /* COForgetPSDNextViewController.m in Sources */,
 				1011B0301DC83A7E00BC2B63 /* COLoginRegistComponet.m in Sources */,
 				10560B2E1DC9E769002638C0 /* Userinfo+CoreDataProperties.m in Sources */,
 				1011B03F1DC83B9800BC2B63 /* CORegistNavigationBar.m in Sources */,
 				1011B0691DC8675E00BC2B63 /* COLRBaseNavigationBar.m in Sources */,
-				10BD6C701DD999A300A4E181 /* COMediator+COMyAlbumComponet.m in Sources */,
+				10BD6C701DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.m in Sources */,
 				108C28291DE837DE002D06CD /* UIImageView+CirecleView.m in Sources */,
 				1011B0601DC83CE200BC2B63 /* COAuthCodeView.m in Sources */,
 				10BD6C431DD9581400A4E181 /* COUserSettingTableViewModel.m in Sources */,
 				106249DC1DB9FAD3001DF428 /* COAccount.m in Sources */,
 				10BD6C2E1DD957AE00A4E181 /* COUserSettingHeadModel.m in Sources */,
+				10A5B52D1E00EF5600BC9A42 /* COMyWXCollectionModel.m in Sources */,
+				10A5B5131E00EB1800BC9A42 /* COMyHistoryTodayViewController.m in Sources */,
 				101B1AB81DDD504C007FC7D1 /* COMyZoneView.m in Sources */,
 				10BD6C411DD9581400A4E181 /* COUserSettingFootViewModel.m in Sources */,
 				106249EB1DBA012A001DF428 /* COMediator+COLoginRegistComponet.m in Sources */,
 				100AAD7B1DD2FE9100013FC4 /* COResultListView.m in Sources */,
 				10C777D71DFA43D2000E7A3E /* SMSServer.m in Sources */,
-				10BD6C591DD9944000A4E181 /* COMyFolderComponet.m in Sources */,
+				10A5B51C1E00EB5700BC9A42 /* COMyNewsTopComponet.m in Sources */,
 				107821961DC324050074059E /* BaiduMapServer.m in Sources */,
 				1011B0451DC83BC600BC2B63 /* CORegisterNextView.m in Sources */,
 				10560B151DC9D463002638C0 /* COBMHeaderView.m in Sources */,
@@ -1879,7 +1939,6 @@
 				10BD6C391DD957F800A4E181 /* COUserSettingFooterView.m in Sources */,
 				106249C81DB9E7A6001DF428 /* FBKVOController.m in Sources */,
 				109911C11DFE4F0700F82584 /* NTImageBrowser.m in Sources */,
-				105BFA491DFF96C80053551B /* COMyCardComponet.m in Sources */,
 				1083153D1DD59BE2002E8B65 /* UINavigationBar+NavigationBackground.m in Sources */,
 				1083153A1DD575A6002E8B65 /* COMyZoneViewController.m in Sources */,
 				1011B04E1DC83BFE00BC2B63 /* CORegisterNextViewController.m in Sources */,
@@ -1887,8 +1946,9 @@
 				1095B8A31DCC241E00E52098 /* Reachability.m in Sources */,
 				109702F41DEBDD3000F5FD7F /* WeiXinServer.m in Sources */,
 				108315301DD574FE002E8B65 /* COMyZoneComponet.m in Sources */,
-				10BD6C561DD9941E00A4E181 /* COMyAlbumComponet.m in Sources */,
+				10AF40271E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.m in Sources */,
 				108C28151DE7D6E8002D06CD /* COMyFavorCell.m in Sources */,
+				10A5B5251E00EB8F00BC9A42 /* COMyWXCollectionComponet.m in Sources */,
 				10BD6C7D1DD9B9FE00A4E181 /* COBaseNavigationController.m in Sources */,
 				106249D51DB9F808001DF428 /* UIInitServer.m in Sources */,
 			);

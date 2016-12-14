@@ -1,20 +1,18 @@
 //
-//  COMyAlbumViewController.m
+//  COMyFolderViewController.m
 //  CoMoBicycle
 //
 //  Created by 金玉衡 on 16/11/14.
 //  Copyright © 2016年 AutoMo. All rights reserved.
 //
 
-#import "COMyAlbumViewController.h"
+#import "COMyNewsTopViewController.h"
 
-@interface COMyAlbumViewController() <UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource>
-
-@property (nonatomic, strong)UITableView *tableView;
+@interface COMyNewsTopViewController()
 
 @end
 
-@implementation COMyAlbumViewController
+@implementation COMyNewsTopViewController
 
 - (void)viewDidLoad
 {
@@ -41,16 +39,13 @@
         self.navigationItem.leftBarButtonItem = iconItem;
     }
     
-    [self setTitle:@"MyAlbum"];
+    [self setTitle:@"我的头条"];
 }
 
 - (void)backBtnClicked:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-#pragma mark lazy load
-
 
 
 @end

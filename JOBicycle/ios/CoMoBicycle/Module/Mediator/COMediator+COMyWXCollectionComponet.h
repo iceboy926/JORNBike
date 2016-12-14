@@ -1,5 +1,5 @@
 //
-//  COMediator+COMyFolderComponet.h
+//  COMediator+COMyAblumComponet.h
 //  CoMoBicycle
 //
 //  Created by 金玉衡 on 16/11/14.
@@ -8,8 +8,8 @@
 
 #import "COMediator.h"
 
-@interface COMediator (COMyFolderComponet)
+@interface COMediator (COMyWXCollectionComponet)
 
-- (UIViewController *)COMyFolderComponet_ViewController;
+- (UIViewController *)COMyWXCollectionComponet_ViewController;
 
 @end

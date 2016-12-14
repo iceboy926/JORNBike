@@ -178,8 +178,6 @@
         _myFavorViewModel = [[COMyFavorTableViewModel alloc] init];
         _myFavorViewModel.didSelectMGSwiperBtn = ^(NSInteger index){
         
-        
-            NSLog(@"did select mgswiperbtn index = %d", index);
             return NO;
         };
     }

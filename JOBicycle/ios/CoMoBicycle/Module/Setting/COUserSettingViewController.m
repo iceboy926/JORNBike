@@ -19,8 +19,9 @@
 #import "AppDelegate.h"
 #import "COMediator+COMyZoneComponet.h"
 #import "COMediator+COMyFavorComponet.h"
-#import "COMediator+COMyAlbumComponet.h"
-#import "COMediator+COMyFolderComponet.h"
+#import "COMediator+COMyWXCollectionComponet.h"
+#import "COMediator+COMyNewsTopComponet.h"
+#import "COMediator+COMyHistoryTodayComponet.h"
 #import "COMediator+COLoginRegistComponet.h"
 
 #import "COBaseNavigationController.h"
@@ -274,17 +275,18 @@
             break;
         case 2:
             
-            viewcontroller = [[COMediator shareInstance] COMyAlbumComponet_ViewController];
+            viewcontroller = [[COMediator shareInstance] COMyWXCollectionComponet_ViewController];
             
             break;
             
         case 3:
             
-            viewcontroller = [[COMediator shareInstance] COMyFolderComponet_ViewController];
+            viewcontroller = [[COMediator shareInstance] COMyNewsTopComponet_ViewController];
             
             break;
         case 4:
             
+            viewcontroller = [[COMediator shareInstance] COMyHistoryTodayComponet_ViewController];
             
             break;
             

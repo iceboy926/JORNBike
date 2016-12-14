@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COMyCardViewController : UIViewController
+@interface COMyHistoryTodayViewController : UIViewController
 
 @end
