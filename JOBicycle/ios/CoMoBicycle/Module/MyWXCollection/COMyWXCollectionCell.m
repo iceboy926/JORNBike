@@ -42,7 +42,11 @@ CGFloat heightCollectionCell;
 {
     static NSString *strCellIdentifier = @"collectionCell";
     
-    COMyWXCollectionCell *collectionCell = [[COMyWXCollectionCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCellIdentifier];
+    COMyWXCollectionCell *collectionCell = [tableview dequeueReusableCellWithIdentifier:strCellIdentifier];
+    if(collectionCell == nil)
+    {
+        collectionCell = [[COMyWXCollectionCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCellIdentifier];
+    }
     
     return collectionCell;
 }
@@ -57,10 +61,11 @@ CGFloat heightCollectionCell;
 - (void)addUIConstriants
 {
     CGFloat leftPadding = 10.0;
-    CGFloat  titleHeight = 30;
+    CGFloat  titleHeight = 50;
+    CGFloat  sourceHeight = 30;
     heightCollectionCell = 0.0;
     
-    CGFloat  imageSize = 80;
+    CGFloat  imageSize = 100;
     
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -84,18 +89,22 @@ CGFloat heightCollectionCell;
     
     [self.sourceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.contentView.mas_left);
+        make.left.equalTo(self.contentView.mas_left).offset(leftPadding);
+        make.top.equalTo(_firstImageView.mas_bottom);
         make.width.equalTo(self.contentView.mas_width).multipliedBy(0.5);
-        make.height.mas_equalTo(titleHeight);
+        make.height.mas_equalTo(sourceHeight);
         
-        heightCollectionCell += titleHeight;
+        heightCollectionCell += sourceHeight;
     }];
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.left.equalTo(_sourceLabel.mas_right);
-        make.right.equalTo(self.contentView.mas_right);
+        make.right.equalTo(self.contentView.mas_right).offset(-leftPadding);
+        make.top.equalTo(_sourceLabel.mas_top);
         make.height.equalTo(_sourceLabel.mas_height);
+        
+        heightCollectionCell += 5;
     }];
     
 }
@@ -120,7 +129,7 @@ CGFloat heightCollectionCell;
 {
     if(_firstImageView == nil)
     {
-        _firstImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _firstImageView = [[UIImageView alloc] init];
     }
     
     return _firstImageView;
@@ -161,10 +170,9 @@ CGFloat heightCollectionCell;
     _collectionModel = collectionModel;
     
     self.titleLabel.text = [NSString replaceUnicode:collectionModel.titleStr];
-    
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:collectionModel.imageUrlStr] placeholderImage:[UIImage imageNamed:@"placeholder_60x60"]];
-    
-    self.sourceLabel.text = [NSString replaceUnicode:collectionModel.sourceStr];
+
+    [self.firstImageView sd_setImageWithURL:[NSURL URLWithString:collectionModel.imageUrlStr] placeholderImage:[UIImage imageNamed:@"placeholderimage"]];
+    self.sourceLabel.text = [NSString stringWithFormat:@"来自: %@", [NSString replaceUnicode:collectionModel.sourceStr]];
     
     NSString *timestr = [collectionModel.timeStr substringWithRange:NSMakeRange(7, 8)];
     
@@ -172,7 +180,7 @@ CGFloat heightCollectionCell;
     NSString *monthstr = [timestr substringWithRange:NSMakeRange(4, 2)];
     NSString *daystr = [timestr substringFromIndex:6];
     
-    self.timeLabel.text = [NSString stringWithFormat:@"%ul年%ul月%ul日", [yearstr intValue], [monthstr intValue], [daystr intValue]];
+    self.timeLabel.text = [NSString stringWithFormat:@"%d年%d月%d日", [yearstr intValue], [monthstr intValue], [daystr intValue]];
     
 }
 

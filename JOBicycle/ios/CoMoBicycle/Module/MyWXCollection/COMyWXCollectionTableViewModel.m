@@ -63,13 +63,16 @@
     dicParam[@"ps"] = [NSString stringWithFormat:@"%ld", self.ps];
     dicParam[@"dtype"] = self.dtype;
     dicParam[@"key"] = self.WXAppkey;
-    
-    if(currentPage > totalPage)
-    {
-        completion(NO);
 
-        return ;
-    }
+    
+//    if(currentPage > totalPage)
+//    {
+//        completion(NO);
+//
+//        return ;
+//    }
+    
+    NSMutableArray *tempDataArray = [NSMutableArray array];
     
     [httpRequest requestWithURLString:self.WXCollectionRequestURL parameters:dicParam type:HttpRequestTypeGet success:^(id responseObject) {
         
@@ -81,30 +84,41 @@
             {
                 NSDictionary *dicResult = responseObject[@"result"];
                 
-                totalPage = [dicResult[@"totalPage"] integerValue];
-                
-                if(dicResult)
+                if((NSNull *)dicResult == [NSNull null])
                 {
-                    NSArray *arrayData = dicResult[@"list"];
-                    
-                    for (NSDictionary *dataDic in arrayData) {
-                        
-                        COMyWXCollectionModel *dataModel = [[COMyWXCollectionModel alloc] initWithDictionary:dataDic];
-                        
-                        [self.collectionArray addObject:dataModel];
-                    }
-                    
-                    if(completion)
-                    {
-                        currentPage++;
-                        completion(YES);
-                    }
-                    
-                    
+                    completion(NO);
                 }
                 else
                 {
-                    completion(NO);
+                
+                    totalPage = [dicResult[@"totalPage"] integerValue];
+                    
+                    if(dicResult)
+                    {
+                        NSArray *arrayData = dicResult[@"list"];
+                        
+                        for (NSDictionary *dataDic in arrayData) {
+                            
+                            COMyWXCollectionModel *dataModel = [[COMyWXCollectionModel alloc] initWithDictionary:dataDic];
+                            
+                            [tempDataArray addObject:dataModel];
+                        }
+                        
+                        [self.collectionArray insertObjects:tempDataArray atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, tempDataArray.count)]];
+                        
+                        
+                        if(completion)
+                        {
+                            currentPage++;
+                            completion(YES);
+                        }
+                        
+                        
+                    }
+                    else
+                    {
+                        completion(NO);
+                    }
                 }
                 
             }

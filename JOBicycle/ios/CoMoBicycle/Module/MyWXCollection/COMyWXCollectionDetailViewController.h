@@ -10,4 +10,6 @@
 
 @interface COMyWXCollectionDetailViewController : UIViewController
 
+- (instancetype)initWithURL:(NSURL *)requestURL;
+
 @end

@@ -45,5 +45,7 @@
 #import <AlipaySDK/AlipaySDK.h>
 #import "NSLogger.h"
 #import "SVProgressHUD+ShowWait.h"
+#import "FCXRefreshHeaderView.h"
+#import "UIScrollView+FCXRefresh.h"
 
 #endif /* PreHeader_pch */

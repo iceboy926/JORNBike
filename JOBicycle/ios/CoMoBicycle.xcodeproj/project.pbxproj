@@ -144,6 +144,12 @@
 		10C81F421DC079E300C03926 /* httpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C81F411DC079E300C03926 /* httpRequest.m */; };
 		10E0806E1DBDA27100DE67AA /* Global.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10E0806D1DBDA27100DE67AA /* Global.mm */; };
 		10E080721DBDA6C800DE67AA /* CBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E080711DBDA6C800DE67AA /* CBNetworking.m */; };
+		10E444D61E02727E00FE918E /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E444CC1E02727E00FE918E /* blueArrow.png */; };
+		10E444D71E02727E00FE918E /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E444CD1E02727E00FE918E /* blueArrow@2x.png */; };
+		10E444D81E02727E00FE918E /* FCXRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E444CF1E02727E00FE918E /* FCXRefreshBaseView.m */; };
+		10E444D91E02727E00FE918E /* FCXRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E444D11E02727E00FE918E /* FCXRefreshFooterView.m */; };
+		10E444DA1E02727E00FE918E /* FCXRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E444D31E02727E00FE918E /* FCXRefreshHeaderView.m */; };
+		10E444DB1E02727E00FE918E /* UIScrollView+FCXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E444D51E02727E00FE918E /* UIScrollView+FCXRefresh.m */; };
 		A35F1FE07D79EE7FBA169288 /* libPods-CoMoBicycle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6FAC1DE535639663902BC3 /* libPods-CoMoBicycle.a */; };
 /* End PBXBuildFile section */
 
@@ -458,6 +464,16 @@
 		10E0806D1DBDA27100DE67AA /* Global.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Global.mm; path = Config/Global.mm; sourceTree = "<group>"; };
 		10E080701DBDA6C800DE67AA /* CBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBNetworking.h; path = Vendor/CBNetWorking/CBNetworking.h; sourceTree = "<group>"; };
 		10E080711DBDA6C800DE67AA /* CBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBNetworking.m; path = Vendor/CBNetWorking/CBNetworking.m; sourceTree = "<group>"; };
+		10E444CC1E02727E00FE918E /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueArrow.png; path = Vendor/FCXRefreshView/blueArrow.png; sourceTree = "<group>"; };
+		10E444CD1E02727E00FE918E /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blueArrow@2x.png"; path = "Vendor/FCXRefreshView/blueArrow@2x.png"; sourceTree = "<group>"; };
+		10E444CE1E02727E00FE918E /* FCXRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCXRefreshBaseView.h; path = Vendor/FCXRefreshView/FCXRefreshBaseView.h; sourceTree = "<group>"; };
+		10E444CF1E02727E00FE918E /* FCXRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCXRefreshBaseView.m; path = Vendor/FCXRefreshView/FCXRefreshBaseView.m; sourceTree = "<group>"; };
+		10E444D01E02727E00FE918E /* FCXRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCXRefreshFooterView.h; path = Vendor/FCXRefreshView/FCXRefreshFooterView.h; sourceTree = "<group>"; };
+		10E444D11E02727E00FE918E /* FCXRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCXRefreshFooterView.m; path = Vendor/FCXRefreshView/FCXRefreshFooterView.m; sourceTree = "<group>"; };
+		10E444D21E02727E00FE918E /* FCXRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCXRefreshHeaderView.h; path = Vendor/FCXRefreshView/FCXRefreshHeaderView.h; sourceTree = "<group>"; };
+		10E444D31E02727E00FE918E /* FCXRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCXRefreshHeaderView.m; path = Vendor/FCXRefreshView/FCXRefreshHeaderView.m; sourceTree = "<group>"; };
+		10E444D41E02727E00FE918E /* UIScrollView+FCXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+FCXRefresh.h"; path = "Vendor/FCXRefreshView/UIScrollView+FCXRefresh.h"; sourceTree = "<group>"; };
+		10E444D51E02727E00FE918E /* UIScrollView+FCXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+FCXRefresh.m"; path = "Vendor/FCXRefreshView/UIScrollView+FCXRefresh.m"; sourceTree = "<group>"; };
 		BC6FAC1DE535639663902BC3 /* libPods-CoMoBicycle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoMoBicycle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF0872ED805A59BD854384B /* Pods-CoMoBicycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMoBicycle.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoMoBicycle/Pods-CoMoBicycle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -701,6 +717,7 @@
 		106249B21DB9BA9C001DF428 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				10E444CB1E02708B00FE918E /* FCXRefreshView */,
 				109911BE1DFE4EEB00F82584 /* NTImageBrowser */,
 				108E30C01DF956B200D4EEC6 /* NSLogger */,
 				108C28201DE82051002D06CD /* URLRoute */,
@@ -1669,6 +1686,23 @@
 			name = UserSetting;
 			sourceTree = "<group>";
 		};
+		10E444CB1E02708B00FE918E /* FCXRefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				10E444CC1E02727E00FE918E /* blueArrow.png */,
+				10E444CD1E02727E00FE918E /* blueArrow@2x.png */,
+				10E444CE1E02727E00FE918E /* FCXRefreshBaseView.h */,
+				10E444CF1E02727E00FE918E /* FCXRefreshBaseView.m */,
+				10E444D01E02727E00FE918E /* FCXRefreshFooterView.h */,
+				10E444D11E02727E00FE918E /* FCXRefreshFooterView.m */,
+				10E444D21E02727E00FE918E /* FCXRefreshHeaderView.h */,
+				10E444D31E02727E00FE918E /* FCXRefreshHeaderView.m */,
+				10E444D41E02727E00FE918E /* UIScrollView+FCXRefresh.h */,
+				10E444D51E02727E00FE918E /* UIScrollView+FCXRefresh.m */,
+			);
+			name = FCXRefreshView;
+			sourceTree = "<group>";
+		};
 		65ADC2C2F6FF60678F3092B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1773,6 +1807,8 @@
 				10BACCDD1DB9ADE80004C2B7 /* Assets.xcassets in Resources */,
 				10BAE3481DF0213B00274877 /* header_placeholder.png in Resources */,
 				10BACCD81DB9ADE80004C2B7 /* Main.storyboard in Resources */,
+				10E444D61E02727E00FE918E /* blueArrow.png in Resources */,
+				10E444D71E02727E00FE918E /* blueArrow@2x.png in Resources */,
 				109702E81DEBCEBC00F5FD7F /* README.txt in Resources */,
 				1094ECFE1DD023DE006D32CA /* mapapi.bundle in Resources */,
 			);
@@ -1850,6 +1886,7 @@
 				1067447D1DD46EB70007527D /* CODetailInfoViewController.m in Sources */,
 				10BD6C531DD993F600A4E181 /* COMyFavorComponet.m in Sources */,
 				1011B04B1DC83BF000BC2B63 /* CORegisterStartViewController.m in Sources */,
+				10E444D91E02727E00FE918E /* FCXRefreshFooterView.m in Sources */,
 				106249E21DB9FE6F001DF428 /* COBikeMainViewController.m in Sources */,
 				10C81F421DC079E300C03926 /* httpRequest.m in Sources */,
 				10A5B5161E00EB2E00BC9A42 /* COMyHistoryTodayComponet.m in Sources */,
@@ -1884,6 +1921,7 @@
 				10560B291DC9DEA6002638C0 /* CoreDataManager.m in Sources */,
 				10560B2F1DC9E769002638C0 /* Userinfo.m in Sources */,
 				10A5B5221E00EB7D00BC9A42 /* COMyWXCollectionViewController.m in Sources */,
+				10E444D81E02727E00FE918E /* FCXRefreshBaseView.m in Sources */,
 				10BD6C311DD957CC00A4E181 /* COUserSettingCellModel.m in Sources */,
 				1095B89F1DCC22D300E52098 /* NetWorkServer.m in Sources */,
 				10A5B51F1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m in Sources */,
@@ -1923,6 +1961,7 @@
 				10BD6C2E1DD957AE00A4E181 /* COUserSettingHeadModel.m in Sources */,
 				10A5B52D1E00EF5600BC9A42 /* COMyWXCollectionModel.m in Sources */,
 				10A5B5131E00EB1800BC9A42 /* COMyHistoryTodayViewController.m in Sources */,
+				10E444DA1E02727E00FE918E /* FCXRefreshHeaderView.m in Sources */,
 				101B1AB81DDD504C007FC7D1 /* COMyZoneView.m in Sources */,
 				10BD6C411DD9581400A4E181 /* COUserSettingFootViewModel.m in Sources */,
 				106249EB1DBA012A001DF428 /* COMediator+COLoginRegistComponet.m in Sources */,
@@ -1951,6 +1990,7 @@
 				10A5B5251E00EB8F00BC9A42 /* COMyWXCollectionComponet.m in Sources */,
 				10BD6C7D1DD9B9FE00A4E181 /* COBaseNavigationController.m in Sources */,
 				106249D51DB9F808001DF428 /* UIInitServer.m in Sources */,
+				10E444DB1E02727E00FE918E /* UIScrollView+FCXRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

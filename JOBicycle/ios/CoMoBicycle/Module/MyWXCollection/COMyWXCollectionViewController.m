@@ -8,11 +8,16 @@
 
 #import "COMyWXCollectionViewController.h"
 #import "COMyWXCollectionTableViewModel.h"
+#import "COMyWXCollectionDetailViewController.h"
 
-@interface COMyWXCollectionViewController() <UITableViewDelegate, UITableViewDataSource>
+@interface COMyWXCollectionViewController() <UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+{
+    FCXRefreshHeaderView *headerRefreshView;
+}
 
 @property (nonatomic, strong)UITableView *mytableView;
 @property (nonatomic, strong)COMyWXCollectionTableViewModel *collectionTableViewModel;
+
 
 @end
 
@@ -27,15 +32,20 @@
     [self.view addSubview:self.mytableView];
     
     [self setNavigationBar];
+    
+    [self addUIConstriants];
+    
+    [self addHeadRefreshView];
+    
+    [SVProgressHUD ShowWaitMsg:@"正在加载"];
+    
+    [self fetchCollectionData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    [self addUIConstriants];
-    
-    [self fetchCollectionData];
 }
 
 - (void)setNavigationBar
@@ -75,15 +85,29 @@
     
 }
 
+- (void)addHeadRefreshView
+{
+    WEAK_SELF(weakself)
+    headerRefreshView = [self.mytableView addHeaderWithRefreshHandler:^(FCXRefreshBaseView *refreshView) {
+        
+        //refresh action
+        
+        [weakself fetchCollectionData];
+        
+    }];
+}
+
 #pragma mark lazy load
 
 - (UITableView *)mytableView
 {
     if(_mytableView == nil)
     {
-        _mytableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        _mytableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _mytableView.dataSource = self;
         _mytableView.delegate = self;
+        _mytableView.emptyDataSetSource = self;
+        _mytableView.emptyDataSetDelegate = self;
     }
     
     return _mytableView;
@@ -103,14 +127,18 @@
 
 - (void)fetchCollectionData
 {
-    [SVProgressHUD ShowWaitMsg:@"正在加载"];
+    WEAK_SELF(weakself)
     
     [self.collectionTableViewModel requestWXCollectionModelWithCompletion:^(BOOL blfinished) {
        
         [SVProgressHUD hideWait];
+        __weak FCXRefreshHeaderView *weakHeaderView = headerRefreshView;
+        
+        [weakHeaderView endRefresh];
+        
         if(blfinished)
         {
-            [self.mytableView reloadData];
+            [weakself.mytableView reloadData];
         }
         
     }];
@@ -141,8 +169,94 @@
 {
     NSURL *url = [self.collectionTableViewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     NSLog(@"url is %@", url);
+    
+    COMyWXCollectionDetailViewController *detailVC = [[COMyWXCollectionDetailViewController alloc] initWithURL:url];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
 }
+
+
+#pragma mark DZNEmptyDataSetSource delegate
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text = nil;
+    UIFont *font = nil;
+    UIColor *textColor = nil;
+    
+    NSMutableDictionary *attributes = [NSMutableDictionary new];
+    
+    text = @"数据未更新";
+    font = [UIFont boldSystemFontOfSize:17.0];
+    textColor = UIColorFromRGB(0x25282b);
+    
+    
+    if (font) [attributes setObject:font forKey:NSFontAttributeName];
+    if (textColor) [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
+    
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    
+}
+
+
+- (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text = nil;
+    UIFont *font = nil;
+    UIColor *textColor = nil;
+    
+    NSMutableDictionary *attributes = [NSMutableDictionary new];
+    
+    NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
+    paragraph.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraph.alignment = NSTextAlignmentCenter;
+    
+    text = @"我的精选文章还未更新，先休息一下吧";
+    font = [UIFont systemFontOfSize:14.5];
+    textColor = UIColorFromRGB(0x7b8994);
+    
+    
+    if (font) [attributes setObject:font forKey:NSFontAttributeName];
+    if (textColor) [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
+    if (paragraph) [attributes setObject:paragraph forKey:NSParagraphStyleAttributeName];
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
+    
+    
+    return attributedString;
+    
+}
+
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *imageName = [NSString stringWithFormat:@"placeholder_dropbox"];
+    
+    return [UIImage imageNamed:imageName];
+}
+
+#pragma mark - DZNEmptyDataSetDelegate Methods
+
+- (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+
 
 
 
