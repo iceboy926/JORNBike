@@ -10,6 +10,6 @@
 
 @interface COMyWXCollectionDetailViewController : UIViewController
 
-- (instancetype)initWithURL:(NSURL *)requestURL;
+- (instancetype)initWithURL:(NSURL *)requestURL firstImage:(NSString *)firstImage;
 
 @end

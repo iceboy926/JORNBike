@@ -23,6 +23,7 @@
 #import "COMediator+COMyNewsTopComponet.h"
 #import "COMediator+COMyHistoryTodayComponet.h"
 #import "COMediator+COLoginRegistComponet.h"
+#import "COMediator+COMyJokeComponet.h"
 
 #import "COBaseNavigationController.h"
 
@@ -270,8 +271,8 @@
             break;
         case 1:
             
-            viewcontroller = [[COMediator shareInstance] COMyFavorComponet_ViewController];
-                    
+            //viewcontroller = [[COMediator shareInstance] COMyFavorComponet_ViewController];
+            viewcontroller = [[COMediator shareInstance] COMyJokeComponet_ViewController];
             break;
         case 2:
             
@@ -307,23 +308,6 @@
 
 - (void)didQuitClicked
 {
-//    WEAK_SELF(weakself)
-//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"我的头条" message:@"确定退出当前登录的账户？" preferredStyle:UIAlertControllerStyleAlert];
-//    
-//    UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-//    
-//    UIAlertAction *actionQuit = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
-//        
-//
-//        [weakself quitCurrentAccout];
-//        
-//    }];
-//    
-//    [alertController addAction:actionCancel];
-//    
-//    [alertController addAction:actionQuit];
-    
-    
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"我的头条" message:@"确定退出当前登录的账户" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     
     [alertView show];

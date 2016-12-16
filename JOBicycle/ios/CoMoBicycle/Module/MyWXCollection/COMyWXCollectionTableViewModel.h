@@ -22,6 +22,6 @@
 
 - (CGFloat)heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 
-- (NSURL *)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (NSDictionary *)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

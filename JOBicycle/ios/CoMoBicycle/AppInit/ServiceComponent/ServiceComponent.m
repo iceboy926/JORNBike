@@ -59,6 +59,7 @@
     [self registService:[[BaiduMapServer alloc] init]];
     [self registService:[[UIInitServer alloc] init]];
     [self registService:[[SMSServer alloc] init]];
+    [self registService:[[ShareServer alloc] init]];
 }
 
 @end

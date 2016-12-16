@@ -167,13 +167,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSURL *url = [self.collectionTableViewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
+    NSDictionary *dicResult = [self.collectionTableViewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSLog(@"url is %@", url);
+    NSLog(@"url is %@", dicResult[@"url"]);
     
-    COMyWXCollectionDetailViewController *detailVC = [[COMyWXCollectionDetailViewController alloc] initWithURL:url];
+    COMyWXCollectionDetailViewController *detailVC = [[COMyWXCollectionDetailViewController alloc] initWithURL:dicResult[@"url"] firstImage:dicResult[@"firstimage"]];
     
     [self.navigationController pushViewController:detailVC animated:YES];
     

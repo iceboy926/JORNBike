@@ -173,13 +173,19 @@
     return [COMyWXCollectionCell heightForCollectionCell];
 }
 
-- (NSURL *)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSDictionary *)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     COMyWXCollectionCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
     NSString *strurl = [cell.collectionModel collectionUrlStr];
     
-    return [NSURL URLWithString:strurl];
+    NSString *strfirstImage = [cell.collectionModel imageUrlStr];
+    
+    NSURL *url = [NSURL URLWithString:strurl];
+    
+    NSDictionary *dicResult = @{@"firstimage": strfirstImage, @"url":url};
+    
+    return dicResult;
 }
 
 

@@ -17,7 +17,7 @@
 {
     UIViewController *viewcontroller = [self performTarget:MyHistoryToday_Target action:MyHistoryToday_Action params:nil];
     
-    if(viewcontroller == nil)
+    if([viewcontroller isKindOfClass:[UIViewController class]])
     {
         return viewcontroller;
     }

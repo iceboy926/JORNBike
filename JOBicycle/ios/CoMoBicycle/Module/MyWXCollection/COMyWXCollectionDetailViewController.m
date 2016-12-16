@@ -13,18 +13,20 @@
 @property (nonatomic, strong)NSURL *requestURL;
 @property (nonatomic, strong)WKWebView *webView;
 @property (nonatomic, strong)UIProgressView *progressView;
+@property (nonatomic, strong)NSString *firstImage;
 
 @end
 
 @implementation COMyWXCollectionDetailViewController
 
 
-- (instancetype)initWithURL:(NSURL *)requestURL
+- (instancetype)initWithURL:(NSURL *)requestURL firstImage:(NSString *)firstImage
 {
     self = [super init];
     if(self)
     {
         self.requestURL = requestURL;
+        self.firstImage = firstImage;
     }
     
     return self;
@@ -73,12 +75,73 @@
         self.navigationItem.leftBarButtonItem = iconItem;
     }
     
-    [self setTitle:@""];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithNormalIcon:@"cancel" highlightedIcon:nil target:self action:@selector(shareItemBtnClicked:)];
+    
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 - (void)backBtnClicked:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)shareItemBtnClicked:(id)sender
+{
+    //share sdk share
+    
+    //创建分享参数
+    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+    NSArray* imageArray = @[self.firstImage];
+    
+    if (imageArray) {
+        
+        [shareParams SSDKSetupShareParamsByText:@"内容"
+                                         images:imageArray
+                                            url:self.requestURL
+                                          title:@"分享"
+                                           type:SSDKContentTypeWebPage];
+        
+        [shareParams SSDKEnableUseClientShare];
+        
+        
+        [ShareSDK showShareActionSheet:nil items:nil shareParams:shareParams onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
+           
+            
+            switch (state) {
+                case SSDKResponseStateBegin: {
+                    
+                    break;
+                }
+                case SSDKResponseStateSuccess: {
+                    
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享成功"
+                                                                        message:nil
+                                                                       delegate:nil
+                                                              cancelButtonTitle:@"确定"
+                                                              otherButtonTitles:nil];
+                    [alertView show];
+                    break;
+                }
+                case SSDKResponseStateFail: {
+                    
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享失败"
+                                                                        message:nil
+                                                                       delegate:nil
+                                                              cancelButtonTitle:@"确定"
+                                                              otherButtonTitles:nil];
+                    [alertView show];
+                    
+                    break;
+                }
+                case SSDKResponseStateCancel: {
+                    
+                    break;
+                }
+            }
+            
+        }];
+    }
+
 }
 
 

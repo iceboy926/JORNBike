@@ -50,5 +50,16 @@
 #define SMS_APPKEY          @"19be103c5bce6"
 #define SMS_APPSECRET       @"8b77bbddf8227e44becf266fb26c445a"
 
+#define Share_AppKey        SMS_APPKEY
+#define Share_AppSecret     SMS_APPSECRET
+
+
+#define SinaWeiBo_AppKey                @"1522613711" //@"2187371547"
+#define SinaWeiBo_AppSecret             @"d3963e403edbc49048f5217eb81a2d26"
+#define SinaWeiBo_redirectUri           @"http://www.myapp.com/login/callback"
+
+#define WeiXin_AppKey                   @"wxb15b4ab26fce2028"
+#define WeiXin_AppSecret                @""
+
 
 #endif /* Macros_h */

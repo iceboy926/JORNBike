@@ -11,6 +11,7 @@
 #import "BaiduMapServer.h"
 #import "UIInitServer.h"
 #import "SMSServer.h"
+#import "ShareServer.h"
 
 @interface ServiceComponent : NSObject
 
