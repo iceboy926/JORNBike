@@ -31,6 +31,10 @@
 		1011B0691DC8675E00BC2B63 /* COLRBaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011B0661DC8675E00BC2B63 /* COLRBaseNavigationBar.m */; };
 		1011B06A1DC8675E00BC2B63 /* COLRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011B0681DC8675E00BC2B63 /* COLRBaseViewController.m */; };
 		1011B0701DC877A500BC2B63 /* COForgetNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011B06F1DC877A500BC2B63 /* COForgetNextView.m */; };
+		1015B2CC1E077F5000736668 /* COMyJokeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015B2CB1E077F5000736668 /* COMyJokeViewModel.m */; };
+		1015B2CF1E07818700736668 /* COMyJokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015B2CE1E07818700736668 /* COMyJokeCell.m */; };
+		1015B2D41E0781CA00736668 /* COMyJokeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015B2D31E0781CA00736668 /* COMyJokeModel.m */; };
+		1015B2D71E07BE6700736668 /* COMyFunnyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015B2D61E07BE6700736668 /* COMyFunnyCell.m */; };
 		101B1AB81DDD504C007FC7D1 /* COMyZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B1AB71DDD504C007FC7D1 /* COMyZoneView.m */; };
 		101D7C4C1DF54610005767BA /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 101D7C4A1DF54610005767BA /* AlipaySDK.bundle */; };
 		101D7C4D1DF54610005767BA /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101D7C4B1DF54610005767BA /* AlipaySDK.framework */; };
@@ -182,10 +186,10 @@
 		10C6E6801E038C13007AABC5 /* ShareServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E67F1E038C13007AABC5 /* ShareServer.m */; };
 		10C6E6821E03B0EA007AABC5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6E6811E03B0EA007AABC5 /* ImageIO.framework */; };
 		10C6E6861E03D669007AABC5 /* COMyJokeComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E6851E03D669007AABC5 /* COMyJokeComponet.m */; };
-		10C6E68D1E03D729007AABC5 /* COMyJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E68C1E03D729007AABC5 /* COMyJokeViewController.m */; };
+		10C6E68D1E03D729007AABC5 /* COMyJokeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E68C1E03D729007AABC5 /* COMyJokeView.m */; };
 		10C6E6911E03D7BD007AABC5 /* COMediator+COMyJokeComponet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E6901E03D7BD007AABC5 /* COMediator+COMyJokeComponet.m */; };
 		10C6E6941E03DA05007AABC5 /* COMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E6931E03DA05007AABC5 /* COMainViewController.m */; };
-		10C6E6971E03DA28007AABC5 /* COMyFunnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E6961E03DA28007AABC5 /* COMyFunnyViewController.m */; };
+		10C6E6971E03DA28007AABC5 /* COMyFunnyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6E6961E03DA28007AABC5 /* COMyFunnyView.m */; };
 		10C777D71DFA43D2000E7A3E /* SMSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C777D61DFA43D2000E7A3E /* SMSServer.m */; };
 		10C777DA1DFA7ECC000E7A3E /* UserSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C777D91DFA7ECC000E7A3E /* UserSetting.plist */; };
 		10C81F421DC079E300C03926 /* httpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C81F411DC079E300C03926 /* httpRequest.m */; };
@@ -250,6 +254,14 @@
 		1011B0681DC8675E00BC2B63 /* COLRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COLRBaseViewController.m; path = "Module/Login&&Register/COLRBaseViewController.m"; sourceTree = "<group>"; };
 		1011B06E1DC877A500BC2B63 /* COForgetNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COForgetNextView.h; path = "Module/Login&&Register/ForgetPSD/Next/COForgetNextView.h"; sourceTree = "<group>"; };
 		1011B06F1DC877A500BC2B63 /* COForgetNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COForgetNextView.m; path = "Module/Login&&Register/ForgetPSD/Next/COForgetNextView.m"; sourceTree = "<group>"; };
+		1015B2CA1E077F5000736668 /* COMyJokeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyJokeViewModel.h; path = Module/MyJoke/COMyJokeViewModel.h; sourceTree = "<group>"; };
+		1015B2CB1E077F5000736668 /* COMyJokeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyJokeViewModel.m; path = Module/MyJoke/COMyJokeViewModel.m; sourceTree = "<group>"; };
+		1015B2CD1E07818700736668 /* COMyJokeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyJokeCell.h; path = Module/MyJoke/COMyJokeCell.h; sourceTree = "<group>"; };
+		1015B2CE1E07818700736668 /* COMyJokeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyJokeCell.m; path = Module/MyJoke/COMyJokeCell.m; sourceTree = "<group>"; };
+		1015B2D21E0781CA00736668 /* COMyJokeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyJokeModel.h; path = Module/MyJoke/COMyJokeModel.h; sourceTree = "<group>"; };
+		1015B2D31E0781CA00736668 /* COMyJokeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyJokeModel.m; path = Module/MyJoke/COMyJokeModel.m; sourceTree = "<group>"; };
+		1015B2D51E07BE6700736668 /* COMyFunnyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFunnyCell.h; path = Module/MyJoke/COMyFunnyCell.h; sourceTree = "<group>"; };
+		1015B2D61E07BE6700736668 /* COMyFunnyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFunnyCell.m; path = Module/MyJoke/COMyFunnyCell.m; sourceTree = "<group>"; };
 		101B1AB61DDD504C007FC7D1 /* COMyZoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyZoneView.h; path = Module/MyZone/COMyZoneView.h; sourceTree = "<group>"; };
 		101B1AB71DDD504C007FC7D1 /* COMyZoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyZoneView.m; path = Module/MyZone/COMyZoneView.m; sourceTree = "<group>"; };
 		101D7C4A1DF54610005767BA /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = Library/AliPay/AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -565,14 +577,14 @@
 		10C6E6811E03B0EA007AABC5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		10C6E6841E03D669007AABC5 /* COMyJokeComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyJokeComponet.h; path = Module/MyJoke/COMyJokeComponet.h; sourceTree = "<group>"; };
 		10C6E6851E03D669007AABC5 /* COMyJokeComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyJokeComponet.m; path = Module/MyJoke/COMyJokeComponet.m; sourceTree = "<group>"; };
-		10C6E68B1E03D729007AABC5 /* COMyJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyJokeViewController.h; path = Module/MyJoke/COMyJokeViewController.h; sourceTree = "<group>"; };
-		10C6E68C1E03D729007AABC5 /* COMyJokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyJokeViewController.m; path = Module/MyJoke/COMyJokeViewController.m; sourceTree = "<group>"; };
+		10C6E68B1E03D729007AABC5 /* COMyJokeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyJokeView.h; path = Module/MyJoke/COMyJokeView.h; sourceTree = "<group>"; };
+		10C6E68C1E03D729007AABC5 /* COMyJokeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyJokeView.m; path = Module/MyJoke/COMyJokeView.m; sourceTree = "<group>"; };
 		10C6E68F1E03D7BD007AABC5 /* COMediator+COMyJokeComponet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COMediator+COMyJokeComponet.h"; path = "Module/Mediator/COMediator+COMyJokeComponet.h"; sourceTree = "<group>"; };
 		10C6E6901E03D7BD007AABC5 /* COMediator+COMyJokeComponet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "COMediator+COMyJokeComponet.m"; path = "Module/Mediator/COMediator+COMyJokeComponet.m"; sourceTree = "<group>"; };
 		10C6E6921E03DA05007AABC5 /* COMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMainViewController.h; path = Module/MyJoke/COMainViewController.h; sourceTree = "<group>"; };
 		10C6E6931E03DA05007AABC5 /* COMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMainViewController.m; path = Module/MyJoke/COMainViewController.m; sourceTree = "<group>"; };
-		10C6E6951E03DA28007AABC5 /* COMyFunnyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFunnyViewController.h; path = Module/MyJoke/COMyFunnyViewController.h; sourceTree = "<group>"; };
-		10C6E6961E03DA28007AABC5 /* COMyFunnyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFunnyViewController.m; path = Module/MyJoke/COMyFunnyViewController.m; sourceTree = "<group>"; };
+		10C6E6951E03DA28007AABC5 /* COMyFunnyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyFunnyView.h; path = Module/MyJoke/COMyFunnyView.h; sourceTree = "<group>"; };
+		10C6E6961E03DA28007AABC5 /* COMyFunnyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyFunnyView.m; path = Module/MyJoke/COMyFunnyView.m; sourceTree = "<group>"; };
 		10C777D51DFA43D2000E7A3E /* SMSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSServer.h; path = AppInit/SDKInit/SMSServer.h; sourceTree = "<group>"; };
 		10C777D61DFA43D2000E7A3E /* SMSServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSServer.m; path = AppInit/SDKInit/SMSServer.m; sourceTree = "<group>"; };
 		10C777D91DFA7ECC000E7A3E /* UserSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UserSetting.plist; path = Resource/InterfaceBuilder/UserSetting.plist; sourceTree = "<group>"; };
@@ -670,6 +682,24 @@
 				1011B0681DC8675E00BC2B63 /* COLRBaseViewController.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		1015B2D01E07819200736668 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1015B2CD1E07818700736668 /* COMyJokeCell.h */,
+				1015B2CE1E07818700736668 /* COMyJokeCell.m */,
+				1015B2D51E07BE6700736668 /* COMyFunnyCell.h */,
+				1015B2D61E07BE6700736668 /* COMyFunnyCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		1015B2D11E07819D00736668 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SubView;
 			sourceTree = "<group>";
 		};
 		101D7C491DF545FA005767BA /* AliPay */ = {
@@ -1995,12 +2025,12 @@
 		10C6E6871E03D6B8007AABC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				10C6E68B1E03D729007AABC5 /* COMyJokeViewController.h */,
-				10C6E68C1E03D729007AABC5 /* COMyJokeViewController.m */,
+				10C6E68B1E03D729007AABC5 /* COMyJokeView.h */,
+				10C6E68C1E03D729007AABC5 /* COMyJokeView.m */,
 				10C6E6921E03DA05007AABC5 /* COMainViewController.h */,
 				10C6E6931E03DA05007AABC5 /* COMainViewController.m */,
-				10C6E6951E03DA28007AABC5 /* COMyFunnyViewController.h */,
-				10C6E6961E03DA28007AABC5 /* COMyFunnyViewController.m */,
+				10C6E6951E03DA28007AABC5 /* COMyFunnyView.h */,
+				10C6E6961E03DA28007AABC5 /* COMyFunnyView.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -2008,6 +2038,8 @@
 		10C6E6881E03D6C3007AABC5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1015B2CA1E077F5000736668 /* COMyJokeViewModel.h */,
+				1015B2CB1E077F5000736668 /* COMyJokeViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -2015,6 +2047,8 @@
 		10C6E6891E03D6CB007AABC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1015B2D11E07819D00736668 /* SubView */,
+				1015B2D01E07819200736668 /* Cell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -2022,6 +2056,8 @@
 		10C6E68A1E03D6D2007AABC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1015B2D21E0781CA00736668 /* COMyJokeModel.h */,
+				1015B2D31E0781CA00736668 /* COMyJokeModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2283,6 +2319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C6E6911E03D7BD007AABC5 /* COMediator+COMyJokeComponet.m in Sources */,
+				1015B2D41E0781CA00736668 /* COMyJokeModel.m in Sources */,
 				1067447D1DD46EB70007527D /* CODetailInfoViewController.m in Sources */,
 				10BD6C531DD993F600A4E181 /* COMyFavorComponet.m in Sources */,
 				1011B04B1DC83BF000BC2B63 /* CORegisterStartViewController.m in Sources */,
@@ -2299,7 +2336,7 @@
 				106249EE1DBA0149001DF428 /* COMediator+COBikeMainComponet.m in Sources */,
 				108C28181DE7D770002D06CD /* COMyFavorCellModel.m in Sources */,
 				10B3250C1DCB1CDB00D8ECAB /* COMediator+COUserSettingComponet.m in Sources */,
-				10C6E6971E03DA28007AABC5 /* COMyFunnyViewController.m in Sources */,
+				10C6E6971E03DA28007AABC5 /* COMyFunnyView.m in Sources */,
 				1011B0361DC83AA600BC2B63 /* COLoginView.m in Sources */,
 				10BACCDB1DB9ADE80004C2B7 /* CoMoBicycle.xcdatamodeld in Sources */,
 				106249DF1DB9FD27001DF428 /* NSString+HashValue.m in Sources */,
@@ -2355,7 +2392,9 @@
 				10560B2E1DC9E769002638C0 /* Userinfo+CoreDataProperties.m in Sources */,
 				1011B03F1DC83B9800BC2B63 /* CORegistNavigationBar.m in Sources */,
 				1011B0691DC8675E00BC2B63 /* COLRBaseNavigationBar.m in Sources */,
+				1015B2D71E07BE6700736668 /* COMyFunnyCell.m in Sources */,
 				10BD6C701DD999A300A4E181 /* COMediator+COMyWXCollectionComponet.m in Sources */,
+				1015B2CF1E07818700736668 /* COMyJokeCell.m in Sources */,
 				108C28291DE837DE002D06CD /* UIImageView+CirecleView.m in Sources */,
 				1011B0601DC83CE200BC2B63 /* COAuthCodeView.m in Sources */,
 				10BD6C431DD9581400A4E181 /* COUserSettingTableViewModel.m in Sources */,
@@ -2377,7 +2416,7 @@
 				10B324F61DCAD55000D8ECAB /* UserinfoManager.m in Sources */,
 				10BD6C3A1DD957F800A4E181 /* COUserSettingHeaderView.m in Sources */,
 				10C6E6801E038C13007AABC5 /* ShareServer.m in Sources */,
-				10C6E68D1E03D729007AABC5 /* COMyJokeViewController.m in Sources */,
+				10C6E68D1E03D729007AABC5 /* COMyJokeView.m in Sources */,
 				10BD6C4A1DD958CE00A4E181 /* COMediator+COMyZoneComponet.m in Sources */,
 				106249AE1DB9BA67001DF428 /* AppDelegate.m in Sources */,
 				10BD6C391DD957F800A4E181 /* COUserSettingFooterView.m in Sources */,
@@ -2392,6 +2431,7 @@
 				108315301DD574FE002E8B65 /* COMyZoneComponet.m in Sources */,
 				10AF40271E00E48A00CBC656 /* COMediator+COMyHistoryTodayComponet.m in Sources */,
 				108C28151DE7D6E8002D06CD /* COMyFavorCell.m in Sources */,
+				1015B2CC1E077F5000736668 /* COMyJokeViewModel.m in Sources */,
 				10A5B5251E00EB8F00BC9A42 /* COMyWXCollectionComponet.m in Sources */,
 				10BD6C7D1DD9B9FE00A4E181 /* COBaseNavigationController.m in Sources */,
 				106249D51DB9F808001DF428 /* UIInitServer.m in Sources */,

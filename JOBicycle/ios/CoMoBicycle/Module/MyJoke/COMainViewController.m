@@ -7,15 +7,15 @@
 //
 
 #import "COMainViewController.h"
-#import "COMyJokeViewController.h"
-#import "COMyFunnyViewController.h"
+#import "COMyJokeView.h"
+#import "COMyFunnyView.h"
 
 @interface COMainViewController() <UIScrollViewDelegate>
 
 @property (nonatomic, strong)UISegmentedControl *segmentView;
 @property (nonatomic, strong)UIScrollView  *scrollView;
-@property (nonatomic, strong)COMyJokeViewController *myJokeVC;
-@property (nonatomic, strong)COMyFunnyViewController *myFunnyVC;
+@property (nonatomic, strong)COMyJokeView *myJokeView;
+@property (nonatomic, strong)COMyFunnyView *myFunnyView;
 
 @end
 
@@ -33,8 +33,8 @@
     
     [self setNavigationBar];
     
-    [self.scrollView addSubview:self.myJokeVC];
-    [self.scrollView addSubview:self.myFunnyVC];
+    [self.scrollView addSubview:self.myJokeView];
+    [self.scrollView addSubview:self.myFunnyView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -107,24 +107,24 @@
     self.scrollView.contentOffset = CGPointMake(self.segmentView.selectedSegmentIndex * self.view.bounds.size.width, 0);
 }
 
-- (COMyJokeViewController *)myJokeVC
+- (COMyJokeView *)myJokeView
 {
-    if(_myJokeVC == nil)
+    if(_myJokeView == nil)
     {
-        _myJokeVC = [[COMyJokeViewController alloc] initWithFrame:self.view.bounds];
+        _myJokeView = [[COMyJokeView alloc] initWithFrame:self.view.bounds];
     }
     
-    return _myJokeVC;
+    return _myJokeView;
 }
 
-- (COMyFunnyViewController *)myFunnyVC
+- (COMyFunnyView *)myFunnyView
 {
-    if(_myFunnyVC == nil)
+    if(_myFunnyView == nil)
     {
-        _myFunnyVC = [[COMyFunnyViewController alloc] initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+        _myFunnyView = [[COMyFunnyView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     }
     
-    return _myFunnyVC;
+    return _myFunnyView;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{

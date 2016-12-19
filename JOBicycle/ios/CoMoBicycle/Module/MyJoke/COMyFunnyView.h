@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COMyFunnyViewController : UIView
+@interface COMyFunnyView : UIView
 
 @end

@@ -75,9 +75,9 @@
         self.navigationItem.leftBarButtonItem = iconItem;
     }
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithNormalIcon:@"cancel" highlightedIcon:nil target:self action:@selector(shareItemBtnClicked:)];
-    
-    self.navigationItem.rightBarButtonItem = rightItem;
+//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithNormalIcon:@"cancel" highlightedIcon:nil target:self action:@selector(shareItemBtnClicked:)];
+//    
+//    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 - (void)backBtnClicked:(id)sender

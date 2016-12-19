@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COMyJokeViewController : UIView
+@interface COMyJokeView : UIView
 
 @end
