@@ -114,6 +114,7 @@
         
         if(error)
         {
+            NSLog(@"error is %@", error.localizedDescription);
             completionBlock(NO);
         }
         
