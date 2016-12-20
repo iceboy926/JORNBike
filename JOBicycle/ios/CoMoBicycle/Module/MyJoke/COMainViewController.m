@@ -79,7 +79,7 @@
         _scrollView.pagingEnabled = YES;
         _scrollView.directionalLockEnabled = YES;
         
-        _scrollView.contentInset = UIEdgeInsetsMake(-64, 0, -49, 0);
+        _scrollView.contentInset = UIEdgeInsetsMake(0, 0, -49, 0);
         _scrollView.contentSize = CGSizeMake(2 *self.view.bounds.size.width, self.view.bounds.size.height);
         _scrollView.showsHorizontalScrollIndicator = NO;
         

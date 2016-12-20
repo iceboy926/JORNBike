@@ -9,12 +9,12 @@
 #import "COMyJokeCell.h"
 #import "COMyJokeModel.h"
 
-CGFloat jokeCellHeight = 0.0;
 
 @interface COMyJokeCell()
 
 @property (nonatomic, strong)UILabel *contentLabel;
 @property (nonatomic, strong)UILabel *timeLabel;
+@property (nonatomic, strong)UIView *horizonLineView;
 
 
 @end
@@ -27,10 +27,12 @@ CGFloat jokeCellHeight = 0.0;
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self)
     {
+        
+        self.backgroundColor = [UIColor clearColor];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self.contentView addSubview:self.contentLabel];
         [self.contentView addSubview:self.timeLabel];
-        
-        [self addUIConstriants];
+        [self.contentView addSubview:self.horizonLineView];
     }
     
     return self;
@@ -38,35 +40,32 @@ CGFloat jokeCellHeight = 0.0;
 
 
 #pragma mark UI layout
-- (void)addUIConstriants
-{
-    NSInteger leftPadding = 15;
-    NSInteger rightPadding = 15;
-    NSInteger topPadding = 5;
-    
-    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-    
-        make.left.right.top.equalTo(self.contentView).insets(UIEdgeInsetsMake(topPadding, leftPadding, 0, rightPadding));
-        
-        make.height.mas_equalTo(40);
-
-        jokeCellHeight = topPadding;
-        
-    }];
-    
-    
-    [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.right.equalTo(_contentLabel.mas_right);
-        make.width.mas_equalTo(100);
-        make.top.equalTo(_contentLabel.mas_bottom);
-        make.height.mas_equalTo(30);
-        
-        jokeCellHeight += 35;
-    }];
-    
-    
-}
+//- (void)addUIConstriants
+//{
+//    NSInteger leftPadding = 15;
+//    NSInteger rightPadding = 15;
+//    NSInteger topPadding = 5;
+//    
+//    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//    
+//        make.left.right.top.equalTo(self.contentView).insets(UIEdgeInsetsMake(topPadding, leftPadding, 0, rightPadding));
+//        
+//        make.height.mas_equalTo(40);
+//        
+//    }];
+//    
+//    
+//    [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        
+//        make.right.equalTo(_contentLabel.mas_right);
+//        make.width.mas_equalTo(200);
+//        make.top.equalTo(_contentLabel.mas_bottom);
+//        make.height.mas_equalTo(30);
+//        
+//    }];
+//    
+//    
+//}
 
 #pragma mark lazy load
 
@@ -93,10 +92,22 @@ CGFloat jokeCellHeight = 0.0;
         _timeLabel.font = [UIFont systemFontOfSize:14.0];
         _timeLabel.textColor = [UIColor whiteColor];
         _timeLabel.backgroundColor = [UIColor clearColor];
+        _timeLabel.textAlignment = NSTextAlignmentRight;
         
     }
     
     return _timeLabel;
+}
+
+- (UIView *)horizonLineView
+{
+    if(_horizonLineView == nil)
+    {
+        _horizonLineView = [[UIView alloc] initWithFrame:CGRectZero];
+        _horizonLineView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+    }
+    
+    return _horizonLineView;
 }
 
 
@@ -113,9 +124,21 @@ CGFloat jokeCellHeight = 0.0;
     return cell;
 }
 
-+ (CGFloat)heightForCell
++ (CGFloat)heightForCellModel:(COMyJokeModel *)jokeModel
 {
-    return jokeCellHeight;
+    CGFloat  jokeHeight = 5;
+    
+     CGRect contentRect = [jokeModel.contentStr boundingRectWithSize:CGSizeMake(MAX_WIDTH - 30, MAX_HEIGHT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15.0]} context:nil];
+    
+
+    jokeHeight += contentRect.size.height + 5;
+    
+    jokeHeight += 35;
+    
+    NSLog(@"jokeheight is %f", jokeHeight);
+    
+    return jokeHeight;
+    
 }
 
 
@@ -126,12 +149,12 @@ CGFloat jokeCellHeight = 0.0;
     _jokeModel = jokeModel;
     
     //set content str
+    CGRect contentRect = [jokeModel.contentStr boundingRectWithSize:CGSizeMake(MAX_WIDTH - 30, MAX_HEIGHT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15.0]} context:nil];
     
-    CGRect contentRect = [jokeModel.contentStr boundingRectWithSize:CGSizeMake(MAX_WIDTH - 30, MAX_HEIGHT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15.0]} context:nil];
 
     
-    [self updateUIConstraints:contentRect];
-    
+    [self updateUIConstraintsWithSize:contentRect.size];
+   
     self.contentLabel.text = jokeModel.contentStr;
     
     //set time str
@@ -141,27 +164,46 @@ CGFloat jokeCellHeight = 0.0;
     [formatter setTimeStyle:NSDateFormatterShortStyle];
     [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
     NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:[jokeModel.unixtimeStr doubleValue]];
-    NSLog(@"1296035591  = %@",confromTimesp);
     NSString *confromTimespStr = [formatter stringFromDate:confromTimesp];
-    NSLog(@"confromTimespStr =  %@",confromTimespStr);
     
     self.timeLabel.text = confromTimespStr;
 }
 
-- (void)updateUIConstraints:(CGRect )contentRect
+- (void)updateUIConstraintsWithSize:(CGSize)size
 {
-    CGFloat contentHeight = contentRect.size.height;
+    NSInteger leftPadding = 15;
+    NSInteger rightPadding = 15;
+    NSInteger topPadding = 5;
     
     [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         
-        make.height.mas_equalTo(contentHeight);
+        make.left.equalTo(self.contentView.mas_left).offset(leftPadding);
+        make.right.equalTo(self.contentView.mas_right).offset(-rightPadding);
+        make.top.equalTo(self.contentView.mas_top).offset(topPadding);
         
-        jokeCellHeight += contentHeight;
+        make.height.mas_equalTo(size.height + 5);
+        
     }];
     
     
+    [self.timeLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        
+        make.right.equalTo(_contentLabel.mas_right);
+        make.width.mas_equalTo(200);
+        make.top.equalTo(_contentLabel.mas_bottom);
+        make.height.mas_equalTo(30);
+        
+    }];
+    
+    [self.horizonLineView mas_updateConstraints:^(MASConstraintMaker *make) {
+       
+        make.left.equalTo(_contentLabel.mas_left);
+        make.right.equalTo(_contentLabel.mas_right);
+        make.top.equalTo(_timeLabel.mas_bottom).offset(2);
+        make.height.mas_equalTo(1.0);
+        
+    }];
 }
-
 
 
 

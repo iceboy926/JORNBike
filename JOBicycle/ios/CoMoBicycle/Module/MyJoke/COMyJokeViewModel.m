@@ -75,7 +75,6 @@
        
         if(responseObject)
         {
-            NSLog(responseObject);
             NSDictionary *resultDic = responseObject[@"result"];
             if(resultDic)
             {
@@ -155,7 +154,7 @@
 {
     if(blJoke)
     {
-        return [COMyJokeCell heightForCell];
+        return [COMyJokeCell heightForCellModel:[self.jokeDataArray objectAtIndex:[indexPath row]]];
     }
     else
     {

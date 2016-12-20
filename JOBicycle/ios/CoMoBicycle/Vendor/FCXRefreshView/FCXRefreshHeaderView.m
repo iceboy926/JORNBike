@@ -19,6 +19,12 @@
     return header;
 }
 
+- (void)setTextColor:(UIColor *)color
+{
+    _statusLabel.textColor = color;
+    _timeLabel.textColor  = color;
+}
+
 - (void)setStateText {
     self.normalStateText = @"下拉刷新";
     self.pullingStateText = @"松开可刷新";

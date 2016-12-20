@@ -12,4 +12,6 @@
 
 + (instancetype)headerWithRefreshHandler:(FCXRefreshedHandler)refreshHandler;
 
+- (void)setTextColor:(UIColor *)color;
+
 @end
