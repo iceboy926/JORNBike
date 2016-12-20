@@ -89,7 +89,7 @@
     {
         _timeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         
-        _timeLabel.font = [UIFont systemFontOfSize:14.0];
+        _timeLabel.font = [UIFont systemFontOfSize:13.0];
         _timeLabel.textColor = [UIColor whiteColor];
         _timeLabel.backgroundColor = [UIColor clearColor];
         _timeLabel.textAlignment = NSTextAlignmentRight;
@@ -155,7 +155,7 @@
     
     [self updateUIConstraintsWithSize:contentRect.size];
    
-    self.contentLabel.text = jokeModel.contentStr;
+    self.contentLabel.text = [NSString replaceUnicode:jokeModel.contentStr];
     
     //set time str
     

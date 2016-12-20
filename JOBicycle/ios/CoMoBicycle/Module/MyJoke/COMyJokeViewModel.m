@@ -158,7 +158,7 @@
     }
     else
     {
-        return [COMyFunnyCell heightForCell];
+        return [COMyFunnyCell heightForCellModel:[self.jokeDataArray objectAtIndex:[indexPath row]]];
     }
 }
 

@@ -16,6 +16,6 @@
 
 + (COMyFunnyCell *)cellWithTableView:(UITableView *)tableView;
 
-+ (CGFloat)heightForCell;
++ (CGFloat)heightForCellModel:(COMyJokeModel *)funnyModel;
 
 @end
