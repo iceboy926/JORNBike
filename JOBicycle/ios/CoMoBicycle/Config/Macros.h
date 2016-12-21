@@ -31,6 +31,8 @@
 #define navigaterBarColor   UIColorFromRGB(0x575757)
 #define shadowViewColor     UIColorFromRGB(0xB0B0B0)
 #define orangeViewColor     UIColorFromRGB(0xEE9572)
+#define cellbackgroundColor  UIColorFromRGB(0xF7F7F7)
+#define innercardbackgroundColor UIColorFromRGB(0xF2F2F2)
 
 
 #pragma mark frame

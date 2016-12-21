@@ -41,6 +41,10 @@
 		101D7C4F1DF5471B005767BA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101D7C4E1DF5471B005767BA /* CoreMotion.framework */; };
 		101D7C551DF55EEC005767BA /* ic_category_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 101D7C531DF55EEC005767BA /* ic_category_11.png */; };
 		101D7C561DF55EEC005767BA /* ic_category_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 101D7C541DF55EEC005767BA /* ic_category_16.png */; };
+		10235A921E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10235A911E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.m */; };
+		10235A951E0A24C700FF1DF2 /* COMyHistoryTodayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10235A941E0A24C700FF1DF2 /* COMyHistoryTodayCell.m */; };
+		10235A981E0A24F100FF1DF2 /* COMyHistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10235A971E0A24F100FF1DF2 /* COMyHistoryTodayModel.m */; };
+		10235A9B1E0A556400FF1DF2 /* COMyHistoryDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10235A9A1E0A556400FF1DF2 /* COMyHistoryDetailModel.m */; };
 		1033AB681DC8898300961174 /* COForgetPSDEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033AB671DC8898300961174 /* COForgetPSDEndViewController.m */; };
 		1033AB6B1DC88B9F00961174 /* COForgetEndView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033AB6A1DC88B9F00961174 /* COForgetEndView.m */; };
 		104135051DDEFF2700AE7E9E /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 104135021DDEFF2700AE7E9E /* MGSwipeButton.m */; };
@@ -269,6 +273,14 @@
 		101D7C4E1DF5471B005767BA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		101D7C531DF55EEC005767BA /* ic_category_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_category_11.png; path = Resource/Image/ic_category_11.png; sourceTree = "<group>"; };
 		101D7C541DF55EEC005767BA /* ic_category_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_category_16.png; path = Resource/Image/ic_category_16.png; sourceTree = "<group>"; };
+		10235A901E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyHistoryTodayTableViewModel.h; path = Module/MyHistoryToday/COMyHistoryTodayTableViewModel.h; sourceTree = "<group>"; };
+		10235A911E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyHistoryTodayTableViewModel.m; path = Module/MyHistoryToday/COMyHistoryTodayTableViewModel.m; sourceTree = "<group>"; };
+		10235A931E0A24C700FF1DF2 /* COMyHistoryTodayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyHistoryTodayCell.h; path = Module/MyHistoryToday/COMyHistoryTodayCell.h; sourceTree = "<group>"; };
+		10235A941E0A24C700FF1DF2 /* COMyHistoryTodayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyHistoryTodayCell.m; path = Module/MyHistoryToday/COMyHistoryTodayCell.m; sourceTree = "<group>"; };
+		10235A961E0A24F100FF1DF2 /* COMyHistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyHistoryTodayModel.h; path = Module/MyHistoryToday/COMyHistoryTodayModel.h; sourceTree = "<group>"; };
+		10235A971E0A24F100FF1DF2 /* COMyHistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyHistoryTodayModel.m; path = Module/MyHistoryToday/COMyHistoryTodayModel.m; sourceTree = "<group>"; };
+		10235A991E0A556400FF1DF2 /* COMyHistoryDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMyHistoryDetailModel.h; path = Module/MyHistoryToday/COMyHistoryDetailModel.h; sourceTree = "<group>"; };
+		10235A9A1E0A556400FF1DF2 /* COMyHistoryDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMyHistoryDetailModel.m; path = Module/MyHistoryToday/COMyHistoryDetailModel.m; sourceTree = "<group>"; };
 		1033AB661DC8898300961174 /* COForgetPSDEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COForgetPSDEndViewController.h; path = "Module/Login&&Register/ForgetPSD/End/COForgetPSDEndViewController.h"; sourceTree = "<group>"; };
 		1033AB671DC8898300961174 /* COForgetPSDEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COForgetPSDEndViewController.m; path = "Module/Login&&Register/ForgetPSD/End/COForgetPSDEndViewController.m"; sourceTree = "<group>"; };
 		1033AB691DC88B9F00961174 /* COForgetEndView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COForgetEndView.h; path = "Module/Login&&Register/ForgetPSD/End/COForgetEndView.h"; sourceTree = "<group>"; };
@@ -711,6 +723,22 @@
 			name = AliPay;
 			sourceTree = "<group>";
 		};
+		10235A8E1E0A23F600FF1DF2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				10235A931E0A24C700FF1DF2 /* COMyHistoryTodayCell.h */,
+				10235A941E0A24C700FF1DF2 /* COMyHistoryTodayCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		10235A8F1E0A23FF00FF1DF2 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SubView;
+			sourceTree = "<group>";
+		};
 		104135001DDEFF1500AE7E9E /* MGSwipeTableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +819,8 @@
 		105BFA441DFF96710053551B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				10235A901E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.h */,
+				10235A911E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -798,6 +828,8 @@
 		105BFA451DFF96790053551B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10235A8F1E0A23FF00FF1DF2 /* SubView */,
+				10235A8E1E0A23F600FF1DF2 /* Cell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -805,6 +837,10 @@
 		105BFA461DFF96800053551B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				10235A961E0A24F100FF1DF2 /* COMyHistoryTodayModel.h */,
+				10235A971E0A24F100FF1DF2 /* COMyHistoryTodayModel.m */,
+				10235A991E0A556400FF1DF2 /* COMyHistoryDetailModel.h */,
+				10235A9A1E0A556400FF1DF2 /* COMyHistoryDetailModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2353,14 +2389,17 @@
 				1011B0331DC83A9500BC2B63 /* COLoginViewModel.m in Sources */,
 				10B324FA1DCB0DBC00D8ECAB /* COBMViewModel.m in Sources */,
 				1011B06A1DC8675E00BC2B63 /* COLRBaseViewController.m in Sources */,
+				10235A9B1E0A556400FF1DF2 /* COMyHistoryDetailModel.m in Sources */,
 				10BD6C421DD9581400A4E181 /* COUserSettingHeadViewModel.m in Sources */,
 				100AAD7E1DD3040F00013FC4 /* COResultInfo.m in Sources */,
 				10BD6C5D1DD9949900A4E181 /* COMediator+COMyFavorComponet.m in Sources */,
+				10235A921E0A245900FF1DF2 /* COMyHistoryTodayTableViewModel.m in Sources */,
 				10560B291DC9DEA6002638C0 /* CoreDataManager.m in Sources */,
 				10560B2F1DC9E769002638C0 /* Userinfo.m in Sources */,
 				10A5B5221E00EB7D00BC9A42 /* COMyWXCollectionViewController.m in Sources */,
 				10E444D81E02727E00FE918E /* FCXRefreshBaseView.m in Sources */,
 				10BD6C311DD957CC00A4E181 /* COUserSettingCellModel.m in Sources */,
+				10235A951E0A24C700FF1DF2 /* COMyHistoryTodayCell.m in Sources */,
 				1095B89F1DCC22D300E52098 /* NetWorkServer.m in Sources */,
 				10A5B51F1E00EB6C00BC9A42 /* COMyWXCollectionTableViewModel.m in Sources */,
 				1033AB6B1DC88B9F00961174 /* COForgetEndView.m in Sources */,
@@ -2419,6 +2458,7 @@
 				10C6E68D1E03D729007AABC5 /* COMyJokeView.m in Sources */,
 				10BD6C4A1DD958CE00A4E181 /* COMediator+COMyZoneComponet.m in Sources */,
 				106249AE1DB9BA67001DF428 /* AppDelegate.m in Sources */,
+				10235A981E0A24F100FF1DF2 /* COMyHistoryTodayModel.m in Sources */,
 				10BD6C391DD957F800A4E181 /* COUserSettingFooterView.m in Sources */,
 				106249C81DB9E7A6001DF428 /* FBKVOController.m in Sources */,
 				109911C11DFE4F0700F82584 /* NTImageBrowser.m in Sources */,

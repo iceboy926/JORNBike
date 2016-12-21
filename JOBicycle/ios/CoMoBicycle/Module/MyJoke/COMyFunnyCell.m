@@ -8,6 +8,7 @@
 
 #import "COMyFunnyCell.h"
 #import "COMyJokeModel.h"
+#import "NTImageBrowser.h"
 
 #define  ImageWidth    120
 #define  ImageHeight   120
@@ -39,6 +40,7 @@
         [self.contentView addSubview:self.horizonLineView];
         
         [self addUIConstriants];
+        
     }
     
     return self;
@@ -83,6 +85,19 @@
         make.height.mas_equalTo(1.0);
         
     }];
+}
+
+- (void)addImageVCGestureRecognation
+{
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self.funnyImageView action:@selector(imageTouchAction:)];
+    
+    [self.funnyImageView addGestureRecognizer:gesture];
+}
+
+- (void)imageTouchAction:(UITapGestureRecognizer *)gesture
+{
+    UIImageView *imageView = (UIImageView *)gesture.view;
+    [NTImageBrowser showImageBrowserWithImageView:imageView];
 }
 
 
@@ -146,6 +161,7 @@
     {
         _funnyImageView = [[UIImageView alloc] init];
         
+        _funnyImageView.userInteractionEnabled = YES;
         
     }
     
