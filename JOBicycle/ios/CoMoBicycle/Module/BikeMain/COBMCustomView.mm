@@ -13,7 +13,7 @@
 
 #define MIN_DISTANCE  5.0
 
-@interface COBMCustomView() <BMKLocationServiceDelegate, BMKMapViewDelegate, BMKPoiSearchDelegate>
+@interface COBMCustomView() <BMKLocationServiceDelegate, BMKMapViewDelegate, BMKPoiSearchDelegate, BMKGeoCodeSearchDelegate>
 {
     CLLocation *preLocation;
     BMKPolyline *polyLine;
@@ -28,8 +28,12 @@
 @property (nonatomic, strong)BMKLocationService *locationService;
 @property (nonatomic, strong)CLLocationManager *locationManager;
 @property (nonatomic, strong)NSMutableArray *locationPointArray; //记录用户经过的点
+@property (nonatomic, strong)BMKGeoCodeSearch *geoCodeSearch;
 
 @property (nonatomic, strong)BMKPoiSearch *poiSearch; //poi 搜索
+
+@property (nonatomic, assign)CLLocationCoordinate2D currentLocationCoordinate;
+@property (nonatomic, strong)NSString *currentCity;
 
 
 @end
@@ -169,6 +173,17 @@
     return _locationPointArray;
 }
 
+- (BMKGeoCodeSearch *)geoCode
+{
+    if(_geoCodeSearch == nil)
+    {
+        _geoCodeSearch = [[BMKGeoCodeSearch alloc] init];
+        _geoCodeSearch.delegate = self;
+    }
+    
+    return _geoCodeSearch;
+}
+
 #pragma mark custom function
 
 - (void)startPoiSearchWithKeyword:(NSString *)strKeyWord
@@ -232,6 +247,52 @@
 }
 
 
+- (void)outputAdd
+{
+    BMKReverseGeoCodeOption *option = [[BMKReverseGeoCodeOption alloc] init];
+    
+    option.reverseGeoPoint = CLLocationCoordinate2DMake(self.currentLocationCoordinate.latitude, self.currentLocationCoordinate.longitude);//self.currentLocationCoordinate;
+    
+    BOOL blgeoResult = [self.geoCodeSearch reverseGeoCode:option];
+    if(blgeoResult)
+    {
+        NSLog(@"self outputAdd");
+    }
+}
+
+#pragma mark  BMKGeoCodeSearchDelegate
+
+
+/**
+ *返回地址信息搜索结果
+ *@param searcher 搜索对象
+ *@param result 搜索结BMKGeoCodeSearch果
+ *@param error 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
+{
+    NSLog(@"onGetGeoCodeResult ");
+}
+
+/**
+ *返回反地理编码搜索结果
+ *@param searcher 搜索对象
+ *@param result 搜索结果
+ *@param error 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
+{
+    NSLog(@"onGetReverseGeoCodeResult ");
+    if(result)
+    {
+        self.currentCity = result.addressDetail.city;
+        
+        NSLog(@"current address is %@ city address is %@", result.address, result.addressDetail.city);
+        
+    }
+}
+
+
 #pragma mark BMKLocationService Delegate
 
 /**
@@ -249,6 +310,18 @@
  */
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
 {
+    //
+    //NSLog(@"当前经纬度坐标是 (%f , %f)", userLocation.location.coordinate)
+    CGFloat latPoint = userLocation.location.coordinate.latitude;
+    CGFloat lotPoint = userLocation.location.coordinate.longitude;
+    
+    self.currentLocationCoordinate = userLocation.location.coordinate;
+    
+    NSLog(@"当前经纬度坐标是 (%f, %f)", latPoint, lotPoint);
+    
+    [self outputAdd];
+    
+    
     if(preLocation)
     {
         CGFloat distance = [userLocation.location distanceFromLocation:preLocation];
