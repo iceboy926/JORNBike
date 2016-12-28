@@ -31,7 +31,7 @@
 
     if (self.username && self.password) {
         
-        if([self.username isEqualToString:@"18810761008"])
+        if([self.username isEqualToString:@"13522431852"])
         {
             NSDictionary *dicUser = @{@"username": self.username, @"usertoken": @"usertesttoken", @"loginstatus": @YES};
             
