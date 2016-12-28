@@ -44,6 +44,7 @@
         
         NSDictionary *dicParam = @{@"user": self.username, @"psd": [self.password md5]};
         
+        
         [httpRequest requestWithURLString:API_URL_LOGIN parameters:nil type:HttpRequestTypeGet success:^(id response){
             if(response[@"success"])
             {
